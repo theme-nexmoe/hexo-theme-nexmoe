@@ -60,9 +60,9 @@ star 以及 issue 是我更新的动力!
 论坛：https://club.chainwon.com/t/nexmoe
 
 ## 特性
-- [相片集](#相片集)
-- [友情链接](#友情链接)
-- [图片灯箱](#图片灯箱)
+- [相片集](https://nexmoe.com/hexo-theme-nexmoe.html#相片集)
+- [友情链接](https://nexmoe.com/hexo-theme-nexmoe.html#友情链接)
+- [图片灯箱](https://nexmoe.com/hexo-theme-nexmoe.html#图片灯箱)
 
 ## 评论支持
 - [GitTalk](https://github.com/gitalk/gitalk)
