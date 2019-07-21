@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive');
+
+    if (is_month()){
+      title += '：' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += '：' + page.year;
+    }
+  } else if (is_category()){
+    title = __('count.categories') + '：' + page.category;
+  } else if (is_tag()){
+    title = __('count.tags') + '：' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <link rel="stylesheet" href="<%- theme.cdn %>/mdui/0.4.3/css/mdui.min.css">
+  <link rel="stylesheet" href="<%- theme.cdn %>/highlight.js/9.8.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="<%- theme.cdn %>/fancybox/3.4.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_pxmk5unjlge.css">
+  <%- css('css/style') %>
+</head>
+
+<body class="<% if (theme.menuopen !== false){ %><%- __('mdui-drawer-body-left') -%><% } %>">
+  <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
+  <div id="nexmoe-header">
+      <%- partial('_partial/header', {}, {cache: true}) %>
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-tab">
+            <a mdui-drawer="{target: '#drawer', swipe: true}">
+              <i class="mdui-icon material-icons">menu</i>
+            </a>
+          </div>
+        <%- body %>
+        <div class="nexmoe-copyright">
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+        <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+        </div>
+    </div>
+  </div>
+  <div id="nexmoe-footer">
+      <%- partial('_partial/footer', {}, {cache: true}) %>
+  </div>
+  <%- partial('_partial/after-footer', {}, {cache: true}) %>
+</body>
+
+</html>

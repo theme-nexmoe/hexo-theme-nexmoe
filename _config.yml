@@ -1,0 +1,43 @@
+avatar: /images/avatar.png # 网站 Logo
+background: https://i.loli.net/2019/01/13/5c3aec85a4343.jpg # 既是博客的背景，又是文章默认头图
+
+menuopen: true
+menu:
+  回到首页: 
+    - /
+    - icon-home
+#  文章归档: 
+#    - /archives
+#    - icon-container
+  关于博客:
+    - /about.html
+    - icon-info-circle
+  我的朋友: 
+    - /PY.html
+
+cdn: https://cdnjs.loli.net/ajax/libs/ # 这里可以修改站点使用的库的CDN
+
+widgets:
+- category
+- tagcloud
+- archive
+# - recent_posts
+
+comment: gitalk # 评论框，目前支持 gitalk,gitment,valine
+
+gitalk:
+  admin: nexmoe # 管理员 GitHub ID
+  owner: nexmoe # 你的 GitHub ID
+  repo: nexmoe.github.io # 存储评论的 repo
+  clientID: 80b2453b6d5f37ad6225 #你的 client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # 你的 client secret
+
+gitment:
+  owner: nexmoe # 你的 GitHub ID
+  repo: nexmoe.github.io # 存储评论的 repo
+  clientID: 80b2453b6d5f37ad6225 #你的 client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # 你的 client secret
+
+valine: 
+  appId: <API_ID>
+  appKey: <API_Key>
