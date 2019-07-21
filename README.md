@@ -1,3 +1,5 @@
+<div align="right">Language: <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/README/english.md">English</a> | Chinese </div>
+
 ![Snipaste_2019-07-21_13-54-09.png](https://i.loli.net/2019/07/21/5d34014060cf831071.png)
 
 <h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
@@ -68,7 +70,7 @@ star 以及 issue 是我更新的动力!
 - [Valine](https://valine.js.org/)
 
 如果以上没有满足你的评论框，可以在本主题目录 `layout/_partial/_comment` 新建一个文件 `xxx.ejs`，然后在该文件中安装你需要的评论框系统代码。
-如果有空的话，还可以将你的修改 `pull request` 到本项目的 Github
+如果有空的话，你还可以使用 `pull request` 功能PR到本项目的 Github 仓库
 
 
 ## 更多
