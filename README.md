@@ -3,6 +3,14 @@
 ## 开源协议
 Apache License 2.0
 
+## 后续更新
+就读高中，
+star 以及 issue 是我更新的动力
+欢迎加群 482634342 划水
+
+## 交流
+论坛：https://club.chainwon.com/t/nexmoe
+
 ## 特性
 - [相片集](#相片集)
 - [友情链接](#友情链接)
@@ -22,11 +30,3 @@ Apache License 2.0
 
 ## 更多
 请查看 https://nexmoe.com/hexo-theme-nexmoe.html
-
-## 后续更新
-就读高中，
-star 以及 issue 是我更新的动力
-欢迎加群 482634342 划水
-
-## 交流
-论坛：https://club.chainwon.com/t/nexmoe
