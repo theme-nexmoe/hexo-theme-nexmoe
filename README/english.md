@@ -14,7 +14,7 @@
 <a href="https://nexmoe.com"><img alt="Author" src="https://img.shields.io/badge/author-%E6%8A%98%E5%BD%B1%E8%BD%BB%E6%A2%A6-red.svg"/></a>
 <a href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/hexo-theme-nexmoe.svg"/></a>
 <img alt="hexo" src="https://img.shields.io/badge/hexo-blue.svg"/>
-<img alt="Download" src="https://img.shields.io/badge/download-23.8KB-brightgreen.svg"/>
+<img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
 </p>
 
 ## Contents
