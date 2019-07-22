@@ -1,0 +1,13 @@
+continue: More
+nav:
+  home: Home
+
+archive: Archive
+recent_posts: Recent Posts
+categories: Categories
+tagcloud: Tag Cloud
+
+count:
+  articles: Articles
+  tags: Tags
+  categories: Categories

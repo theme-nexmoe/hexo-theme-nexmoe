@@ -1,7 +1,6 @@
 avatar: /images/avatar.png # 网站 Logo
 background: https://i.loli.net/2019/01/13/5c3aec85a4343.jpg # 既是博客的背景，又是文章默认头图
 
-menuopen: true
 menu:
   回到首页: 
     - /
