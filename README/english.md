@@ -20,6 +20,7 @@
 ## Contents
 
 - [Introduction](#introduction)
+- [Wiki](#wiki)
 - [Demo](#demo)
 - [Internationalization](#internationalization)
 - [License](#license)
@@ -32,6 +33,9 @@
 ## Introduction
 
 A special Hexo theme
+
+## Wiki
+Please check [Here](https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/start.md)
 
 ## Demo
 
