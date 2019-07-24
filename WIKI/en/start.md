@@ -34,7 +34,7 @@ Before using “Nexmoe” theme, please read [Hexo’s Official Documents](https
 Choose the version you want to deploy, expand `Assets` tab in releases page, and download Source Code (zip).
 Unpack it and rename it to `nexmoe`, and then move it to `themes` directory of your Hexo Project.
 
-#### [Using Git]((https://github.com/nexmoe/hexo-theme-nexmoe)
+#### [Using Git](https://github.com/nexmoe/hexo-theme-nexmoe)
 
 With git you can decide which version and branch you want to use. You can use `git pull` to update the theme if you goes this way.
 ```
@@ -50,7 +50,7 @@ When installing “Nexmoe” you need extra steps which is diffrent from other t
 ```
 npm i --save hexo-wordcount
 ```
-*** Before Node version 7.6.0, please install the 2.x version (Node.js v7.6.0 and previous), the installation command is as follows:***
+** Before Node version 7.6.0, please install the 2.x version (Node.js v7.6.0 and previous), the installation command is as follows: **
 ```
 npm install hexo-wordcount@2 --save
 ```
