@@ -21,7 +21,7 @@
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <link rel="stylesheet" href="<%- theme.cdn %>/mdui/0.4.3/css/mdui.min.css">
   <link rel="stylesheet" href="<%- theme.cdn %>/highlight.js/9.8.0/styles/atom-one-dark.min.css">
