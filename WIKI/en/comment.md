@@ -16,7 +16,7 @@ Nexmoe currently supports `three` review systems: Gitment, Gitalk, and Valley.
 
 The corresponding key values are `gitment` `gitalk` `valine`, fill in the key of the comment system you want to enable in `comment`, and then find the configuration location of the corresponding comment system.
 
-##[Gitment](https://github.com/imsun/gitment)
+## [Gitment](https://github.com/imsun/gitment)
 
 ```
 comment: gitment
@@ -29,7 +29,7 @@ gitment:
 ```
 Read Gitment's documentation and tutorials to find out how to enable and populate the above parameters. In general, you need to [create a new GitHub Application](https://github.com/settings/applications/new)
 
-##[Gitalk](https://github.com/gitalk/gitalk)
+## [Gitalk](https://github.com/gitalk/gitalk)
 
 ```
 comment: gitalk
@@ -43,7 +43,7 @@ gitalk:
 ```
 Please read Gitalk's documentation and tutorials carefully to know how to enable and populate the above parameters. In general, you need to [create a new GitHub Application](https://github.com/settings/applications/new)
 
-##[Valine](https://valine.js.org/)
+## [Valine](https://valine.js.org/)
 
 ```
 comment: valine
