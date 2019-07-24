@@ -26,17 +26,17 @@ comment: gitalk # 评论框，目前支持 gitalk,gitment,valine
 
 gitalk:
   admin: nexmoe # 管理员 GitHub ID
-  owner: nexmoe # 你的 GitHub ID
-  repo: nexmoe.github.io # 存储评论的 repo
-  clientID: 80b2453b6d5f37ad6225 #你的 client ID
-  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # 你的 client secret
+  owner: nexmoe # 持有该 repo 的 GitHub user
+  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
+  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
 
 gitment:
-  owner: nexmoe # 你的 GitHub ID
-  repo: nexmoe.github.io # 存储评论的 repo
-  clientID: 80b2453b6d5f37ad6225 #你的 client ID
-  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # 你的 client secret
+  owner: nexmoe # 持有该 repo 的 GitHub user
+  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
+  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
 
 valine: 
-  appId: <API_ID>
-  appKey: <API_Key>
+  appId: <API_ID> # leancloud application app id
+  appKey: <API_Key> # leancloud application app key
