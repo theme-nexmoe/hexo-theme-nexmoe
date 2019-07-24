@@ -10,13 +10,13 @@
 - [Valine](#valine)
 
 
-##开始
+## 开始
 
 Nexmoe目前支持 3 种的评论系统，它们分别是 Gitment、Gitalk、Valine。
 
 它们分别对应的键值是 `gitment` `gitalk` `valine`，将你想启用的评论系统的键值填写在 `comment` 中，然后找到对应评论系统的配置位置。
 
-##[Gitment](https://github.com/imsun/gitment)
+## [Gitment](https://github.com/imsun/gitment)
 
 ```
 comment: gitment
@@ -29,7 +29,7 @@ gitment:
 ```
 请仔细阅读Gitment的文档、教程，以知晓如何启用、填充上述参数。一般的，你需要 [创建一个新的 GitHub Application](https://github.com/settings/applications/new)
 
-##[Gitalk](https://github.com/gitalk/gitalk)
+## [Gitalk](https://github.com/gitalk/gitalk)
 
 ```
 comment: gitalk
@@ -43,7 +43,7 @@ gitalk:
 ```
 请仔细阅读Gitalk的文档、教程，以知晓如何启用、填充上述参数。一般的，你需要 [创建一个新的 GitHub Application](https://github.com/settings/applications/new)
 
-##[Valine](https://valine.js.org/)
+## [Valine](https://valine.js.org/)
 
 ```
 comment: valine

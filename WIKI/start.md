@@ -33,7 +33,7 @@ Hexo 是基于 [Node.js](https://nodejs.org/) 的高效静态站点生成框架�
 选择你所需要的版本，在新打开的页面中找到 Assets 区域，下载 Source Code (zip) 到本地。
 解压所下载的压缩包至站点的 `themes` 目录下， 并将 解压后的文件夹名称 更改为 `nexmoe`（推荐）。
 
-#### [使用 Git]((https://github.com/nexmoe/hexo-theme-nexmoe)
+#### [使用 Git](https://github.com/nexmoe/hexo-theme-nexmoe)
 
 你可以自己决定想要使用的分支；使用 Git 下载nexmoe以后还可以使用 `git pull` 更新nexmoe。
 ```
@@ -49,7 +49,7 @@ git checkout {branch/tags name/commit hash}
 ```
 npm i --save hexo-wordcount
 ```
-*** Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：***
+** Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：**
 ```
 npm install hexo-wordcount@2 --save
 ```
