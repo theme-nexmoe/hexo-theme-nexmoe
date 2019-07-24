@@ -49,7 +49,7 @@ git checkout {branch/tags name/commit hash}
 ```
 npm i --save hexo-wordcount
 ```
-** Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：**
+> Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：
 ```
 npm install hexo-wordcount@2 --save
 ```

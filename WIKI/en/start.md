@@ -50,7 +50,7 @@ When installing “Nexmoe” you need extra steps which is diffrent from other t
 ```
 npm i --save hexo-wordcount
 ```
-** Before Node version 7.6.0, please install the 2.x version (Node.js v7.6.0 and previous), the installation command is as follows: **
+> Before Node version 7.6.0, please install the 2.x version (Node.js v7.6.0 and previous), the installation command is as follows: 
 ```
 npm install hexo-wordcount@2 --save
 ```
