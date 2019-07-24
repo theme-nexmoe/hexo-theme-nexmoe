@@ -1,8 +1,9 @@
 avatar: /images/avatar.png # 网站 Logo
 background: https://i.loli.net/2019/01/13/5c3aec85a4343.jpg # 既是博客的背景，又是文章默认头图
 favicon:
-  href: /favicon.ico
-  type: image/png
+  href: /favicon.ico # 网站图标
+  type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+
 menu:
   回到首页: 
     - /
