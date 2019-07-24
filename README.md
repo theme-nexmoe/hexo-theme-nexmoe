@@ -20,6 +20,7 @@
 ## 目录
 
 - [介绍](#%E4%BB%8B%E7%BB%8D)
+- [教程](#%E6%95%99%E7%A8%8B)
 - [演示](#%E6%BC%94%E7%A4%BA)
 - [国际化](#%E5%9B%BD%E9%99%85%E5%8C%96)
 - [许可证](#%E8%AE%B8%E5%8F%AF%E8%AF%81)
@@ -32,6 +33,9 @@
 ## 介绍
 
 一个比较特别的 Hexo 主题
+
+## 教程
+请查看 [这里](https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md)
 
 ## 演示
 
