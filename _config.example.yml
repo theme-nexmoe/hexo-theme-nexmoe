@@ -42,12 +42,12 @@ valine:
   appKey: <API_Key> # leancloud application app key
 
 disqus:
-  shortname: <shortname> # disqus shortname
+  shortname: <shortname> # 你的 Disqus shortname
    
 changyan:
-  appid: <APP_ID>
-  conf: <CONF>
-  thread_key_type: path # id | path. Only when you generate static id for each post before you using 'id'
+  appid: <APP_ID> # 畅言的 APPID
+  conf: <CONF> # 畅言的 CONF
+  thread_key_type: path # 可选 id 或 path
 
 livere:
   data_uid: <data_uid> # 你的来必力 UID，可以在来必力后台获取
