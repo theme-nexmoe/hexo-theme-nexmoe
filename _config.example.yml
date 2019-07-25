@@ -25,7 +25,7 @@ widgets:
 - archive
 # - recent_posts
 
-comment: gitalk # 评论框，目前支持 gitalk,gitment,valine
+comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,changyan,livere
 
 gitalk:
   admin: nexmoe # 管理员 GitHub ID
@@ -43,3 +43,14 @@ gitment:
 valine: 
   appId: <API_ID> # leancloud application app id
   appKey: <API_Key> # leancloud application app key
+
+disqus:
+  shortname: <shortname> # 你的 Disqus shortname
+   
+changyan:
+  appid: <APP_ID> # 畅言的 APPID
+  conf: <CONF> # 畅言的 CONF
+  thread_key_type: path # 可选 id 或 path
+
+livere:
+  data_uid: <data_uid> # 你的来必力 UID，可以在来必力后台获取
