@@ -3,11 +3,11 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-    owner: '<%= theme.gitment.owner %>', // 你的 GitHub ID
-    repo: '<%= theme.gitment.repo %>', // 存储评论的 repo
+    owner: '<%= theme.comment.gitment.owner %>', // 你的 GitHub ID
+    repo: '<%= theme.comment.gitment.repo %>', // 存储评论的 repo
     oauth: {
-        client_id: '<%= theme.gitment.clientID %>', // 你的 client ID
-        client_secret: '<%= theme.gitment.clientSecret %>' // 你的 client secret
+        client_id: '<%= theme.comment.gitment.clientID %>', // 你的 client ID
+        client_secret: '<%= theme.comment.gitment.clientSecret %>' // 你的 client secret
     },
 })
 gitment.render('gitment')

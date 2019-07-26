@@ -3,12 +3,12 @@
 <script src="https://cdnjs.loli.net/ajax/libs/gitalk/1.5.0/gitalk.min.js"></script>
 <script type="text/javascript">
     var gitalk = new Gitalk({
-        clientID: '<%= theme.gitalk.clientID %>',
-        clientSecret: '<%= theme.gitalk.clientSecret %>',
+        clientID: '<%= theme.comment.gitalk.clientID %>',
+        clientSecret: '<%= theme.comment.gitalk.clientSecret %>',
         id: window.location.pathname,
-        repo: '<%= theme.gitalk.repo %>',
-        owner: '<%= theme.gitalk.owner %>',
-        admin: '<%= theme.gitalk.admin %>'
+        repo: '<%= theme.comment.gitalk.repo %>',
+        owner: '<%= theme.comment.gitalk.owner %>',
+        admin: '<%= theme.comment.gitalk.admin %>'
     })
     gitalk.render('gitalk')
 </script>
