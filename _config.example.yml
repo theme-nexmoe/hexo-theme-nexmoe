@@ -26,10 +26,10 @@ widgets:
 # - recent_posts
 
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计
-  google_site_id: <ID>
-  gtags_site_id: <ID>
-  cnzz_site_id: <ID>
-  tencent_site_id: <ID>
+  google_site_id: #<ID>
+  gtags_site_id: #<ID>
+  cnzz_site_id: #<ID>
+  tencent_site_id: #<ID>
 
 comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere
 
