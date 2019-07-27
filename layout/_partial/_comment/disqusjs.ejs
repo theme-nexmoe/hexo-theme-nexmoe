@@ -1,0 +1,17 @@
+<!-- Unpkg -->
+<link rel="stylesheet" href="https://unpkg.com/disqusjs@1.2/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+<div id="disqus_thread"></div>
+<script>
+var dsqjs = new DisqusJS({
+    shortname: '<%= theme.disqusjs.shortname %>',
+    siteName: '<%= theme.disqusjs.sitename %>',
+    identifier: '<%= page.permalink %>',
+    url: '<%= page.permalink %>',
+    title: '<%= page.title %>',
+    api: '<%= theme.disqusjs.api %>',
+    apikey: '<%= theme.disqusjs.apikey %>',
+    admin: '<%= theme.disqusjs.admin %>',
+    adminLabel: '<%= theme.disqusjs.adminLabel %>'
+});
+</script>
