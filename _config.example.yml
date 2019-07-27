@@ -17,7 +17,7 @@ menu:
   我的朋友: 
     - /PY.html
 
-cdn: https://cdnjs.loli.net/ajax/libs/ # 这里可以修改站点使用的库的CDN
+cdn: https://cdnjs.loli.net/ajax/libs # 这里可以修改站点使用的库的CDN
 
 widgets:
 - category
