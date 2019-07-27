@@ -225,6 +225,34 @@ body {
         position: absolute;
         min-height: 100vh;
         padding-bottom: 58px;
+        .nexmoe-page-nav {
+            padding: 0;
+            padding-bottom: 20px;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+            color: #DDD;
+            .page-number, .extend {
+                transition: all .35s;
+                color: #999;
+                display: block;
+                border-radius: 10px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                display: inline-block;
+                margin: 5px 8px;
+                background-color: #f5f6f5;
+            }
+            .current {
+                color: #fff;
+                background: #ff4e6a;
+                opacity: .8;
+            }
+            .prev, .next {
+                width: 50px;
+            }
+        }
         .nexmoe-copyright {
             margin: 0 -20px;
             width: 100%;
@@ -253,25 +281,6 @@ body {
                 margin-bottom: 0;
             }
         }
-    }
-    .nexmoe-page-nav {
-        margin-bottom: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        span,a{
-            background-color: #ff4e6a;
-            color:#fff;
-            display: inline-block;
-            width 18px;
-            line-height: 18px;
-            height: 18px;
-            text-align: center;
-        }
-        a:first-child,
-        a:last-child {
-            width: auto;
-        }
-        
     }
     .nexmoe-post {
             .nexmoe-post-cover {
