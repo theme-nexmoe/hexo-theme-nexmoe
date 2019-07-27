@@ -31,7 +31,7 @@ analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag
   cnzz_site_id: <ID>
   tencent_site_id: <ID>
 
-comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,changyan,livere
+comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere
 
 gitalk:
   admin: nexmoe # 拥有对该repo进行操作的 GitHub username
@@ -52,6 +52,14 @@ valine:
 
 disqus:
   shortname: <shortname> # 你的 Disqus shortname
+
+disqusjs:
+  shortname: <shortname> # 你的 Disqus shortname
+  sitename: <sitename> # 你站点的名称，将会显示在「评论基础模式」的 header 中；该配置应该和 Disqus Admin - Settings - General - Website Name 一致
+  api: https://disqus.skk.moe/disqus/ # DisqusJS 请求的 API Endpoint，通常情况下你应该配置一个 Disqus API 的反代并填入反代的地址。你也可以直接使用 DISQUS 官方 API 的 Endpoint https://disqus.com/api/，或是使用SukkaW搭建的 Disqus API 反代 Endpoint https://disqus.skk.moe/disqus/。
+  apikey: <api_key> # DisqusJS 向 API 发起请求时使用的 API Key，你应该在配置 Disqus Application 时获取了 API Key;DisqusJS 支持填入一个 包含多个 API Key 的 Array，在每次请求时会随机使用其中一个；如果你只需要填入一个 API Key，则可以填入 String 或 Array。
+  admin: <admin> # 你的站点的 Disqus Moderator 的用户名（也就是你的用户名）。你可以在 Disqus - Settings - Account - Username 获取你的 Username
+  adminLabel: <adminLabel> # 你想显示在 Disqus Moderator Badge 中的文字。该配置应和 Disqus Admin - Settings - Community - Moderator Badge Text 相同
 
 changyan:
   appid: <APP_ID> # 畅言的 APPID

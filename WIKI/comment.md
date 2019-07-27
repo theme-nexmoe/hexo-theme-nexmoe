@@ -9,14 +9,15 @@
 - [Gitalk](#Gitalk)
 - [Valine](#Valine)
 - [Disqus](#Disqus)
+- [Disqusjs](#Disqusjs)
 - [搜狐畅言](#搜狐畅言)
 - [来必力 livere](#%E6%9D%A5%E5%BF%85%E5%8A%9B%20livere)
 
 ## 开始
 
-Nexmoe目前支持 6 种的评论系统，它们分别是 Gitment、Gitalk、Valine、DISQUS、搜狐畅言、来必力。
+Nexmoe目前支持 7 种的评论系统，它们分别是 Gitment、Gitalk、Valine、Disqus、disqusjs、搜狐畅言、来必力。
 
-它们分别对应的键值是 `gitment` `gitalk` `valine` `disqus` `changyan` `livere`，将你想启用的评论系统的键值填写在 `comment` 中，然后找到对应评论系统的配置位置。
+它们分别对应的键值是 `gitment` `gitalk` `valine` `disqus` `disqusjs` `changyan` `livere`，将你想启用的评论系统的键值填写在 `comment` 中，然后找到对应评论系统的配置位置。
 
 ## [Gitment](https://github.com/imsun/gitment)
 
@@ -65,6 +66,24 @@ disqus:
   shortname: <shortname> # 你的 Disqus shortname
 ```
 如果你不知道你的 `shortname` 是什么，请访问 Disqus 中你的站点的管理后台，此时你浏览器地址栏中的域名应形如是 `example.disqus.com`，`example` 就是你的 `shortname`。
+
+## [Disqusjs](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqusjs-%E5%8F%82%E6%95%B0)
+
+这个模式下，需要用户配置一个 `https://disqus.com/api/3.0/` 的反向代理，在评论基本模式中使用反代 API 获取评论内容（但是基本模式下仍然不能发表评论）。同时提供一个按钮切换到 Disqus 完整模式下以发表评论。
+
+>这项设置有助于在 **公开、平等、有序 的 网络审查 地区** 下的浏览者正常阅读评论内容。
+
+```
+disqusjs:
+  shortname: <shortname> # 你的 Disqus shortname
+  sitename: <sitename> # 你站点的名称，将会显示在「评论基础模式」的 header 中；该配置应该和 Disqus Admin - Settings - General - Website Name 一致
+  api: https://disqus.skk.moe/disqus/ # DisqusJS 请求的 API Endpoint，通常情况下你应该配置一个 Disqus API 的反代并填入反代的地址。你也可以直接使用 DISQUS 官方 API 的 Endpoint https://disqus.com/api/，或是使用SukkaW搭建的 Disqus API 反代 Endpoint https://disqus.skk.moe/disqus/。
+  apikey: <api_key> # DisqusJS 向 API 发起请求时使用的 API Key，你应该在配置 Disqus Application 时获取了 API Key;DisqusJS 支持填入一个 包含多个 API Key 的 Array，在每次请求时会随机使用其中一个；如果你只需要填入一个 API Key，则可以填入 String 或 Array。
+  admin: <admin> # 你的站点的 Disqus Moderator 的用户名（也就是你的用户名）。你可以在 Disqus - Settings - Account - Username 获取你的 Username
+  adminLabel: <adminLabel> # 你想显示在 Disqus Moderator Badge 中的文字。该配置应和 Disqus Admin - Settings - Community - Moderator Badge Text 相同
+```
+
+具体配置请阅读 [Disqusjs - 配置-disqusjs-参数](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqusjs-%E5%8F%82%E6%95%B0)
 
 ## [搜狐畅言](http://changyan.kuaizhan.com/)
 
