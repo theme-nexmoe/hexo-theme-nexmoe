@@ -20,7 +20,7 @@ Hexo 是基于 [Node.js](https://nodejs.org/) 的高效静态站点生成框架�
 
 在使用 Nexmoe 之前，请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)，完成对 Hexo 的安装，并完成对 `站点配置文件` 的基本配置（标题、介绍、作者、时区、语言等）。
 
-##下载
+## 下载
 
 #### [下载最新 Release 版本](https://github.com/nexmoe/hexo-theme-nexmoe/releases/latest)
 
