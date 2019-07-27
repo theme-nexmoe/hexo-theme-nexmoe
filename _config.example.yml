@@ -25,17 +25,23 @@ widgets:
 - archive
 # - recent_posts
 
+analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计
+  google_site_id: <ID>
+  gtags_site_id: <ID>
+  cnzz_site_id: <ID>
+  tencent_site_id: <ID>
+
 comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,changyan,livere
 
 gitalk:
-  admin: nexmoe # 管理员 GitHub ID
-  owner: nexmoe # 持有该 repo 的 GitHub user
+  admin: nexmoe # 拥有对该repo进行操作的 GitHub username
+  owner: nexmoe # 持有该 repo 的 GitHub username
   repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
   clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
   clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
 
 gitment:
-  owner: nexmoe # 持有该 repo 的 GitHub user
+  owner: nexmoe # 持有该 repo 的 GitHub username
   repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
   clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
   clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
@@ -46,7 +52,7 @@ valine:
 
 disqus:
   shortname: <shortname> # 你的 Disqus shortname
-   
+
 changyan:
   appid: <APP_ID> # 畅言的 APPID
   conf: <CONF> # 畅言的 CONF
