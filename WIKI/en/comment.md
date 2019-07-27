@@ -9,14 +9,15 @@
 - [Gitalk](#Gitalk)
 - [Valine](#Valine)
 - [Disqus](#Disqus)
+- [Disqusjs](#Disqusjs)
 - [Sohu Changyan](#Sohu%20Changyan)
 - [livere](#livere)
 
 ## Start
 
-Nexmoe currently supports `six` review systems: Gitment, Gitalk, Valley, Disqus, Sohu Changyan, and livere.
+Nexmoe currently supports `seven` review systems: Gitment, Gitalk, Valley, Disqus, Disqusjs, Sohu Changyan, and livere.
 
-The corresponding key values are `gitment` `gitalk` `valine` `disqus` `changyan` `livere`, fill in the key of the comment system you want to enable in `comment`, and then find the configuration location of the corresponding comment system.
+The corresponding key values are `gitment` `gitalk` `valine` `disqus` `disqusjs` `changyan` `livere`, fill in the key of the comment system you want to enable in `comment`, and then find the configuration location of the corresponding comment system.
 
 ## [Gitment](https://github.com/imsun/gitment)
 
@@ -65,6 +66,24 @@ disqus:
   shortname: <shortname> # disqus shortname
 ```
 If you don't know what your `shortname` is, please visit the administrative background of your site in Disqus. The domain name in your browser's address bar should be like `example.disqus.com`, `example` is your `shortname`.
+
+## [Disqusjs](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqusjs-%E5%8F%82%E6%95%B0)
+
+In this mode, the user needs to configure a reverse proxy of `https://disqus.com/api/3.0/` to use the anti-generation API to get the comment content in the comment basic mode (but the comment cannot be published in the basic mode). Also provide a button to switch to the full text of Disqus to post a comment.
+
+>This setting helps viewers in **an open, equal, and orderly online review area** read the comments as they normally.
+
+```
+disqusjs:
+  shortname: <shortname> # Your Disqus shortname
+  sitename: <sitename> # The name of your site will be displayed in the header of the "Comment Based Mode"; this configuration should be consistent with the Disqus Admin - Settings - General - Website Name
+  api: https://disqus.skk.moe/disqus/ # The API Endpoint requested by the DisqusJS. Normally you should configure a reverse of the Disqus API and fill in the inverted address. You can also use the Endpoint https://disqus.com/api/ of the DISQUS official API directly, or use the Google API built by SukkaW to reverse Endpoint https://disqus.skk.moe/disqus/.
+  apikey: <api_key> # The API Key used by the companyJS to make a request to the API, you should get the API Key when configuring the Disqus application; the DisqusJS support fills in an Array containing multiple API Keys, which will be used randomly at each request; if you only Need to fill in an API Key, you can fill in String or Array.
+  admin: <admin> # The username of your site's Disqus Moderator (that is, your username). You can get your Username in Disqus - Settings - Account - Username
+  adminLabel: <adminLabel> # You want to display the text in the Disqus Moderator Badge. This configuration should be the same as the Disqus Admin - Settings - Community - Moderator Badge Text
+```
+
+Please read [Disqusjs - 配置-disqusjs-参数](https://github.com/SukkaW/DisqusJS#%E9%85%8D%E7%BD%AE-disqusjs-%E5%8F%82%E6%95%B0) for specific configuration 
 
 ## [Sohu Changyan](http://changyan.kuaizhan.com/)
 
