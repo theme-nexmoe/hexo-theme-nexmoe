@@ -225,6 +225,34 @@ body {
         position: absolute;
         min-height: 100vh;
         padding-bottom: 58px;
+        .nexmoe-page-nav {
+            display: block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+            color: #DDD;
+            padding-bottom: 20px;
+            .page-number, .extend {
+                transition: all .35s;
+                color: #999;
+                display: block;
+                border-radius: 10px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                display: inline-block;
+                margin: 5px 8px;
+                background-color: #f5f6f5;
+            }
+            .current {
+                background: #fff;
+                box-shadow: 1px 1px 3px 1px rgba(0, 64, 128, 0.15);
+            }
+            .prev, .next {
+                width: 50px;
+            }
+        }
         .nexmoe-copyright {
             margin: 0 -20px;
             width: 100%;
