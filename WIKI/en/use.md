@@ -130,11 +130,3 @@ Get the method of the site_verification value:
 2. Copy the xxxxxxxxxxxxxxxx string and fill it in the corresponding search engine settings in `topic configuration file`. After the site is redeployed, you can pass the verification.
 
 > If you have enabled `Google Analytics`, you can verify directly in `Google Webmaster` without having to use html markup verification again.
-
-### copyright_since
-
-This item is used to set the time when the site is established and will be displayed at the bottom.
-
-For example, if you set `2018`, then `footer` will display something like this: `© 2018 - 2019`.
-
-**If this value is null**, then `footer` will only display the current year**.
