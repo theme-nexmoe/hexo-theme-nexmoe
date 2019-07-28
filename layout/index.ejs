@@ -12,19 +12,20 @@
             </div>
         </a>
         <div class="nexmoe-post-meta">
-            <span><%- date(page.date, "YYYY年MM月DD日") %></span>
-            <span><%= wordcount(page.content) %> 字</span>
-            <span>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</span>
+            <span><i class="nexmoefont icon-calendar-fill"></i> <%- date(page.date, "YYYY年MM月DD日") %></span>
+            <span><i class="nexmoefont icon-eye-fill"></i> <%= wordcount(page.content) %> 字</span>
+            <span><i class="nexmoefont icon-time-circle-fill"></i> 大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</span>
             <% if (page.categories && page.categories.length){ %>
                 <span>
-                  <%- list_categories(page.categories, {
+                    <i class="nexmoefont icon-tag-fill"></i>
+                    <%- list_categories(page.categories, {
                     show_count: false,
                     class: 'article-category',
                     style: 'none',
                     separator: '►'
-                  }) %>
+                    }) %>
                 </span>
-              <% } %>
+            <% } %>
         </div>
         <article>
             <% if(page.excerpt) {%>
