@@ -1,6 +1,6 @@
 <div align="right">Language: <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/README/english.md">English</a> | Chinese </div>
 
-![Snipaste_2019-07-21_13-54-09.png](https://i.loli.net/2019/07/21/5d34014060cf831071.png)
+![预览图](https://i.loli.net/2019/07/28/5d3c7e8005ddf46048.png)
 
 <h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
 
