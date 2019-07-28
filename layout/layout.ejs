@@ -22,6 +22,8 @@
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Site Verification -->
+  <%- partial('_partial/site-verification', {}, {cache: true}) %>
   <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <link rel="stylesheet" href="<%- theme.cdn %>/mdui/0.4.3/css/mdui.min.css">
@@ -45,7 +47,7 @@
           </div>
         <%- body %>
         <div class="nexmoe-copyright">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+        &copy; <%- partial('_partial/copyright_since', {}, {cache: true}) %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
         </div>
