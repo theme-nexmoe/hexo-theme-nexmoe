@@ -9,6 +9,7 @@
 - [Picture Light Box](#Picture%20Light%20Box)
 - [Article Cover](#Article%20Cover)
 - [Analytics](#Analytics)
+- [站点设置](#Settings)
 
 ## Add new post
 
@@ -85,3 +86,55 @@ Set that long string of IDs in `cnzz_site_id`.
 ### [Tencent analysis](http://ta.qq.com)
 
 Log in to the Tencent Analysis Console, log in and get the ID of the analysis, and fill it in `tencent_site_id`.
+
+### [Baidu statistics](http://tongji.baidu.com/)
+
+Log in to Baidu's statistics console and navigate to the code acquisition page. You should provide code similar to the following:
+```
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?{Your site ID}';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+```
+Set that long string of IDs in `baidu_site_id`.
+
+### [51.La statistics](https://www.51.la/)
+
+Log in to the 51.La statistics console and navigate to the code acquisition page, which should provide code similar to the following:
+```
+<script type="text/javascript" src="//js.users.51.la/{Your site ID}.js"></script>
+```
+Set that long string of IDs in `la_site_id`.
+
+## Settings
+
+### site_verification
+
+Authenticate your site to the search engine for submitting sitemaps to search engines and managing sites for inclusion by search engines.
+```
+Site_verification:
+   Google:
+   Baidu:
+```
+
+Get the method of the site_verification value:
+
+1. Log in to the search engine backend. After adding the site, select the `HTML tag` method when verifying ownership. The search engine will then tell you to add something like a string to your page:
+```
+<meta name="xxxx-site-verification" content="xxxxxxxxxxxxxxxx" />
+```
+2. Copy the xxxxxxxxxxxxxxxx string and fill it in the corresponding search engine settings in `topic configuration file`. After the site is redeployed, you can pass the verification.
+
+> If you have enabled `Google Analytics`, you can verify directly in `Google Webmaster` without having to use html markup verification again.
+
+### copyright_since
+
+This item is used to set the time when the site is established and will be displayed at the bottom.
+
+For example, if you set `2018`, then `footer` will display something like this: `© 2018 - 2019`.
+
+**If this value is null**, then `footer` will only display the current year**.
