@@ -25,11 +25,17 @@ widgets:
 - archive
 # - recent_posts
 
-analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计
+site_verification: # 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
+  google:
+  baidu:
+
+analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
   google_site_id: #<ID>
   gtags_site_id: #<ID>
   cnzz_site_id: #<ID>
   tencent_site_id: #<ID>
+  la_site_id: #<ID>
+  baidu_site_id: #<ID>
 
 comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere
 

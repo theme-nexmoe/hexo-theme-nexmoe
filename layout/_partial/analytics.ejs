@@ -10,3 +10,9 @@
 <% if (theme.analytics.tencent_site_id) { %>
     <%- partial('_analytics/tencent', {}, {cache: true}) %>
 <% } %>
+<% if (theme.analytics.la_site_id) { %>
+    <%- partial('_analytics/la', {}, {cache: true}) %>
+<% } %>
+<% if (theme.analytics.baidu_site_id) { %>
+    <%- partial('_analytics/baidu', {}, {cache: true}) %>
+<% } %>
