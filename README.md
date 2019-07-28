@@ -41,6 +41,14 @@
 
 - [Nexmoe](https://nexmoe.com/)
 
+## 字体图标
+
+| ![icon-container](font/container.svg) | ![icon-ellipsis](font/ellipsis.svg) | ![icon-home](font/home.svg) |![icon-info-circle](font/info-circle.svg) | ![icon-left](font/left.svg) | ![icon-menu](font/menu.svg) | ![icon-right](font/right.svg) | ![icon-unorderedlist](font/unorderedlist.svg) | ![icon-time-circle-fill](font/time-circle-fill.svg) | ![icon-calendar-fill](font/calendar-fill.svg) |
+| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
+| icon-info-circle | icon-container | icon-home | icon-unorderedlist | icon-ellipsis | icon-menu | icon-right | icon-left | icon-time-circle-fill | icon-calendar-fill |
+| ![icon-eye-fill](font/eye-fill.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) |  |  |  |  |  |  |  |
+| icon-eye-fill | icon-tag-fill | icon-tags-fill |  |  |  |  |  |  |  |
+
 ## 国际化
 
 支持多语言，默认语言为简体中文。
