@@ -130,11 +130,3 @@ site_verification:
 2. 将 xxxxxxxxxxxxxxxx 字符串复制出来，填入 `主题配置文件` 中对应搜索引擎的设置中，站点重新部署以后即可通过验证。
 
 >如果你启用了 `Google Analytics`，可以直接在 `Google Webmaster` 验证，无需再次使用 html 标记验证。
-
-### copyright_since
-
-此项用于设置站点成立的时间，将在底部显示。
-
-例如，如果你设置了 `2018`，那么 `footer` 就会显示类似于这样的内容： `© 2018 - 2019`。
-
-**如果这个值为空**，那么 `footer` 只会显示**现在的年份**。

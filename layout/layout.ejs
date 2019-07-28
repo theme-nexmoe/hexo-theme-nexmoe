@@ -47,7 +47,7 @@
           </div>
         <%- body %>
         <div class="nexmoe-copyright">
-        &copy; <%- partial('_partial/copyright_since', {}, {cache: true}) %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
         </div>

@@ -29,8 +29,6 @@ site_verification: # 向搜索引擎验证你对站点的所有权，用于向�
   google:
   baidu:
 
-copyright_since: # 用于设置站点成立的时间
-
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
   google_site_id: #<ID>
   gtags_site_id: #<ID>
