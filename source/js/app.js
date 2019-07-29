@@ -9,9 +9,9 @@ $("img").each(function () {
 
 $("article img").each(function () {
     var element = document.createElement("a");
-    $(element).attr("data-fancybox", "gallery");
-    $(element).attr("href", $(this).attr("src"));
-    $(this).wrap(element);
+    $(element).attr("href", $(this).attr("data-src"));
+    var img = $(this).parent().html();
+    $(this).replaceWith($(element).html(img));
 });
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
