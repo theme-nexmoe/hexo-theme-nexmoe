@@ -1,8 +1,9 @@
-$("table:has(img)").addClass("nexmoe-album");
+$("table").has('img').addClass("nexmoe-album");
 
-$("#nexmoe-content img").each(function () {
-    $(this).attr("data-original", $(this).attr("src"));
+$("img").each(function () {
+    $(this).attr("data-src", $(this).attr("src"));
     $(this).attr("src", "");
+    $(this).addClass('lazyload')
     $(this).attr("referrerPolicy", "no-referrer");
 });
 
@@ -15,5 +16,3 @@ $("article img").each(function () {
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
-
-$("img").lazyload({effect: "fadeIn"});
