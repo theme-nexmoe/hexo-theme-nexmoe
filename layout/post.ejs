@@ -9,7 +9,7 @@
     </div>
   <div class="nexmoe-post-meta">
     <span><i class="nexmoefont icon-calendar-fill"></i> <%- date(page.date, "YYYY年MM月DD日") %></span>
-    <span><i class="nexmoefont icon-eye-fill"></i> <%= wordcount(page.content) %> 字</span>
+    <span><i class="nexmoefont icon-areachart"></i> <%= wordcount(page.content) %> 字</span>
     <span><i class="nexmoefont icon-time-circle-fill"></i> 大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</span>
     <% if (page.categories && page.categories.length){ %>
       <span>
