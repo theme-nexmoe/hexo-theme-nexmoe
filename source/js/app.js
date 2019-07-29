@@ -8,7 +8,6 @@ $("article img").each(function () {
 
 $("#nexmoe-content img").each(function () {
     $(this).attr("data-original", $(this).attr("src"));
-    $(this).attr("src", "");
     $(this).attr("referrerPolicy", "no-referrer");
 });
 
