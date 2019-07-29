@@ -39,18 +39,19 @@ body {
         font-size:0 0;
     }
     .nexmoe-avatar {
-        padding: 55px;
+        margin: 45px;
         z-index: 4;
         position: relative;
         font-size: 0;
-    }
-    .nexmoe-avatar img {
+        width: calc(100% - 90px);
+        overflow: hidden;
         border-radius: 100%;
         box-shadow: 0 0.3rem 2rem rgba(161,177,204,.6);
     }
+
     .nexmoe-count {
-        padding: 30px;
-        padding-top: 0;
+        padding: 0 30px;
+        margin-bottom: 30px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -64,6 +65,19 @@ body {
                 color: #363636;
                 display: block;
             }
+        }
+    }
+    .nexmoe-social {
+        padding: 5px;
+        a {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            margin: 5px;
+            border-radius: 100%;
+            display: inline-block;
+            text-align: center;
+            color: #606266;
         }
     }
     .nexmoe-list {
