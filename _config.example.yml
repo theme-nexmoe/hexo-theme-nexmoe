@@ -4,6 +4,8 @@ favicon:
   href: /favicon.ico # 网站图标
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
+cdn: https://cdnjs.loli.net/ajax/libs # 这里可以修改站点使用的库的CDN
+
 menu:
   回到首页: 
     - /
@@ -16,8 +18,6 @@ menu:
     - icon-info-circle
   我的朋友: 
     - /PY.html
-
-cdn: https://cdnjs.loli.net/ajax/libs # 这里可以修改站点使用的库的CDN
 
 widgets:
 - category
