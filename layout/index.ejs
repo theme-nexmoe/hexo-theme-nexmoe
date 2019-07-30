@@ -1,8 +1,8 @@
 <section class="nexmoe-posts" id="brand-waterfall">
     <% page.posts.each(function (page) { %>
     <div class="nexmoe-post">
-        <a class="mdui-ripple" href="<%- url_for(page.path) %>">
-            <div class="nexmoe-post-cover"> 
+        <a href="<%- url_for(page.path) %>">
+            <div class="nexmoe-post-cover mdui-ripple"> 
                 <% if (page.cover){ %>
                 <img src="<%- page.cover %>">
                 <%}  else{ %>

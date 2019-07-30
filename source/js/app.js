@@ -9,18 +9,12 @@ $("img").each(function() {
   $(this).attr("referrerPolicy", "no-referrer");
 });
 
-/* $("article img").each(function() {
+$("article img").each(function() {
   var element = document.createElement("a");
-  $(this)
-    .parent()
-    .attr("data-src", $(this).attr("data-src"));
+  $(element).attr("data-fancybox", "gallery");
   $(element).attr("href", $(this).attr("data-src"));
-  var img = $(this)
-    .parent()
-    .html();
-  $(this).replaceWith($(element).html(img));
+  $(this).wrap(element);
 });
-*/
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
