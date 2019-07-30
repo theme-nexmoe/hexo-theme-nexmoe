@@ -1,12 +1,7 @@
 <script src="<%- theme.cdn %>/mdui@0.4.3/dist/js/mdui.min.js"></script>
 <script>var $ = mdui.JQ;</script>
 <script src="<%- theme.cdn %>/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
-<script src="<%- theme.cdn %>/highlight.js@9.15.8/lib/highlight.js"></script>
-<script>
-hljs.configure({useBR: true});
-
-document.querySelectorAll('div.code').forEach((block) => {
-  hljs.highlightBlock(block);
-});</script>
+<%- js_auto_version('js/highlight.pack') %>
+<script>hljs.initHighlightingOnLoad();</script>
 <%- js_auto_version('js/app') %>
 <script src="<%- theme.cdn %>/lazysizes@5.1.0/lazysizes.min.js"></script>
