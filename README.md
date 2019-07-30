@@ -41,6 +41,8 @@
 
 - [Nexmoe](https://nexmoe.com/)
 
+欢迎将你的网站提交到这里来
+
 ## 字体图标
 
 | ![icon-container](font/container.svg) | ![icon-ellipsis](font/ellipsis.svg) | ![icon-home](font/home.svg) |![icon-info-circle](font/info-circle.svg) | ![icon-left](font/left.svg) | ![icon-menu](font/menu.svg) | ![icon-right](font/right.svg) | ![icon-unorderedlist](font/unorderedlist.svg) | ![icon-time-circle-fill](font/time-circle-fill.svg) | ![icon-calendar-fill](font/calendar-fill.svg) |
@@ -80,6 +82,11 @@ star 以及 issue 是我更新的动力!
 - [GitTalk](https://github.com/gitalk/gitalk)
 - [Gitment](https://github.com/imsun/gitment)
 - [Valine](https://valine.js.org/)
+- Disqusjs
+- DISQUS
+- 搜狐畅言 
+- 来必力
+
 
 如果以上没有满足你的评论框，可以在本主题目录 `layout/_partial/_comment` 新建一个文件 `xxx.ejs`，然后在该文件中安装你需要的评论框系统代码。
 如果有空的话，你还可以使用 `pull request` 功能PR到本项目的 Github 仓库

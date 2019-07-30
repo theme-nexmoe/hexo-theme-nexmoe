@@ -1,8 +1,12 @@
+<script src="<%- theme.cdn %>/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script>var $ = mdui.JQ;</script>
+<script src="<%- theme.cdn %>/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+<script src="<%- theme.cdn %>/highlight.js@9.15.8/lib/highlight.js"></script>
+<script>
+hljs.configure({useBR: true});
 
-<script src="<%- theme.cdn %>/jquery/2.2.4/jquery.min.js"></script>
-<script src="<%- theme.cdn %>/mdui/0.4.3/js/mdui.min.js"></script>
-<script src="<%- theme.cdn %>/fancybox/3.4.1/jquery.fancybox.min.js"></script>
-<script src="<%- theme.cdn %>/smoothscroll/1.4.9/SmoothScroll.min.js"></script>
-<script src="<%- theme.cdn %>/highlight.js/9.9.0/highlight.min.js"></script>
-<script>$('pre code').each(function(i, block) {hljs.highlightBlock(block);});</script>
+document.querySelectorAll('div.code').forEach((block) => {
+  hljs.highlightBlock(block);
+});</script>
 <%- js_auto_version('js/app') %>
+<script src="<%- theme.cdn %>/lazysizes@5.1.0/lazysizes.min.js"></script>
