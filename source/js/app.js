@@ -2,17 +2,18 @@ $("table")
   .has("img")
   .addClass("nexmoe-album");
 
-$("img").each(function() {
+$("#nexmoe-content img").each(function() {
   $(this).attr("data-src", $(this).attr("src"));
   $(this).attr("src", "");
   $(this).addClass("lazyload");
   $(this).attr("referrerPolicy", "no-referrer");
 });
 
-$("article img").each(function() {
+$("article:not(.nexmoe-py) img").each(function() {
   var element = document.createElement("a");
   $(element).attr("data-fancybox", "gallery");
   $(element).attr("href", $(this).attr("data-src"));
+  $(element).attr("title", $(this).attr("alt"));
   $(this).wrap(element);
 });
 
