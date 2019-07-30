@@ -49,6 +49,7 @@ analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag
   tencent_site_id: #<ID>
   la_site_id: #<ID>
   baidu_site_id: #<ID>
+  gtm_container_id: #<ID>
 
 comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere
 
