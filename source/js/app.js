@@ -2,25 +2,20 @@ $("table")
   .has("img")
   .addClass("nexmoe-album");
 
-$("img").each(function() {
+$("#nexmoe-content img").each(function() {
   $(this).attr("data-src", $(this).attr("src"));
   $(this).attr("src", "");
   $(this).addClass("lazyload");
   $(this).attr("referrerPolicy", "no-referrer");
 });
 
-/* $("article img").each(function() {
+$("article:not(.nexmoe-py) img").each(function() {
   var element = document.createElement("a");
-  $(this)
-    .parent()
-    .attr("data-src", $(this).attr("data-src"));
+  $(element).attr("data-fancybox", "gallery");
   $(element).attr("href", $(this).attr("data-src"));
-  var img = $(this)
-    .parent()
-    .html();
-  $(this).replaceWith($(element).html(img));
+  $(element).attr("title", $(this).attr("alt"));
+  $(this).wrap(element);
 });
-*/
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
