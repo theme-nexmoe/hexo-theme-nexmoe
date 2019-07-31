@@ -12,19 +12,24 @@
             </div>
         </a>
         <div class="nexmoe-post-meta">
-            <span><i class="nexmoefont icon-calendar-fill"></i> <%- date(page.date, "YYYY年MM月DD日") %></span>
-            <span><i class="nexmoefont icon-areachart"></i> <%= wordcount(page.content) %> 字</span>
-            <span><i class="nexmoefont icon-time-circle-fill"></i> 大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</span>
+            <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+            <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
             <% if (page.categories && page.categories.length){ %>
-                <span>
-                    <i class="nexmoefont icon-appstore-fill"></i>
-                    <%- list_categories(page.categories, {
+                <%- list_categories(page.categories, {
                     show_count: false,
-                    class: 'article-category',
+                    class: 'nexmoefont icon-appstore-fill ',
                     style: 'none',
-                    separator: '►'
-                    }) %>
-                </span>
+                    separator: ''
+                }) %>
+            <% } %>
+            <% if (page.tags && page.tags.length){ %>
+                <%- list_tags(page.tags, {
+                    show_count: false,
+                    class: 'nexmoefont icon-tag-fill ',
+                    style: 'none',
+                    separator: ' '
+                }) %>
             <% } %>
         </div>
         <article>
