@@ -1,8 +1,25 @@
 <script src="<%- theme.cdn.mdui.js %>"></script>
-<script src="<%- theme.cdn.jquery.js %>"></script>
-<script src="<%- theme.cdn.fancybox.js %>"></script>
-<script src="<%- theme.cdn.SmoothScroll.js %>"></script>
+
+<% if(theme.function.fancybox == true) { %> 
+    <script src="<%- theme.cdn.jquery.js %>"></script>
+    <script src="<%- theme.cdn.fancybox.js %>"></script>
+    <script>
+        $("article:not(.nexmoe-py) img").each(function() {
+            var element = document.createElement("a");
+            $(element).attr("data-fancybox", "gallery");
+            $(element).attr("href", $(this).attr("data-src"));
+            $(element).attr("title", $(this).attr("alt"));
+            $(this).wrap(element);
+        });
+    </script>
+<% } %>
+
+<% if(theme.function.SmoothScroll == true) { %> 
+    <script src="<%- theme.cdn.SmoothScroll.js %>"></script>
+<% } %>
+
 <%- js('js/highlight.pack') %>
 <script>hljs.initHighlightingOnLoad();</script>
+
 <%- js_auto_version('js/app') %>
 <script src="<%- theme.cdn.lazysizes.js %>"></script>

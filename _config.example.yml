@@ -4,6 +4,10 @@ favicon:
   href: /favicon.ico # 网站图标
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
+function: # 功能开关，可选值（true,false）
+  fancybox: true # 灯箱功能，需要加载 jQuery 
+  SmoothScroll: true # 平滑滚动
+
 cdn: # 这里可以修改站点使用的库的CDN
   mdui:
     css: https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css
