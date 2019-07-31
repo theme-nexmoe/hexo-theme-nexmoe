@@ -22,18 +22,21 @@
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Site Verification -->
+  <%- partial('_partial/_analytics/gtm-head', {}, {cache: true}) %>
   <%- partial('_partial/site-verification', {}, {cache: true}) %>
   <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <link rel="stylesheet" href="<%- theme.cdn %>/mdui@0.4.3/dist/css/mdui.min.css">
-  <link rel="stylesheet" href="<%- theme.cdn %>/highlight.js@9.15.8/styles/atom-one-dark.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="<%- theme.cdn.mdui.css %>">
+  <link rel="stylesheet" href="<%- theme.cdn.highlight.css %>">
+  <% if(theme.function.fancybox == true) { %> 
+    <link rel="stylesheet" href="<%- theme.cdn.fancybox.css %>" />
+  <% } %>
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_930ljcwktg9.css">
   <%- css_auto_version('css/style') %>
 </head>
 
 <body class="<% if (theme.menuopen !== false){ %><%- __('mdui-drawer-body-left') -%><% } %>">
+  <%- partial('_partial/_analytics/gtm-body', {}, {cache: true}) %>
   <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
   <div id="nexmoe-header">
       <%- partial('_partial/header', {}, {cache: true}) %>
@@ -57,7 +60,6 @@
       <%- partial('_partial/footer', {}, {cache: true}) %>
   </div>
   <%- partial('_partial/after-footer', {}, {cache: true}) %>
-  <!-- ### Analytics ### -->
   <%- partial('_partial/analytics', {}, {cache: true}) %>
 </body>
 

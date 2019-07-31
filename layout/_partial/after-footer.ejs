@@ -1,8 +1,15 @@
-<script src="<%- theme.cdn %>/mdui@0.4.3/dist/js/mdui.min.js"></script>
-<script src="<%- theme.cdn %>/jquery@3.4.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="<%- theme.cdn %>/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+<script src="<%- theme.cdn.mdui.js %>"></script>
+<script src="<%- theme.cdn.jquery.js %>"></script>
+<% if(theme.function.fancybox == true) { %> 
+    <script src="<%- theme.cdn.fancybox.js %>"></script>
+<% } %>
+
+<% if(theme.function.SmoothScroll == true) { %> 
+    <script src="<%- theme.cdn.SmoothScroll.js %>"></script>
+<% } %>
+
 <%- js('js/highlight.pack') %>
 <script>hljs.initHighlightingOnLoad();</script>
+
 <%- js_auto_version('js/app') %>
-<script src="<%- theme.cdn %>/lazysizes@5.1.0/lazysizes.min.js"></script>
+<script src="<%- theme.cdn.lazysizes.js %>"></script>
