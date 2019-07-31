@@ -241,14 +241,17 @@ body {
         min-height: 100vh;
         padding-bottom: 58px;
         .nexmoe-page-nav {
-            padding: 0;
-            padding-bottom: 20px;
-            margin: 0;
             list-style: none;
             text-align: center;
-            color: #DDD;
+            display: inline-block;
+            color: #ddd;
+            background-color: #f5f6f5;
+            border-radius: 10px;
+            margin-top: -10px;
+            .prev {
+                margin-left: 8px;
+            }
             .page-number, .extend {
-                transition: all .35s;
                 color: #999;
                 display: block;
                 border-radius: 10px;
@@ -256,16 +259,13 @@ body {
                 height: 35px;
                 line-height: 35px;
                 display: inline-block;
-                margin: 5px 8px;
-                background-color: #f5f6f5;
+                margin-right: 8px;
             }
             .current {
                 color: #fff;
                 background: #ff4e6a;
-                opacity: .8;
-            }
-            .prev, .next {
-                width: 50px;
+                opacity: .9;
+                box-shadow: 0 2px 12px #ff4e6a;
             }
         }
         .nexmoe-copyright {
