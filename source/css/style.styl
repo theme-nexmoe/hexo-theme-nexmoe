@@ -544,13 +544,16 @@ article a[data-fancybox="gallery"] {
 }
 article a[data-fancybox="gallery"]:after {
 	content: attr(title);
-	color: #fff;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	padding: 7px 8px;
-	text-align: right;
-	text-shadow: 0 0 2px #000;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 7px 8px;
+    text-align: right;
+    text-shadow: 0 0 2px #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 article a:hover, article a:focus {
     color:#ff4e6a
