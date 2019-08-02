@@ -23,6 +23,7 @@ cdn: # 这里可以修改站点使用的库的CDN
     js: https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js
   highlight:
     css: https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css
+    js: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js
   disqusjs: 
     css: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.min.css
     js: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.min.js
