@@ -35,7 +35,7 @@
   <%- css_auto_version('css/style') %>
 </head>
 
-<body class="<% if (theme.menuopen !== false){ %><%- __('mdui-drawer-body-left') -%><% } %>">
+<body class="mdui-drawer-body-left">
   <%- partial('_partial/_analytics/gtm-body', {}, {cache: true}) %>
   <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
   <div id="nexmoe-header">
@@ -49,15 +49,7 @@
             </a>
           </div>
         <%- body %>
-        <div class="nexmoe-copyright">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-        <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
-        </div>
     </div>
-  </div>
-  <div id="nexmoe-footer">
-      <%- partial('_partial/footer', {}, {cache: true}) %>
   </div>
   <%- partial('_partial/after-footer', {}, {cache: true}) %>
   <%- partial('_partial/analytics', {}, {cache: true}) %>
