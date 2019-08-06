@@ -282,13 +282,19 @@ body {
         position relative
         .nexmoe-post {
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
+            article {
+                padding: 10px 0;
+            }
             article p:first-child {
                 margin-top: 0;
             }
             article p:last-child {
                 margin-bottom: 0;
             }
+        }
+        .nexmoe-post:last-child {
+            margin-bottom: 20px;
         }
     }
     .nexmoe-post {
@@ -376,15 +382,40 @@ body {
                     background-color:#b4b4ff
                 }
             }
-            article {
-                padding: 10px 0;
-                margin-bottom: 30px;
+            .nexmoe-post-copyright {
+                margin-bottom: 20px;
+                border-radius: 6px;
+                padding: 20px;
+                color: #666;
+                background-color: #f8f8f8;
+                border-left: 2px solid #eee;
+                line-height: 1.5em;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: -10px;
+                    left: 13px;
+                    font-size: 20px;
+                    background: #f8f8f8;
+                    color: #666666;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 24px;
+                    padding: 2px;
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid #eee;
+                }
+                a {
+                    color: rgb(255,78,106);
+                }
             }
         }
     .nexmoe-comment {
         background-color: #f5f6f5;
         padding: 20px;
         margin: -20px;
+        margin-top: 0;
     }
 
 }
@@ -476,7 +507,6 @@ article code::-webkit-scrollbar-thumb {
     background-color:#888
 }
 article pre {
-    border: 1px solid #ddd;
     border-radius: 6px;
     overflow hidden
     max-height:600px;
@@ -484,6 +514,7 @@ article pre {
     box-sizing:border-box;
     margin:20px 0;
     position: relative;
+    background: #282c34;
 }
 article pre::before {
     content: "";
@@ -506,8 +537,7 @@ article pre::after {
     box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 }
 article pre code {
-    position: relative;
-    background: #282c34!important;
+    position: relative; 
     padding: 0 5px;
     display: inline-block;
     padding-left: 45px!important;
