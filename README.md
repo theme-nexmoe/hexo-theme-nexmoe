@@ -40,6 +40,8 @@
 ## 演示
 
 - [Nexmoe](https://nexmoe.com/)
+- [深海小涛](https://www.xtaolink.cn/)
+- [西瓜星 🍉✨](https://suikastar.com/)
 
 欢迎将你的网站提交到这里来
 
