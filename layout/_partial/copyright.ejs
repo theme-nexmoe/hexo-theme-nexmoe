@@ -1,0 +1,12 @@
+<% if (page.hide_copyright !== true && theme.copyright || page.copyright) { %>
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong><%- __('copyright.author') %>: </strong><%= config.author %><br>
+<strong><%- __('copyright.permalink') %>：</strong><%- link_to(page.permalink, page.permalink, {external: true}) %><br>
+<% if (page.copyright) { %>
+  <%- page.copyright %>
+<% } else { %>
+  <%- theme.copyright %>
+<% } %>
+</div>
+<% } %>

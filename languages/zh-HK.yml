@@ -11,3 +11,7 @@ count:
   articles: 文章
   tags: 標籤
   categories: 分類
+
+copyright:
+  author: 本文作者
+  permalink: 本文鏈接

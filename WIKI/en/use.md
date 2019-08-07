@@ -9,7 +9,7 @@
 - [Picture Light Box](#Picture%20Light%20Box)
 - [Article Cover](#Article%20Cover)
 - [Analytics](#Analytics)
-- [站点设置](#Settings)
+- [Settings](#Settings)
 
 ## Add new post
 
@@ -130,3 +130,21 @@ Get the method of the site_verification value:
 2. Copy the xxxxxxxxxxxxxxxx string and fill it in the corresponding search engine settings in `topic configuration file`. After the site is redeployed, you can pass the verification.
 
 > If you have enabled `Google Analytics`, you can verify directly in `Google Webmaster` without having to use html markup verification again.
+
+### Copyright agreement
+
+You can set the copyright agreement for all articles, which will be displayed at the end of the article; support `HTML`. The copyright will include information such as `author of this article, links to this article, and agreement` .
+
+For example, you can set this up:
+```
+copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
+```
+You can also override this setting in the article's `Front-Matter`
+```
+copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc/3.0/cn/deed.zh" target="_blank">CC BY-NC 3.0 CN</a> 协议进行许可'
+```
+At the same time you can use the following `Front-Matter`
+```
+hide_copyright: true
+```
+To hide the copyright agreement for this article
