@@ -1,6 +1,6 @@
 <div align="right">Language: <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/README/english.md">English</a> | Chinese </div>
 
-![预览图](https://i.loli.net/2019/07/28/5d3c7e8005ddf46048.png)
+![预览图](cover.png)
 
 <h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
 
@@ -45,11 +45,13 @@
 
 ## 字体图标
 
-| ![icon-container](font/container.svg) | ![icon-ellipsis](font/ellipsis.svg) | ![icon-home](font/home.svg) |![icon-info-circle](font/info-circle.svg) | ![icon-left](font/left.svg) | ![icon-menu](font/menu.svg) | ![icon-right](font/right.svg) | ![icon-unorderedlist](font/unorderedlist.svg) | ![icon-time-circle-fill](font/time-circle-fill.svg) | ![icon-calendar-fill](font/calendar-fill.svg) |
+| ![icon-home](font/home.svg) | ![icon-areachart](font/areachart.svg) | ![icon-battlenet](font/battlenet.svg) | ![icon-bilibili](font/bilibili.svg) | ![icon-calendar-fill](font/calendar-fill.svg) | ![icon-container](font/container.svg) | ![icon-dribbble](font/dribbble.svg) | ![icon-ellipsis](font/ellipsis.svg) | ![icon-eye-fill](font/eye-fill.svg) | ![icon-github](font/github.svg) | 
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
-| icon-info-circle | icon-container | icon-home | icon-unorderedlist | icon-ellipsis | icon-menu | icon-right | icon-left | icon-time-circle-fill | icon-calendar-fill |
-| ![icon-eye-fill](font/eye-fill.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) |  |  |  |  |  |  |  |
-| icon-eye-fill | icon-tag-fill | icon-tags-fill |  |  |  |  |  |  |  |
+| icon-home | icon-areachart | icon-battlenet | icon-bilibili | icon-calendar-fill | icon-container | icon-dribbble | icon-ellipsis | icon-eye-fill | icon-github | 
+| ![icon-telegram](font/telegram.svg) | ![icon-info-circle](font/info-circle.svg) | ![icon-left](font/left.svg) | ![icon-mail-fill](font/mail-fill.svg) | ![icon-menu](font/menu.svg) | ![icon-QQ](font/QQ.svg) | ![icon-right](font/right.svg) | ![icon-steam](font/steam.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) | 
+| icon-telegram | icon-info-circle | icon-left | icon-mail-fill | icon-menu | icon-QQ | icon-right | icon-steam | icon-tag-fill | icon-tags-fill | 
+| ![icon-telegram](font/telegram.svg) | ![icon-time-circle-fill](font/time-circle-fill.svg) | ![icon-twitter](font/twitter.svg) | ![icon-unorderedlist](font/unorderedlist.svg) | ![icon-wechat-fill](font/wechat-fill.svg) | ![icon-weibo](font/weibo.svg) | ![icon-youtube](font/youtube.svg) | ![icon-zhihu](font/zhihu.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) | 
+| icon-telegram | icon-time-circle-fill | icon-twitter | icon-unorderedlist | icon-wechat-fill | icon-weibo | icon-youtube | icon-zhihu | icon-tag-fill | icon-tags-fill | 
 
 ## 国际化
 

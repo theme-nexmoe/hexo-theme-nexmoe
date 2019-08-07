@@ -177,40 +177,46 @@ body {
                 a:before {
                     content: "# ";
                 }
-                a:nth-child(8n+1) {
+                a:nth-child(7n+1) {
                     background-color:rgba(255,78,106,.15);
                     color: rgba(255,78,106,.8);
                 }
-                a:nth-child(8n+2) {
+                a:nth-child(7n+2) {
                     background-color:rgba(255, 170, 115,.15);
                     color: rgb(255, 170, 115);
                 }
-                a:nth-child(8n+3) {
+                a:nth-child(7n+3) {
                     background-color:rgba(254, 212, 102, .15);
                     color: rgb(254, 212, 102);
                 }
-                a:nth-child(8n+4) {
+                a:nth-child(7n+4) {
                     background-color:rgba(60, 220, 130, .15)
                     color: rgb(60, 220, 130);
                 }
-                a:nth-child(8n+5) {
+                a:nth-child(7n+5) {
                     background-color:rgba(100, 220, 240, .15)
                     color: rgb(100, 220, 240);
                 }
-                a :nth-child(8n+6) {
+                a :nth-child(7n+6) {
                     background-color:rgba(100, 185, 255, .15)
                     color: rgb(100, 185, 255);
                 }
-                a:nth-child(8n+7) {
+                a:nth-child(7n+7) {
                     background-color:rgba(180, 180, 255, .15)
                     color: rgb(180, 180, 255);
                 }
-                a:nth-child(8n+8) {
-                    background-color:rgba(244, 167, 185, .15)
-                    color: rgb(244, 167, 185);
-                }
             }
         }
+    .nexmoe-copyright {
+        padding: 0 30px;
+        text-align: right;
+        color: #777;
+        white-space: normal;
+        margin-bottom: 20px;
+        a {
+            color: rgba(255,78,106,.8);
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -243,16 +249,18 @@ body {
         padding: 20px;
         position: absolute;
         min-height: 100vh;
-        padding-bottom: 58px;
         .nexmoe-page-nav {
-            padding: 0;
-            padding-bottom: 20px;
-            margin: 0;
             list-style: none;
             text-align: center;
-            color: #DDD;
+            display: inline-block;
+            color: #ddd;
+            background-color: #f5f6f5;
+            border-radius: 10px;
+            margin-top: -10px;
+            .prev {
+                margin-left: 8px;
+            }
             .page-number, .extend {
-                transition: all .35s;
                 color: #999;
                 display: block;
                 border-radius: 10px;
@@ -260,31 +268,13 @@ body {
                 height: 35px;
                 line-height: 35px;
                 display: inline-block;
-                margin: 5px 8px;
-                background-color: #f5f6f5;
+                margin-right: 8px;
             }
             .current {
                 color: #fff;
                 background: #ff4e6a;
-                opacity: .8;
-            }
-            .prev, .next {
-                width: 50px;
-            }
-        }
-        .nexmoe-copyright {
-            margin: 0 -20px;
-            width: 100%;
-            padding: 20px;
-            margin-bottom: -20px;
-            text-align: center;
-            border-top: 1px solid #eee;
-            background-color: #f5f6f5;
-            color: #777;
-            position: absolute;
-            bottom: 0;
-            a {
-                color: rgba(255,78,106,.8);
+                opacity: .9;
+                box-shadow: 0 2px 12px #ff4e6a;
             }
         }
     }
@@ -292,13 +282,19 @@ body {
         position relative
         .nexmoe-post {
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
+            article {
+                padding: 10px 0;
+            }
             article p:first-child {
                 margin-top: 0;
             }
             article p:last-child {
                 margin-bottom: 0;
             }
+        }
+        .nexmoe-post:last-child {
+            margin-bottom: 20px;
         }
     }
     .nexmoe-post {
@@ -348,7 +344,7 @@ body {
             }
             .nexmoe-post-meta {
                 margin-bottom: -10px;
-                span {
+                a {
                     border-radius: 10px;
                     padding:5px 10px;
                     color:#fff;
@@ -360,43 +356,66 @@ body {
                         font-size: 14px;
                     }
                 }
-                span a {
-                    color:#fff;
+                a:before,
+                i:before {
+                    margin-right: 5px;
                 }
-                span:nth-child(8n+1) {
+                a:nth-child(7n+1) {
                     background-color:#ff4e6a
                 }
-                span:nth-child(8n+2) {
+                a:nth-child(7n+2) {
                     background-color:#ffaa73
                 }
-                span:nth-child(8n+3) {
+                a:nth-child(7n+3) {
                     background-color:#fed466
                 }
-                span:nth-child(8n+4) {
+                a:nth-child(7n+4) {
                     background-color:#3cdc82
                 }
-                span:nth-child(8n+5) {
+                a:nth-child(7n+5) {
                     background-color:#64dcf0
                 }
-                span:nth-child(8n+6) {
+                a:nth-child(7n+6) {
                     background-color:#64b9ff
                 }
-                span:nth-child(8n+7) {
+                a:nth-child(7n+7) {
                     background-color:#b4b4ff
                 }
-                span:nth-child(8n+8) {
-                    background-color:#f4a7b9
-                }
             }
-            article {
-                padding: 10px 0;
-                margin-bottom: 30px;
+            .nexmoe-post-copyright {
+                margin-bottom: 20px;
+                border-radius: 6px;
+                padding: 20px;
+                color: #666;
+                background-color: #f8f8f8;
+                border-left: 2px solid #eee;
+                line-height: 1.5em;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: -10px;
+                    left: 13px;
+                    font-size: 20px;
+                    background: #f8f8f8;
+                    color: #666666;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 24px;
+                    padding: 2px;
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid #eee;
+                }
+                a {
+                    color: rgb(255,78,106);
+                }
             }
         }
     .nexmoe-comment {
         background-color: #f5f6f5;
         padding: 20px;
         margin: -20px;
+        margin-top: 0;
     }
 
 }
@@ -488,7 +507,6 @@ article code::-webkit-scrollbar-thumb {
     background-color:#888
 }
 article pre {
-    border: 1px solid #ddd;
     border-radius: 6px;
     overflow hidden
     max-height:600px;
@@ -496,6 +514,7 @@ article pre {
     box-sizing:border-box;
     margin:20px 0;
     position: relative;
+    background: #282c34;
 }
 article pre::before {
     content: "";
@@ -518,8 +537,7 @@ article pre::after {
     box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 }
 article pre code {
-    position: relative;
-    background: #282c34!important;
+    position: relative; 
     padding: 0 5px;
     display: inline-block;
     padding-left: 45px!important;
@@ -549,6 +567,23 @@ article a {
     text-decoration:none;
     position:relative;
     word-wrap:break-word
+}
+article a[data-fancybox="gallery"] {
+	display: inline-block;
+	position: relative;
+}
+article a[data-fancybox="gallery"]:after {
+	content: attr(title);
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 7px 8px;
+    text-align: right;
+    text-shadow: 0 0 2px #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 article a:hover, article a:focus {
     color:#ff4e6a
