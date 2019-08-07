@@ -5,3 +5,14 @@ nav:
 archive: Archive
 recent_posts: Recent Posts
 categories: Categories
+tagcloud: Tagcloud
+social: Social
+
+count:
+  articles: Articles
+  tags: Tags
+  categories: Categories
+  
+copyright:
+  author: Author
+  permalink: Link

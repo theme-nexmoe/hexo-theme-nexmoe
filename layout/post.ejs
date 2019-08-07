@@ -31,5 +31,8 @@
   <article>
     <%- page.content %>
   </article>
+  <% if (!page.reprint){ %>
+    <%- partial('_partial/copyright') %>
+  <% } %>
   <%- partial('_partial/comment') %>
 </div>
