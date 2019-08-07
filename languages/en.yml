@@ -11,3 +11,7 @@ count:
   articles: Articles
   tags: Tags
   categories: Categories
+
+copyright:
+  author: Author
+  permalink: Link

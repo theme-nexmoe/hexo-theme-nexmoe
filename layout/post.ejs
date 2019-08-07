@@ -32,11 +32,7 @@
     <%- page.content %>
   </article>
   <% if (!page.reprint){ %>
-    <div class="nexmoe-post-copyright">
-      <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-      <strong>本文链接：</strong><%- link_to(page.permalink, page.permalink, {external: true}) %><br>
-      <strong>版权声明：</strong>本文采用 <%- link_to('https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh', 'CC BY-NC-SA 3.0 CN', {external: true}) %> 协议进行许可
-    </div>
+    <%- partial('_partial/copyright') %>
   <% } %>
   <%- partial('_partial/comment') %>
 </div>
