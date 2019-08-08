@@ -15,37 +15,10 @@ features:
 footer: Made with ❤ by Nexmoe
 ---
 
-<div class="item-list">
-    <router-link :to="page.path" v-for="page of $site.pages.filter(item => item.path !== '/')" :key="page.key" class="item">
-        {{page.title}}
-        <br>
-        ---
-    </router-link>
-</div>
-
-<style>
-    .item-list {
-        margin: -5px;
-        margin-bottom: 10px;
-    }
-    .item-list::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    .item-list .item {
-        float: left;
-        width: calc(25% - 10px);
-        margin: 5px;
-        background-color: #3eaf7c;
-        color: #fff;
-        border-radius: 6px;
-        padding: 12px 16px;
-        box-sizing: border-box;
-    }
-    @media screen and (max-width:768px) {
-        .item-list .item {
-            width: calc(50% - 10px);
-        }
-    }
-</style>
+    cd themes # 载入主题目录
+    git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe # 安装
+    cd nexmoe # 进入 Nexmoe 主题目录
+    npm i --save hexo-wordcount
+    # Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) 
+    # npm install hexo-wordcount@2 --save
+    cp -i _config.example.yml _config.yml
