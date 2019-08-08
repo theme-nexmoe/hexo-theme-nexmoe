@@ -1,4 +1,15 @@
+<div align="right">Main Contents: <a title="Start" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/start.md">Start</a> | <a title="Comment" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/comment.md">Comment</a> | Use | <a title="Notice" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/notice.md">Notice</a> | <a title="Chinese" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/use.md">Chinese</a></div>
+
 # Use
+
+## Contents
+
+- [Add new post](#Add%20new%20post)
+- [Links Page](#Links%20Page)
+- [Picture Light Box](#Picture%20Light%20Box)
+- [Article Cover](#Article%20Cover)
+- [Analytics](#Analytics)
+- [Settings](#Settings)
 
 ## Add new post
 

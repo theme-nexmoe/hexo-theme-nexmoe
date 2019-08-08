@@ -1,4 +1,15 @@
+<div align="right">Main Contents: Start | <a title="Comment" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/comment.md">Comment</a> | <a title="Use" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/use.md">Use</a> | <a title="Notice" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/notice.md">Notice</a> | <a title="Chinese" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md">Chinese</a></div>
+
 # Welcome to Nexmoe
+
+## Contents
+
+- [Introduction](#Introduction)
+- [Download](#Download)
+- [Install](#Install)
+- [Enable](#Enable)
+- [Start](#Start)
+- [Update](#Update)
 
 ## Introduction
 
