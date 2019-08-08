@@ -8,11 +8,6 @@ module.exports = {
       href: '/manifest.json'
     }],
   ],
-  plugins: [
-    '@vuepress/pwa', {
-      serviceWorker: true,
-    }
-  ],
   themeConfig: {
     lastUpdated: '最后编辑',
 

@@ -9,3 +9,5 @@ node_modules
 .idea
 
 .directory
+
+WIKI/.vuepress/dist
