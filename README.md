@@ -40,16 +40,6 @@
 
 欢迎将你的网站提交到这里来
 
-## 字体图标
-
-| ![icon-home](font/home.svg) | ![icon-areachart](font/areachart.svg) | ![icon-battlenet](font/battlenet.svg) | ![icon-bilibili](font/bilibili.svg) | ![icon-calendar-fill](font/calendar-fill.svg) | ![icon-container](font/container.svg) | ![icon-dribbble](font/dribbble.svg) | ![icon-ellipsis](font/ellipsis.svg) | ![icon-eye-fill](font/eye-fill.svg) | ![icon-github](font/github.svg) | 
-| :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
-| icon-home | icon-areachart | icon-battlenet | icon-bilibili | icon-calendar-fill | icon-container | icon-dribbble | icon-ellipsis | icon-eye-fill | icon-github | 
-| ![icon-telegram](font/telegram.svg) | ![icon-info-circle](font/info-circle.svg) | ![icon-left](font/left.svg) | ![icon-mail-fill](font/mail-fill.svg) | ![icon-menu](font/menu.svg) | ![icon-QQ](font/QQ.svg) | ![icon-right](font/right.svg) | ![icon-steam](font/steam.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) | 
-| icon-telegram | icon-info-circle | icon-left | icon-mail-fill | icon-menu | icon-QQ | icon-right | icon-steam | icon-tag-fill | icon-tags-fill | 
-| ![icon-telegram](font/telegram.svg) | ![icon-time-circle-fill](font/time-circle-fill.svg) | ![icon-twitter](font/twitter.svg) | ![icon-unorderedlist](font/unorderedlist.svg) | ![icon-wechat-fill](font/wechat-fill.svg) | ![icon-weibo](font/weibo.svg) | ![icon-youtube](font/youtube.svg) | ![icon-zhihu](font/zhihu.svg) | ![icon-tag-fill](font/tag-fill.svg) | ![icon-tags-fill](font/tags-fill.svg) | 
-| icon-telegram | icon-time-circle-fill | icon-twitter | icon-unorderedlist | icon-wechat-fill | icon-weibo | icon-youtube | icon-zhihu | icon-tag-fill | icon-tags-fill | 
-
 ## 国际化
 
 支持多语言，默认语言为简体中文。
@@ -71,11 +61,6 @@ star 以及 issue 是我更新的动力!
 
 ## 交流
 论坛：https://club.chainwon.com/t/nexmoe
-
-## 特性
-- [相片集](https://nexmoe.com/hexo-theme-nexmoe.html#相片集)
-- [友情链接](https://nexmoe.com/hexo-theme-nexmoe.html#友情链接)
-- [图片灯箱](https://nexmoe.com/hexo-theme-nexmoe.html#图片灯箱)
 
 ## 评论支持
 - [GitTalk](https://github.com/gitalk/gitalk)
