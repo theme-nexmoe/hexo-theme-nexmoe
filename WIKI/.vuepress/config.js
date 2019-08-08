@@ -31,10 +31,6 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    nav: [{
-      text: 'Hexo',
-      link: '/hexo/'
-    }, ],
     locales: {
       '/en/': {
         selectText: 'Languages',
@@ -46,6 +42,13 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
+        nav: [{
+          text: 'Hexo',
+          link: '/en/hexo/'
+        }, {
+          text: 'Component',
+          link: '/en/component/basic/icon.html'
+        }, ],
       },
       '/': {
         // 多语言下拉菜单的标题
@@ -61,6 +64,13 @@ module.exports = {
             buttonText: "刷新"
           }
         },
+        nav: [{
+          text: 'Hexo',
+          link: '/hexo/'
+        }, {
+          text: '组件',
+          link: '/component/basic/icon.html'
+        }, ],
         sidebar: {
           '/hexo/': [
               {
