@@ -14,4 +14,4 @@ We also add `_config.yml` to `.gitignore` to prevent our `theme config` pushing 
 
 ## Add the Read More tag
 
-hexo 在写作的时候，如果在文中添加 `<!--more-->` 则该标记之前的部分就会成为该文章的简述，显示在首页里。
+When hexo writes, if you add `<!--more-->` to the text, the part before the mark will become a brief description of the article, which is displayed on the home page.
