@@ -108,6 +108,7 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     'basic/icon',
+	            'basic/color',
                 ],
             },
         ],
