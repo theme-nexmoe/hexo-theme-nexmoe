@@ -17,18 +17,6 @@
 <img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
 </p>
 
-## 目录
-
-- [教程](#%E6%95%99%E7%A8%8B)
-- [演示](#%E6%BC%94%E7%A4%BA)
-- [国际化](#%E5%9B%BD%E9%99%85%E5%8C%96)
-- [许可证](#%E8%AE%B8%E5%8F%AF%E8%AF%81)
-- [后续更新](#%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0)
-- [交流](#%E4%BA%A4%E6%B5%81)
-- [特性](#%E7%89%B9%E6%80%A7)
-- [评论支持](#%E8%AF%84%E8%AE%BA%E6%94%AF%E6%8C%81)
-- [更多](#%E6%9B%B4%E5%A4%9A)
-
 ## 教程
 请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
 
