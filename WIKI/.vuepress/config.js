@@ -108,6 +108,7 @@ module.exports = {
                       'use',
                       'comment',
                       'notice',
+                      'statistics'
                   ],
               },
           ],
