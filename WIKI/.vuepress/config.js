@@ -7,26 +7,21 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/zh/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器'
+      title: 'Nexmoe 主题文档',
+      description: 'Nexmoe 主题文档'
     },
     '/en/': {
       lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+      title: 'Nexmoe theme docs',
+      description: 'Nexmoe theme docs'
     },
   },
   themeConfig: {
-    lastUpdated: '最后编辑',
-
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     repo: 'nexmoe/hexo-theme-nexmoe',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: 'GitHub',
-
-    // 以下为可选的编辑链接选项
-
     // 假如你的文档仓库和项目本身不在一个仓库：
     docsRepo: 'nexmoe/hexo-theme-nexmoe',
     // 假如文档不是放在仓库的根目录下：
@@ -36,37 +31,56 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    editLinkText: '帮助我们改善此页面',
+    lastUpdated: '最后编辑',
     nav: [{
       text: 'Hexo',
-      link: '/hexo/'
+      link: '/zh/hexo/'
     }, ],
     sidebar: 'auto',
-    sidebar: {
-      '/senior/': [{
-          title: '必修二',
-          collapsable: false,
-          children: [
-            '/senior/compulsory2/氓',
-            '/senior/compulsory2/采薇',
-            '/senior/compulsory2/离骚',
-          ]
+    locales: {
+      '/en/': {
+        selectText: 'Languages',
+        label: 'English',
+        editLinkText: 'Edit this page on GitHub',
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
         },
-        {
-          title: '必修三',
-          collapsable: false,
+      },
+      '/zh/': {
+        // 多语言下拉菜单的标题
+        selectText: '选择语言',
+        // 该语言在下拉菜单中的标签
+        label: '简体中文',
+        // 编辑链接文字
+        editLinkText: '在 GitHub 上编辑此页',
+        // Service Worker 的配置
+        serviceWorker: {
+          updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新"
+          }
         },
-        {
-          title: '必修五',
-          collapsable: false,
-          children: [
-            '/senior/compulsory5/归去来兮辞·并序',
-            '/senior/compulsory5/滕王阁序',
-            '/senior/compulsory5/逍遥游',
-            '/senior/compulsory5/陈情表',
-          ]
-        }
-      ],
-    },
+        sidebar: {
+          '/zh/hexo/comment': [{
+              title: '评论系统',
+              collapsable: false,
+            },
+          ],
+          '/zh/hexo/notice': [{
+              title: '注意事项',
+              collapsable: false,
+            },
+          ],
+          '/zh/hexo/use': [{
+              title: '开始使用',
+              collapsable: false,
+            },
+          ],
+        },
+      }
+    }
   },
 }
