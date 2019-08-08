@@ -1,17 +1,4 @@
-<div align="right">Main Contents: <a title="Start" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/start.md">Start</a> | Comment | <a title="Use" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/use.md">Use</a> | <a title="Notice" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/notice.md">Notice</a> | <a title="Chinese" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/comment.md">Chinese</a></div>
-
 # Comment
-
-## Contents
-
-- [Start](#Start)
-- [Gitment](#Gitment)
-- [Gitalk](#Gitalk)
-- [Valine](#Valine)
-- [Disqus](#Disqus)
-- [Disqusjs](#Disqusjs)
-- [Sohu Changyan](#Sohu%20Changyan)
-- [livere](#livere)
 
 ## Start
 
