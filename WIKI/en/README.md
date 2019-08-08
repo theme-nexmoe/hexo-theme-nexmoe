@@ -4,7 +4,7 @@ heroImage: https://i.loli.net/2019/08/08/5ceZJrGxLk8Shug.png
 heroText: Nexmoe
 tagline: 🔥 A more special blog theme
 actionText: Get started →
-actionLink: /en/Hexo/
+actionLink: /en/hexo/
 features:
 - title: Shadow
   details: 
