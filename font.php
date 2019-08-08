@@ -17,5 +17,5 @@ function listDir($dir){
 }
 $array = listDir('font');
 for($x=0;isset($array[$x]);$x++){
-    echo '<li><i class="nexmoefont icon-'.strstr($array[$x],'.svg',true).'"></i><span class="icon-name">icon-'.strstr($array[$x],'.svg',true).'</span></li>'."\n";
+    echo '<li><i class="nexmoefont icon-'.strstr($array[$x],'.svg',true).'"></i><span>icon-'.strstr($array[$x],'.svg',true).'</span></li>'."\n";
 }
