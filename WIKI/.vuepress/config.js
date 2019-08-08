@@ -107,8 +107,8 @@ module.exports = {
                       '',
                       'use',
                       'comment',
+                      'statistics',
                       'notice',
-                      'statistics'
                   ],
               },
           ],
