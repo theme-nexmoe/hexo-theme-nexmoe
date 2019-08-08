@@ -6,14 +6,12 @@ set -e
 vuepress build
  
 # 进入生成的文件夹
-cd .vuepress/dist
-
+cd ./.vuepress/dist
+echo 'docs.nexmoe.com' > CNAME
 git init
  
-# 下面这行是官网没有的，如果是多人开发项目，务必执行此命令
-git pull https://github.com/nexmoe/hexo-theme-nexmoe.git master 
 git add -A
-git commit -m 'deploy'
+git commit -m '🔥 部署文档'
 git push -f https://github.com/nexmoe/hexo-theme-nexmoe.git master:gh-pages
  
 cd -
