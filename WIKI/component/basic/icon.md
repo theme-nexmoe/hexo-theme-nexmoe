@@ -14,7 +14,6 @@
     float: left;
     width: 16.66%;
     text-align: center;
-    height: 120px;
     color: #666;
     font-size: 13px;
     border-right: 1px solid #eee;
@@ -22,6 +21,8 @@
     margin-right: -1px;
     margin-bottom: -1px;
     overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
 }
 .icon-list li i {
     display: block;
@@ -31,15 +32,13 @@
     color: #606266;
 }
 .icon-list li span {
-    background-color: #fafafa;
     display: block;
     padding: 5px;
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    height: 32px;
-    line-height: 19px;
-    margin-left: 1px;
+    position: absolute;
+    bottom: 0;
 }
 </style>
 
