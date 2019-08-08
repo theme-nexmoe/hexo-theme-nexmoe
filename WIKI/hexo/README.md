@@ -1,15 +1,4 @@
-<div align="right">主目录: 开始 | <a title="评论系统" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/comment.md">评论系统</a> | <a title="开始使用" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/use.md">开始使用</a> | <a title="注意事项" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/notice.md">注意事项</a> | <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/start.md">English</a></div>
-
 # 欢迎使用 Nexmoe
-
-## 目录
-
-- [介绍](#%E4%BB%8B%E7%BB%8D)
-- [下载](#%E4%B8%8B%E8%BD%BD)
-- [安装nexmoe](#%E5%AE%89%E8%A3%85nexmoe)
-- [启用nexmoe](#%E5%90%AF%E7%94%A8nexmoe)
-- [运行nexmoe](#%E8%BF%90%E8%A1%8Cnexmoe)
-- [更新nexmoe](#%E6%9B%B4%E6%96%B0nexmoe)
 
 ## 介绍
 

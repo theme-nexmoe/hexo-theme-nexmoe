@@ -1,15 +1,4 @@
-<div align="right">主目录: <a title="开始" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md">开始</a> | <a title="评论系统" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/comment.md">评论系统</a> | 开始使用 | <a title="注意事项" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/notice.md">注意事项</a> | <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/use.md">English</a></div>
-
 # 开始使用
-
-## 目录
-
-- [创建文章](#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0)
-- [友情链接](#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5)
-- [图片灯箱](#%E5%9B%BE%E7%89%87%E7%81%AF%E7%AE%B1)
-- [文章封面图](#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%E5%9B%BE)
-- [统计系统](#%E7%BB%9F%E8%AE%A1%E7%B3%BB%E7%BB%9F)
-- [站点设置](#%E7%AB%99%E7%82%B9%E8%AE%BE%E7%BD%AE)
 
 ## 创建文章
 

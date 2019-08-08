@@ -5,7 +5,7 @@ module.exports = {
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
-    '/zh/': {
+    '/': {
       lang: 'zh-CN',
       title: 'Nexmoe 主题文档',
       description: 'Nexmoe 主题文档'
@@ -31,12 +31,10 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    lastUpdated: '最后编辑',
     nav: [{
       text: 'Hexo',
-      link: '/zh/hexo/'
+      link: '/hexo/'
     }, ],
-    sidebar: 'auto',
     locales: {
       '/en/': {
         selectText: 'Languages',
@@ -49,7 +47,7 @@ module.exports = {
           }
         },
       },
-      '/zh/': {
+      '/': {
         // 多语言下拉菜单的标题
         selectText: '选择语言',
         // 该语言在下拉菜单中的标签
@@ -64,22 +62,21 @@ module.exports = {
           }
         },
         sidebar: {
-          '/zh/hexo/comment': [{
-              title: '评论系统',
-              collapsable: false,
-            },
+          '/hexo/': [
+              {
+                  title: '指南',
+                  collapsable: false,
+                  sidebarDepth: 2,
+                  children: [
+                      '',
+                      'use',
+                      'comment',
+                      'notice',
+                  ],
+              },
           ],
-          '/zh/hexo/notice': [{
-              title: '注意事项',
-              collapsable: false,
-            },
-          ],
-          '/zh/hexo/use': [{
-              title: '开始使用',
-              collapsable: false,
-            },
-          ],
-        },
+      },
+        lastUpdated: '最后编辑',
       }
     }
   },

@@ -4,7 +4,7 @@ heroImage: https://i.loli.net/2019/08/08/5ceZJrGxLk8Shug.png
 heroText: Nexmoe
 tagline: 🔥 一个比较特别的博客主题
 actionText: 快速上手 →
-actionLink: /zh/Hexo/
+actionLink: /Hexo/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

@@ -1,17 +1,4 @@
-<div align="right">主目录: <a title="开始" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md">开始</a> | 评论系统 | <a title="开始使用" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/use.md">开始使用</a> | <a title="注意事项" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/notice.md">注意事项</a> | <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/comment.md">English</a></div>
-
 # 评论系统
-
-## 目录
-
-- [开始](#%E4%BB%8B%E7%BB%8D)
-- [Gitment](#Gitment)
-- [Gitalk](#Gitalk)
-- [Valine](#Valine)
-- [Disqus](#Disqus)
-- [Disqusjs](#Disqusjs)
-- [搜狐畅言](#搜狐畅言)
-- [来必力 livere](#%E6%9D%A5%E5%BF%85%E5%8A%9B%20livere)
 
 ## 开始
 

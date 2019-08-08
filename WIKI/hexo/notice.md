@@ -1,11 +1,4 @@
-<div align="right">主目录: <a title="开始" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md">开始</a> | <a title="评论系统" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/comment.md">评论系统</a> | <a title="开始使用" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/use.md">开始使用</a> | 注意事项 | <a title="English" href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/en/notice.md">English</a></div>
-
 # 注意事项
-
-## 目录
-
-- [代码高亮](#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE)
-- [使用 Git 管理 Hexo](#%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%20Hexo)
 
 ## 代码高亮
 主题内置代码高亮且自动开启，为了避免冲突，请在 `站点配置文件` 中禁用 highlight
