@@ -75,6 +75,16 @@ module.exports = {
                   ],
               },
           ],
+          '/component/': [
+            {
+                title: '基础',
+                collapsable: false,
+                sidebarDepth: 2,
+                children: [
+                    'basic/icon',
+                ],
+            },
+        ],
       },
         lastUpdated: '最后编辑',
       }
