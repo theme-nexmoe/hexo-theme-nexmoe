@@ -6,7 +6,7 @@ set -e
 vuepress build
  
 # 进入生成的文件夹
-cd ./.vuepress/dist
+cd .vuepress/dist
 echo 'docs.nexmoe.com' > CNAME
 git init
  
