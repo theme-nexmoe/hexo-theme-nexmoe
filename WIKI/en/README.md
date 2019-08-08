@@ -2,15 +2,15 @@
 home: true
 heroImage: https://i.loli.net/2019/08/08/5ceZJrGxLk8Shug.png
 heroText: Nexmoe
-tagline: 🔥 一个比较特别的博客主题
-actionText: 快速上手 →
+tagline: 🔥 A more special blog theme
+actionText: Get started →
 actionLink: /Hexo/
 features:
-- title: 阴影
+- title: Shadow
   details: 
-- title: 圆角
+- title: Rounded Corners
   details: 
-- title: 虚化
+- title: Blurring
   details: 
 footer: Made with ❤ by Nexmoe
 ---
