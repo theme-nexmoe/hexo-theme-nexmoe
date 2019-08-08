@@ -35,7 +35,7 @@
 一个比较特别的 Hexo 主题
 
 ## 教程
-请查看 [这里](https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI/start.md)
+请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
 
 ## 演示
 
