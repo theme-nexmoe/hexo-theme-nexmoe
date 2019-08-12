@@ -4,9 +4,9 @@
         <a href="<%- url_for(page.path) %>">
             <div class="nexmoe-post-cover mdui-ripple"> 
                 <% if (page.cover){ %>
-                <img src="<%- page.cover %>">
+                <img src="<%- page.cover %>" alt="<%= page.title %>">
                 <%}  else{ %>
-                    <img src="<%= theme.background %>">
+                    <img src="<%= theme.background %>" alt="<%= page.title %>">
                 <% } %>
                 <h1><%= page.title %></h1>
             </div>

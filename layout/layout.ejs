@@ -21,6 +21,7 @@
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
+  <meta name="description" content="config.description">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%- partial('_partial/_analytics/gtm-head', {}, {cache: true}) %>
   <%- partial('_partial/site-verification', {}, {cache: true}) %>
