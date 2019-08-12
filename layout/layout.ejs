@@ -37,17 +37,22 @@
 
 <body class="mdui-drawer-body-left">
   <%- partial('_partial/_analytics/gtm-body', {}, {cache: true}) %>
-  <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="<%- url_for() %>" title="<%= config.author || config.title %>" class="mdui-btn mdui-btn-icon"><img src="<%= theme.avatar %>"></a>
+       </div>
+    </div>
+  </div>
   <div id="nexmoe-header">
       <%- partial('_partial/header', {}, {cache: true}) %>
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <div class="nexmoe-tab">
-            <a mdui-drawer="{target: '#drawer', swipe: true}">
-              <i class="mdui-icon material-icons">menu</i>
-            </a>
-          </div>
         <%- body %>
     </div>
   </div>
