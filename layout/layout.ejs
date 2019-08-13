@@ -58,6 +58,7 @@
     </div>
   </div>
   <%- partial('_partial/after-footer') %>
+  <% if (theme.cdn.copy) { %><script type="text/javascript" src="<%- theme.cdn.copy %>"></script><% } %>
   <%- partial('_partial/analytics') %>
 </body>
 
