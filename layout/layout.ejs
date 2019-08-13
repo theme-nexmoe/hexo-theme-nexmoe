@@ -21,9 +21,10 @@
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
+  <meta name="description" content="<%= config.description %>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%- partial('_partial/_analytics/gtm-head', {}, {cache: true}) %>
-  <%- partial('_partial/site-verification', {}, {cache: true}) %>
+  <%- partial('_partial/_analytics/gtm-head') %>
+  <%- partial('_partial/site-verification') %>
   <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <link rel="stylesheet" href="<%- theme.cdn.mdui.css %>">
@@ -36,23 +37,28 @@
 </head>
 
 <body class="mdui-drawer-body-left">
-  <%- partial('_partial/_analytics/gtm-body', {}, {cache: true}) %>
-  <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
+  <%- partial('_partial/_analytics/gtm-body') %>
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(<%= theme.background %>)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="<%- url_for() %>" title="<%= config.author || config.title %>" class="mdui-btn mdui-btn-icon"><img src="<%= theme.avatar %>"></a>
+       </div>
+    </div>
+  </div>
   <div id="nexmoe-header">
-      <%- partial('_partial/header', {}, {cache: true}) %>
+      <%- partial('_partial/header') %>
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <div class="nexmoe-tab">
-            <a mdui-drawer="{target: '#drawer', swipe: true}">
-              <i class="mdui-icon material-icons">menu</i>
-            </a>
-          </div>
         <%- body %>
     </div>
   </div>
-  <%- partial('_partial/after-footer', {}, {cache: true}) %>
-  <%- partial('_partial/analytics', {}, {cache: true}) %>
+  <%- partial('_partial/after-footer') %>
+  <%- partial('_partial/analytics') %>
 </body>
 
 </html>
