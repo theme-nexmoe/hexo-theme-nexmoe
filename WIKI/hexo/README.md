@@ -2,12 +2,13 @@
 
 ## 介绍
 
-Hexo 是基于 [Node.js](https://nodejs.org/) 的高效静态站点生成框架。你可以在 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/) 了解如何安装 Hexo、生成一个站点。
->在这篇文档中，我们假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。
-
-在 Hexo 中，通常有两份配置文件，一个是站点根目录下的 `_config.yml`；另外一个是主题目录下的 `_config.yml`。 为了描述方便，在以下说明中，将前者称为 `站点配置文件`，后者称为 `主题配置文件`。
-
 在使用 Nexmoe 之前，请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)，完成对 Hexo 的安装，并完成对 `站点配置文件` 的基本配置（标题、介绍、作者、时区、语言等）。
+
+请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
 
 ## 下载
 
@@ -32,9 +33,9 @@ cd nexmoe
 git checkout {branch/tags name/commit hash}
 ```
 
-## 安装nexmoe
+## 安装 Nexmoe
 
-其他主题不同，安装nexmoe需要额外的步骤；主题默认已经集成了文章【字数统计】、【阅读时长】统计功能，且暂时无法关闭。如果没有安装 hexo-wordcount 插件，先安装该插件：
+其他主题不同，安装 Nexmoe 需要额外的步骤；主题默认已经集成了文章【字数统计】、【阅读时长】统计功能，且暂时无法关闭。如果没有安装 hexo-wordcount 插件，先安装该插件：
 ```
 npm i --save hexo-wordcount
 ```
@@ -48,12 +49,12 @@ cp -i _config.example.yml _config.yml
 ```
 因为在主题的开发迭代过程中，`主题的配置文件` 很有可能会有变动。所以我们把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。
 
-## 启用nexmoe
+## 启用 Nexmoe
 
 在 `站点配置文件` 中，修改 `theme` 的值为 `nexmoe`。
 >如果在安装时你将主题文件夹重命名为其它名字，就修改为你重命名后文件夹的名字
 
-## 运行nexmoe
+## 运行 Nexmoe
 
 在站点根目录下运行下面的命令在本地启动一个 Hexo Server。
 
@@ -71,8 +72,8 @@ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 
 >如果你在使用过程中遇到问题，请尝试在文档中进行搜索，或者在 GitHub 上 提出 [issue](https://github.com/nexmoe/hexo-theme-nexmoe/issues/new)
 
-## 更新nexmoe
+## 更新 Nexmoe
 
-如果你是在 `版本发布页` 下载并安装的nexmoe，那么你需要备份你的 `主题备份文件`，然后将旧的主题文件夹命名为 `nexmoe-old`，将下载的新版本nexmoe重命名为 `nexmoe`，根据更新日志的指导迁移旧的 `主题配置文件` 到新的 `主题配置文件` 中。测试通过后你可以将 `nexmoe-old` 删除。
+如果你是在 `版本发布页` 下载并安装的 Nexmoe，那么你需要备份你的 `主题备份文件`，然后将旧的主题文件夹命名为 `nexmoe-old`，将下载的新版本  Nexmoe 重命名为 `nexmoe`，根据更新日志的指导迁移旧的 `主题配置文件` 到新的 `主题配置文件` 中。测试通过后你可以将 `nexmoe-old` 删除。
 
-如果你使用 Git 安装的nexmoe，你可以直接在主题文件夹下运行 git pull 更新主题，并把备份之前的 主题配置文件 重命名为 `_config.old.yml`，复制一份 `_config.example.yml` 并重命名为 `_config.yml`。从 `_config.old.yml` 迁移你的配置到新的 `_config.yml`测试通过后你可以将 `_config.old.yml` 删除。
+如果你使用 Git 安装的 Nexmoe，你可以直接在主题文件夹下运行 git pull 更新主题，并把备份之前的 主题配置文件 重命名为 `_config.old.yml`，复制一份 `_config.example.yml` 并重命名为 `_config.yml`。从 `_config.old.yml` 迁移你的配置到新的 `_config.yml`测试通过后你可以将 `_config.old.yml` 删除。

@@ -2,11 +2,11 @@
 
 ## 创建文章
 
-### 使用命令行
+#### 使用命令行
 ```
 hexo new <title>
 ```
-### 手动创建
+#### 手动创建
 
 在站点根目录的 `source/_posts` 目录下新建以 `.md` 为后缀的文件。
 
@@ -19,12 +19,15 @@ hexo new <title>
 ```
 ---
 title: links
-date:
+date: 2013/7/13 20:46:25
 layout: py
+permalink: PY.html
 ---
 ```
->title 可以更换为自己喜欢的标题
+> title 可以更换为自己喜欢的标题
+> permalink 为本页面地址
 
+参考：[https://hexo.io/zh-cn/docs/front-matter](https://hexo.io/zh-cn/docs/front-matter)
 
 
 #### 添加友链
@@ -41,19 +44,10 @@ layout: py
 演示：[https://nexmoe.com/PY.html](https://nexmoe.com/PY.html)
 
 
-
-## 图片灯箱
-
-自动开启功能，为文章中每一个图片提供灯箱功能
-![图片灯箱](https://nexmoe.com/images/pasted-4.png "图片灯箱")
-
-
-
 ## 文章封面图
 
-在站点根目录下的 `source` 文件夹内创建一个 `.md` 文件，文件名和路径根据个人喜好决定，会决定渲染生成以后页面的路径。
+在 Front-matter 中插入 cover 值，该值可以是图片的远程链接，可以是图片的绝对路径
 
-在文件中写入以下内容：
 ```
 ---
 title: Hello World
@@ -62,9 +56,16 @@ cover: https://i.loli.net/2019/07/21/5d33d5dc1531213134.png
 ---
 ```
 
+
+## 图片灯箱
+
+自动开启功能，为文章中每一个图片提供灯箱功能
+![图片灯箱](https://nexmoe.com/images/pasted-4.png "图片灯箱")
+
+
 ## 站点设置
 
-### site_verification
+#### site_verification
 
 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
 ```
@@ -82,7 +83,7 @@ site_verification:
 
 >如果你启用了 `Google Analytics`，可以直接在 `Google Webmaster` 验证，无需再次使用 html 标记验证。
 
-### 版权协议
+#### 版权协议
 
 你可以设置所有文章的版权协议，这将会显示在文章结尾；支持 `HTML`。版权中会包含 `本文作者、本文链接和协议` 等信息。
 
