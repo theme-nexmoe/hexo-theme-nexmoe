@@ -49,8 +49,9 @@ module.exports = {
           text: 'Component',
           link: '/en/component/basic/icon.html'
         }, ],
-        sidebar: {
-          '/hexo/': [
+	     sidebar: {
+					   
+          '/en/Hexo/': [
               {
                   title: 'Guide',
                   collapsable: false,
@@ -63,18 +64,7 @@ module.exports = {
                   ],
               },
           ],
-          '/component/': [
-            {
-                title: 'Basic',
-                collapsable: false,
-                sidebarDepth: 2,
-                children: [
-                    'basic/icon',
-	                  'basic/color',
-                ],
-            },
-          ],
-        },
+      }
       },
       '/': {
         // 多语言下拉菜单的标题
@@ -107,8 +97,8 @@ module.exports = {
                       '',
                       'use',
                       'comment',
-                      'statistics',
                       'notice',
+					  'math',
                   ],
               },
           ],
@@ -119,11 +109,10 @@ module.exports = {
                 sidebarDepth: 2,
                 children: [
                     'basic/icon',
-	                  'basic/color',
                 ],
             },
-          ],
-        },
+        ],
+      },
         lastUpdated: '最后编辑',
       }
     }
