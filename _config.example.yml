@@ -9,7 +9,7 @@ function: # 功能开关，可选值（true,false）
   SmoothScroll: true # 平滑滚动
   
 # 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
-iconlib: //at.alicdn.com/t/font_1356975_9w555m52u3.css
+iconlib: //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 
 cdn: # 这里可以修改站点使用的库的CDN
   mdui:
