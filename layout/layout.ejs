@@ -32,7 +32,9 @@
   <% if(theme.function.fancybox == true) { %> 
     <link rel="stylesheet" href="<%- theme.cdn.fancybox.css %>" />
   <% } %>
-  <link rel="stylesheet" href="<%= theme.iconlib %>">
+  <% if (theme.iconlib) { %>
+    <link rel="stylesheet" href="<%= theme.iconlib %>">
+  <% } %>
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
   <%- css_auto_version('css/style') %>
 </head>
@@ -59,7 +61,6 @@
     </div>
   </div>
   <%- partial('_partial/after-footer') %>
-  <% if (theme.cdn.copy) { %><script type="text/javascript" src="<%- theme.cdn.copy %>"></script><% } %>
   <%- partial('_partial/analytics') %>
 </body>
 
