@@ -110,5 +110,23 @@ livere:
   data_uid: <data_uid> # 你的来必力 UID，可以在来必力后台获取
 ```
 
+## [DiscussBot](https://comments.app/)
+
+使用此评论，您需要一个 `Telegram账户` 。注册网站步骤非常简单，不另行阐述。
+
+注册完成后您可以通过使用按钮来对比进行设置 `主题配置文件` 。
+
+```
+DiscussBot:
+  id: <id> # 站点id
+  comments: 5 # 可能是限制每位用户单页面评论最多条数？
+  color: # 评论框主色调
+  dislike: 0 # 显示差评按钮
+  icons: 0 # 图标主题
+  diff: 0 # 每位用户name不同颜色
+```
+
+`id` 对应申请完成后的 `Site ID`，`color` 对应下方代码框中的 `data-color` 值，如您使用默认颜色则无需填写，`icons` 对应 `Icons` 如您选择 `Filled` 请填入 `0`；如您选择`Outlined` 请填入 `1`，`diff` 代表 `Use different colors for names`，如您需要请填入 `1` ，无需请填入 `0` 。
+
 如果以上没有满足你的评论框，可以在本主题目录 `layout/_partial/_comment` 新建一个文件 `xxx.ejs`，然后在该文件中安装你需要的评论框系统代码。
 如果有空的话，你还可以使用 `pull request` 功能PR到本项目的 Github 仓库
