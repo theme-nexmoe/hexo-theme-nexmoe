@@ -109,3 +109,21 @@ comment: livere
 livere:
   data_uid: <data_uid> # Your livere UID, which can be obtained in the livere backstage
 ```
+
+## [DiscussBot](https://comments.app/)
+
+To use this comment, you need a `Telegram Account`. The steps to register a website are very simple and will not be elaborated.
+
+After registration is complete, you can set the `topic profile` by using the button.
+
+```
+DiscussBot:
+  id: <id> # site id
+  comments: 5 # May be limiting the maximum number of comments per user on a single page?
+  color: # comment box main color
+  dislike: 0 # Show bad review button
+  icons: 0 # icon theme
+  diff: 0 # each user name different color
+```
+
+`id` corresponds to the `Site ID` after the application is completed, `color` corresponds to the `data-color` value in the code box below. If you use the default color, you don't need to fill it in. `icons` corresponds to `Icons`. If you choose `Filled ` Please fill in `0`; if you choose `Outlined`, please fill in `1`, `diff` stands for `Use different colors for names`, please fill in `1` if you need, please fill in `0` .
