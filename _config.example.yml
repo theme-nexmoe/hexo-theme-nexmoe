@@ -57,6 +57,8 @@ widgets:
 - archive
 # - recent_posts
 
+maxTagcloud: 0  # 0 表示不限制
+
 social:
   哔哩哔哩:
     - https://space.bilibili.com/20238211
