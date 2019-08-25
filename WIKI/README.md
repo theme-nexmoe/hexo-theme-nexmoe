@@ -1,19 +1,18 @@
 ---
 home: true
-heroImage: https://i.loli.net/2019/08/08/5ceZJrGxLk8Shug.png
+heroImage: https://i.loli.net/2019/08/25/fC5X3yNJBr1cDbP.png
 heroText: Nexmoe
 tagline: 🔥 一个比较特别的博客主题
 actionText: 快速上手 →
 actionLink: /hexo/
-features:
-- title: 阴影
-  details: 
-- title: 圆角
-  details: 
-- title: 虚化
-  details: 
 footer: Made with ❤ by Nexmoe
 ---
+
+<style>
+.home .hero img {
+    max-height: unset;
+}
+</style>
 
 ``` bash
 cd themes # 载入主题目录
