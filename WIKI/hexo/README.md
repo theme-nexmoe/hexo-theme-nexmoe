@@ -26,7 +26,8 @@
 #### [使用 Git](https://github.com/nexmoe/hexo-theme-nexmoe)
 
 你可以自己决定想要使用的分支；使用 Git 下载nexmoe以后还可以使用 `git pull` 更新nexmoe。
-```
+
+``` bash {4}
 cd themes
 git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe
 cd nexmoe
@@ -36,15 +37,15 @@ git checkout {branch/tags name/commit hash}
 ## 安装 Nexmoe
 
 其他主题不同，安装 Nexmoe 需要额外的步骤；主题默认已经集成了文章【字数统计】、【阅读时长】统计功能，且暂时无法关闭。如果没有安装 hexo-wordcount 插件，先安装该插件：
-```
+``` bash
 npm i --save hexo-wordcount
 ```
 **Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：**
-```
+``` bash
 npm install hexo-wordcount@2 --save
 ```
 同时你需要把nexmoe主题目录下的 `_config.example.yml` 复制一份并把副本重命名为 `_config.yml`。
-```
+``` bash
 cp -i _config.example.yml _config.yml
 ```
 因为在主题的开发迭代过程中，`主题的配置文件` 很有可能会有变动。所以我们把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。
@@ -58,7 +59,7 @@ cp -i _config.example.yml _config.yml
 
 在站点根目录下运行下面的命令在本地启动一个 Hexo Server。
 
-```
+``` bash
 hexo s --debug
 ```
 
@@ -66,7 +67,7 @@ hexo s --debug
 
 当命令行输出下述内容时说明 Hexo 已经监听在本机的 4000 端口，使用浏览器访问 [http://localhost:4000](http://localhost:4000) ，检查站点是否正确运行。
 
-```
+``` bash
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 ```
 

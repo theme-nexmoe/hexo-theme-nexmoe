@@ -11,9 +11,11 @@
 ## CNZZ
 
 登陆 CNZZ 后台，找到代码安装页面，应该会提供类似如下形式的代码：
-```
+
+``` html
 <script src="//s95.cnzz.com/z_stat.php?id=<%= theme.analytics.cnzz_site_id %>&web_id={你的站点 ID}" language="JavaScript"></script>
 ```
+
 把那一长串 ID 设置在 `cnzz_site_id` 中。
 
 >脚本生成的内容会产生“站长统计”，Nexmoe已将其隐藏。
@@ -29,7 +31,8 @@
 ## [百度统计](http://tongji.baidu.com/)
 
 登陆百度统计后台，定位到代码获取页面，应该会提供类似如下形式的代码：
-```
+
+``` html
 <script>
     var _hmt = _hmt || [];
     (function() {var hm = document.createElement('script');
@@ -39,6 +42,7 @@
     })();
 </script>
 ```
+
 把那一长串 ID 设置在 `baidu_site_id` 中。
 
 
@@ -46,7 +50,9 @@
 ## [51.La统计](https://www.51.la/)
 
 登陆51.La统计后台，定位到代码获取页面，应该会提供类似如下形式的代码：
-```
+
+``` html
 <script type="text/javascript" src="//js.users.51.la/{这一长串就是你的 ID}.js"></script>
 ```
+
 把那一长串 ID 设置在 `la_site_id` 中。
