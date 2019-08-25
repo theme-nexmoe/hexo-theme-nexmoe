@@ -13,3 +13,7 @@
 
 <%- js_auto_version('js/app') %>
 <script src="<%- theme.cdn.lazysizes.js %>"></script>
+
+<% if (theme.cdn.copy) { %>
+    <script type="text/javascript" src="<%- theme.cdn.copy %>"></script>
+<% } %>

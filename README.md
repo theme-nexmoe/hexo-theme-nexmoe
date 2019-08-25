@@ -28,6 +28,9 @@
 
 欢迎将你的网站提交到这里来
 
+## 其他博客程序
+ - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
+
 ## 国际化
 
 支持多语言，默认语言为简体中文。
