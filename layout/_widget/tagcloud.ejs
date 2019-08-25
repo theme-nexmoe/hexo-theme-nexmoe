@@ -1,8 +1,25 @@
 <% if (site.tags.length){ %>
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title"><%= __('tagcloud') %></h3>
-    <div class="nexmoe-widget tagcloud">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud">
       <%- tagcloud() %>
     </div>
+    <% if (theme.maxTagcloud){ %>
+      <script>
+        var maxTagcloud = parseInt(<%= theme.maxTagcloud %>);
+        var tags_length = parseInt(<%= site.tags.length %>);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    <% } %>
   </div>
 <% } %>
