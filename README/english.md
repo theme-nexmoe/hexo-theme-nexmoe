@@ -40,6 +40,8 @@ Please check [Here](https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/WIKI
 ## Demo
 
 - [Nexmoe](https://nexmoe.com/)
+- [深海小涛](https://hexo.xtaolink.cn/)
+- [西瓜星 🍉✨](https://suikastar.com/)
 
 ## Internationalization
 
