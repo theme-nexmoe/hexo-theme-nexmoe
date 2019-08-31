@@ -100,6 +100,9 @@ module.exports = {
         }, {
           text: '组件',
           link: '/component/basic/icon.html'
+        },{
+          text: '贡献',
+          link: '/contribution/'
         }, ],
         sidebar: {
           '/hexo/': [
@@ -125,6 +128,14 @@ module.exports = {
                     'basic/icon',
                     'basic/color',
                 ],
+            },
+          ],
+          '/contribution/': [
+            {
+                title: '参与贡献',
+                collapsable: false,
+                sidebarDepth: 2,
+
             },
           ],
       },
