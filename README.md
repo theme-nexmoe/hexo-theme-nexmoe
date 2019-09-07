@@ -26,7 +26,7 @@
 - [深海小涛](https://hexo.xtaolink.cn/)
 - [西瓜星 🍉✨](https://suikastar.com/)
 
-欢迎将你的网站提交到这里来
+> 欢迎将你的网站提交到这里来
 
 ## 其他博客程序
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
