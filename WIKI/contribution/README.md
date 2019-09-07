@@ -4,7 +4,7 @@
 
 ## 即时讨论
 [QQ群 482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun)
-[Telegram 群组 轻惋漫社](https://t.me/rsshub)
+[Telegram 群组 轻惋漫社](https://t.me/chainwon)
 
 ## Issue
 这可以不需要你的任何技术要求，只需要提交你的建议，还有你发现的 BUG，就足以参加到贡献中来。
