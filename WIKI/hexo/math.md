@@ -82,7 +82,7 @@ em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
 ``` yaml
 mathjax:
   enable: true
-  per_page: true //按需加载mathjax
+  per_page: true # 按需加载mathjax
 ```
 
 在每次需要用的博文中，在文章的 `Front-matter` 里打开 `mathjax` 开关
