@@ -31,7 +31,7 @@
 ## 其他博客程序
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
 
-＞ 希望你移植到其他博客程序后可以把你的项目提交到这里
+> 希望你移植到其他博客程序后可以把你的项目提交到这里
 
 ## 国际化
 
