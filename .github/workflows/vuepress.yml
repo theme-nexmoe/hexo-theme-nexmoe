@@ -12,6 +12,9 @@ on:
       - 'WIKI/*/*/*/*/*'
       - 'WIKI/*/*/*/*/*/*'
       - 'WIKI/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*/*/*'
 
 jobs:
   build:
@@ -49,5 +52,5 @@ jobs:
           git init
           git add -A
           git commit -m '🔥 部署文档'
-          git push -f git@github.com:suikastar/hexo-theme-nexmoe.git master:gh-pages
+          git push -f git@github.com:nexmoe/hexo-theme-nexmoe.git master:gh-pages
           cd ..
