@@ -47,9 +47,10 @@ jobs:
         run: |
           cd WIKI
           vuepress build
-          echo 'docs.nexmoe.com' > .vuepress/dist/CNAME
+          cd .vuepress/dist
+          echo 'docs.nexmoe.com' > CNAME
           git init
           git add -A
           git commit -m '🔥 部署文档'
           git push -f git@github.com:nexmoe/hexo-theme-nexmoe.git master:gh-pages
-          cd ..
+          cd ../../../
