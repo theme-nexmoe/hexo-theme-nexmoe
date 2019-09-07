@@ -25,7 +25,7 @@
 
 #### [使用 Git](https://github.com/nexmoe/hexo-theme-nexmoe)
 
-你可以自己决定想要使用的分支；使用 Git 下载nexmoe以后还可以使用 `git pull` 更新nexmoe。
+你可以自己决定想要使用的分支；使用 Git 下载 nexmoe 以后还可以使用 `git pull` 更新 nexmoe。
 
 ``` bash {4}
 cd themes
