@@ -32,6 +32,9 @@
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
  - Solo：https://github.com/InkDP/solo-nexmoe
 
+## 其他分支
+ - Saigyou_Ayakashi-HexoTheme: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
+
 > 希望你移植到其他博客程序后可以把你的项目提交到这里
 
 ## 国际化
