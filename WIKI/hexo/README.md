@@ -1,14 +1,26 @@
 # 欢迎使用 Nexmoe
 
-## 介绍
+## 遇到问题怎么办？
 
 在使用 Nexmoe 之前，请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)，完成对 Hexo 的安装，并完成对 `站点配置文件` 的基本配置（标题、介绍、作者、时区、语言等）。
 
-请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+#### 查阅 Hexo 官方文档
+
+<font color="red">官方文档解决大部分问题！</font>
 
 请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
 
 请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+#### 查阅本文档
+
+本文档内容较少，只解决常见问题
+
+#### 使用搜索引擎
+
+以上方法解决不了的问题，搜索引擎一定能解决，如果搜索引擎都解决不了，那就没办法了。
 
 ## 下载
 
