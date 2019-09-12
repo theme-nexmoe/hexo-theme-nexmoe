@@ -28,16 +28,17 @@
 
 > 欢迎将你的网站提交到这里来
 
-## 移植版
+## 其他博客程序
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
+ - Solo：https://github.com/InkDP/solo-nexmoe
 
-> 完全 Copy Hexo 版本的样式
+> 希望你移植到其他博客程序后可以把你的项目提交到这里
 
-## 修改版
- - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
- - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
+## 其他分支
+ - Saigyou_Ayakashi-HexoTheme: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
 
-> 与官方版略有不同
+> 欢迎各位把魔改的的版本提交到这里
+
 
 ## 国际化
 
