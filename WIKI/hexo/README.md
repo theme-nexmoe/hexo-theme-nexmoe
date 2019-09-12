@@ -8,7 +8,7 @@
 
 一般遇到的问题都是对 Hexo 不熟悉导致的，本主题作者也不是很了解 Hexo，所以经常会去看官方文档。
 
-<font color="red" size="20">官方文档解决大部分问题！</font>
+<font color="blue" size="16">Hexo 官方文档解决大部分问题！</font>
 
 请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
 
