@@ -7,7 +7,7 @@ favicon:
 function: # 功能开关，可选值（true,false）
   fancybox: true # 灯箱功能
   SmoothScroll: true # 平滑滚动
-  pjax: true # Pjax 无刷新加载页面
+  pjax: true # Pjax 无刷新加载页面，暂时存在较大问题
   
 # 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
