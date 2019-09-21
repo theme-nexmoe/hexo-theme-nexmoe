@@ -20,7 +20,6 @@
 
 <% if(theme.function.pjax == true) { %> 
     <script type="text/javascript" src="<%- theme.cdn.pjax.js %>"></script>
-    <script type="text/javascript" src="<%- theme.cdn.nprogress.js %>"></script>
     <script>
         var pjax = new Pjax({
             elements: 'a[href]:not([href^="#"])',
@@ -32,10 +31,10 @@
             ]
         });
         document.addEventListener('pjax:send', function () {
-            NProgress.start();
+            
         });
         document.addEventListener('pjax:complete', function () {
-            NProgress.done();
+            
         });
     </script>
 <% } %>
