@@ -25,9 +25,6 @@ cdn: # 这里可以修改站点使用的库的CDN
     js: https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js
   pjax:
     js: //cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js
-  nprogress:
-    css: //cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css
-    js: //cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js
   lazysizes:
     js: https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js
   highlight:
