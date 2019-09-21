@@ -37,6 +37,9 @@
   <% } %>
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
   <%- css_auto_version('css/style') %>
+  <% if(theme.function.pjax == true) { %> 
+    <link rel="stylesheet" href="<%- theme.cdn.nprogress.css %>">
+  <% } %>
 </head>
 
 <body class="mdui-drawer-body-left">
