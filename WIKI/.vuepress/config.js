@@ -135,6 +135,9 @@ module.exports = {
                 title: '参与贡献',
                 collapsable: false,
                 sidebarDepth: 2,
+                children: [
+                  'catalog'
+                ],
 
             },
           ],
