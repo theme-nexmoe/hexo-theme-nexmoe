@@ -59,7 +59,7 @@
 │          css_auto_version.js
 │          js_auto_version.js
 │
-└─source
+├─source
 │   ├─css
 │   │      style.styl
 │   │
