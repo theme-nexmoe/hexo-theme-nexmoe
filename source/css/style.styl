@@ -803,9 +803,6 @@ summary i {
     margin-right: 0.3em;
     width: 24px;
 }
-summary::-webkit-details-marker {
-    display: none;
-}
 summary .remove {
     display: none;
 }
@@ -814,51 +811,6 @@ details[open] > summary .add {
 }
 details[open] > summary .remove {
     display: inline-block;
-}
-article .catui-pic {
-    max-height: 400px;
-    overflow: hidden;
-    display: inline-block;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 0 0 1px #eee;
-    box-shadow: 0 0 0 1px #eee;
-}
-article .catui-pic-2 p {
-    width: calc(50% - 10px);
-}
-article .catui-pic-3 p {
-    width: calc(33.3333333333333333333333% - 13.333333333333333333333333333333px);
-}
-article .catui-pic-2 p, article .catui-pic-3 p {
-    float:left;
-    margin-right: 20px!important;
-    margin-top: 0!important;
-}
-article .catui-pic-2 img, article .catui-pic-3 img {
-    object-fit: cover;
-}
-article .catui-pic-2 p:after, article .catui-pic-3 p:after {
-    content: attr(title);
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-    color: #fff;
-    right: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    pointer-events: none;
-}
-article .catui-pic-2 p:nth-child(2n+2), article .catui-pic-3 p:nth-child(3n+3) {
-    margin-right: 0!important;
-}
-article .catui-pic-2, article .catui-pic-3 {
-    margin-bottom: -20px;
-}
-article .catui-pic-2::after, article .catui-pic-3::after {
-    content:"";
-    clear: both;
-    display: block;
 }
 .aplayer {
     -webkit-box-shadow:0 0 0 1px #eee!important;
