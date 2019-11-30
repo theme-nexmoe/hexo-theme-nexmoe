@@ -60,7 +60,7 @@ npm install hexo-wordcount@2 --save
 ```
 同时你需要把nexmoe主题目录下的 `_config.example.yml` 复制一份并把副本重命名为 `_config.yml`。
 ``` bash
-cp -i _config.example.yml _config.yml
+cp _config.example.yml _config.yml
 ```
 因为在主题的开发迭代过程中，`主题的配置文件` 很有可能会有变动。所以我们把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。
 
