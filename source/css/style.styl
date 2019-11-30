@@ -617,10 +617,9 @@ article table.nexmoe-album td {
     padding: 5px;
     height: 300px;
 }
-article table.nexmoe-album th > a,
-article table.nexmoe-album td > a {
-    padding: 5px;
-    height: 300px;
+article table.nexmoe-album th a::after,
+article table.nexmoe-album td a::after {
+    display: none;
 }
 @media screen and (max-width:1024px) {
     article table.nexmoe-album th,

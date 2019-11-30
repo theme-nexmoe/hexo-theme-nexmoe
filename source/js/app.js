@@ -39,12 +39,15 @@ $("#nexmoe-content img").each(function() {
   $(this).attr("referrerPolicy", "no-referrer");
 });
 
-$("article:not(.nexmoe-py) th:not(:has(a)) img,article:not(.nexmoe-py) td:not(:has(a)) img").each(function() {
-  var element = document.createElement("a");
-  $(element).attr("data-fancybox", "gallery");
-  $(element).attr("href", $(this).attr("data-src"));
-  $(this).wrap(element);
+$("article:not(.nexmoe-py) img").each(function() {
+  if($(this).parent()[0].localName!=="a"){
+    var element = document.createElement("a");
+    $(element).attr("data-fancybox", "gallery");
+    $(element).attr("href", $(this).attr("data-src"));
+    $(this).wrap(element);
+  }  
 });
+
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
