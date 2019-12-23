@@ -60,6 +60,6 @@ star 以及 issue 是我更新的动力!
 
 ## 交流
 论坛：https://club.chainwon.com/t/nexmoe
-
+主题讨论群：614621637
 ## 更多
 请查看 [这里](https://nexmoe.com/hexo-theme-nexmoe.html)
