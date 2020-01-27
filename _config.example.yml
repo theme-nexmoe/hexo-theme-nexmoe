@@ -12,6 +12,8 @@ function: # 功能开关，可选值（true,false）
 # 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 
+search: https://cn.bing.com/search?q=site:nexmoe.com # https://www.google.com/search?q={你的博客链接}
+
 cdn: # 这里可以修改站点使用的库的CDN
   mdui:
     css: https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css
@@ -54,6 +56,7 @@ menu:
     - /PY.html
 
 widgets:
+- search
 - social
 - category
 - tagcloud

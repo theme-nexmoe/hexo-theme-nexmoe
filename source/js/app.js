@@ -51,3 +51,8 @@ $("article:not(.nexmoe-py) img").each(function() {
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
+
+function search() {
+  window.open($("#search_form").attr("action_e") + " " + $("#search_value").val());
+  return false;
+}
