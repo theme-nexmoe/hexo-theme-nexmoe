@@ -1,0 +1,56 @@
+name: vuepress
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'WIKI/*'
+      - 'WIKI/*/*'
+      - 'WIKI/*/*/*'
+      - 'WIKI/*/*/*/*'
+      - 'WIKI/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*/*'
+      - 'WIKI/*/*/*/*/*/*/*/*/*/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Configuration environment
+        env:
+          ID_RSA: ${{secrets.id_rsa}}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$ID_RSA" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name 'suikatomoki'
+          git config --global user.email 'suikatomoki@gmail.com'
+      - name: Install dependencies
+        run: |
+          cd WIKI
+          npm i -g vuepress
+          cd ..
+      - name: Deploy vuepress
+        run: |
+          cd WIKI
+          vuepress build
+          cd .vuepress/dist
+          echo 'docs.nexmoe.com' > CNAME
+          git init
+          git add -A
+          git commit -m '🔥 部署文档'
+          git push -f git@github.com:nexmoe/hexo-theme-nexmoe.git master:gh-pages
+          cd ../../../

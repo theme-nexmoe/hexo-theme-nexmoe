@@ -4,7 +4,7 @@
 
 主题内置代码高亮且自动开启，为了避免冲突，请在 `站点配置文件` 中禁用 highlight
 
-```
+``` yaml
 highlight:
   enable: false
 ```

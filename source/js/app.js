@@ -40,11 +40,19 @@ $("#nexmoe-content img").each(function() {
 });
 
 $("article:not(.nexmoe-py) img").each(function() {
-  var element = document.createElement("a");
-  $(element).attr("data-fancybox", "gallery");
-  $(element).attr("href", $(this).attr("data-src"));
-  $(this).wrap(element);
+  if($(this).parent()[0].localName!=="a"){
+    var element = document.createElement("a");
+    $(element).attr("data-fancybox", "gallery");
+    $(element).attr("href", $(this).attr("data-src"));
+    $(this).wrap(element);
+  }  
 });
+
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
+
+function search() {
+  window.open($("#search_form").attr("action_e") + " " + $("#search_value").val());
+  return false;
+}

@@ -6,10 +6,15 @@ favicon:
 
 function: # 功能开关，可选值（true,false）
   fancybox: true # 灯箱功能
-  SmoothScroll: true # 平滑滚动
+  SmoothScroll: false # 平滑滚动
+  pjax: false # Pjax 无刷新加载页面，暂时存在较大问题
+  avatarRotateZ: false # 头像旋转
+  clickHeart: false # 鼠标点击小心心 ♥
   
 # 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
-iconlib: //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
+iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
+
+search: https://cn.bing.com/search?q=site:nexmoe.com # https://www.google.com/search?q={你的博客链接}
 
 cdn: # 这里可以修改站点使用的库的CDN
   mdui:
@@ -22,6 +27,8 @@ cdn: # 这里可以修改站点使用的库的CDN
     js: https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
   SmoothScroll:
     js: https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js
+  pjax:
+    js: //cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js
   lazysizes:
     js: https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js
   highlight:
@@ -51,11 +58,14 @@ menu:
     - /PY.html
 
 widgets:
+- search
 - social
 - category
 - tagcloud
 - archive
 # - recent_posts
+
+maxTagcloud: 0  # 0 表示不限制
 
 social:
   哔哩哔哩:

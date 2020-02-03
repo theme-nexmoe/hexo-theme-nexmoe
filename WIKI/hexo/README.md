@@ -1,14 +1,28 @@
-# 欢迎使用 Nexmoe
+# 快速开始
 
-## 介绍
+## 遇到问题怎么办？
 
 在使用 Nexmoe 之前，请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)，完成对 Hexo 的安装，并完成对 `站点配置文件` 的基本配置（标题、介绍、作者、时区、语言等）。
 
-请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+#### 1、查阅 Hexo 官方文档
+
+一般遇到的问题都是对 Hexo 不熟悉导致的，本主题作者也不是很了解 Hexo，所以经常会去看官方文档。
+
+<font color="blue" size="16">Hexo 官方文档解决大部分问题！</font>
 
 请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
 
 请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+请仔细阅读 [Hexo 的官方文档](https://hexo.io/zh-cn/docs/)
+
+#### 2、查阅本文档
+
+本文档内容较少，只解决常见问题
+
+#### 3、使用搜索引擎
+
+以上方法解决不了的问题，搜索引擎一定能解决，如果搜索引擎都解决不了，那就没办法了。
 
 ## 下载
 
@@ -25,8 +39,9 @@
 
 #### [使用 Git](https://github.com/nexmoe/hexo-theme-nexmoe)
 
-你可以自己决定想要使用的分支；使用 Git 下载nexmoe以后还可以使用 `git pull` 更新nexmoe。
-```
+你可以自己决定想要使用的分支；使用 Git 下载 nexmoe 以后还可以使用 `git pull` 更新 nexmoe。
+
+``` bash {4}
 cd themes
 git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe
 cd nexmoe
@@ -36,16 +51,16 @@ git checkout {branch/tags name/commit hash}
 ## 安装 Nexmoe
 
 其他主题不同，安装 Nexmoe 需要额外的步骤；主题默认已经集成了文章【字数统计】、【阅读时长】统计功能，且暂时无法关闭。如果没有安装 hexo-wordcount 插件，先安装该插件：
-```
+``` bash
 npm i --save hexo-wordcount
 ```
 **Node 版本 7.6.0 之前,请安装 2.x 版本 (Node.js v7.6.0 and previous) ，安装命令如下：**
-```
+``` bash
 npm install hexo-wordcount@2 --save
 ```
 同时你需要把nexmoe主题目录下的 `_config.example.yml` 复制一份并把副本重命名为 `_config.yml`。
-```
-cp -i _config.example.yml _config.yml
+``` bash
+cp _config.example.yml _config.yml
 ```
 因为在主题的开发迭代过程中，`主题的配置文件` 很有可能会有变动。所以我们把 `_config.yml` 添加到了 `.gitignore` 之中，这样可以避免使用 `git pull` 更新主题的用户出现冲突。
 
@@ -58,7 +73,7 @@ cp -i _config.example.yml _config.yml
 
 在站点根目录下运行下面的命令在本地启动一个 Hexo Server。
 
-```
+``` bash
 hexo s --debug
 ```
 
@@ -66,7 +81,7 @@ hexo s --debug
 
 当命令行输出下述内容时说明 Hexo 已经监听在本机的 4000 端口，使用浏览器访问 [http://localhost:4000](http://localhost:4000) ，检查站点是否正确运行。
 
-```
+``` bash
 INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 ```
 

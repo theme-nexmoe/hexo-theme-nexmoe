@@ -23,13 +23,22 @@
 ## 演示
 
 - [Nexmoe](https://nexmoe.com/)
-- [深海小涛](https://www.xtaolink.cn/)
+- [深海小涛](https://hexo.xtaolink.cn/)
 - [西瓜星 🍉✨](https://suikastar.com/)
+- [我妻善逸](http://fguby.love/)
 
-欢迎将你的网站提交到这里来
+> 欢迎将你的网站提交到这里来
 
-## 其他博客程序
+## 移植版
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
+
+> 完全 Copy Hexo 版本的样式
+
+## 修改版
+ - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
+ - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
+
+> 与官方版略有不同
 
 ## 国际化
 
@@ -52,6 +61,6 @@ star 以及 issue 是我更新的动力!
 
 ## 交流
 论坛：https://club.chainwon.com/t/nexmoe
-
+主题讨论群：614621637
 ## 更多
 请查看 [这里](https://nexmoe.com/hexo-theme-nexmoe.html)

@@ -3,7 +3,7 @@
 ## 创建文章
 
 #### 使用命令行
-```
+``` bash
 hexo new <title>
 ```
 #### 手动创建
@@ -16,7 +16,7 @@ hexo new <title>
 在站点根目录下的 `source` 文件夹内创建一个 `.md` 文件，文件名和路径根据个人喜好决定，会决定渲染生成以后页面的路径。
 
 在文件中写入以下内容：
-```
+``` yaml
 ---
 title: links
 date: 2013/7/13 20:46:25
@@ -33,11 +33,11 @@ permalink: PY.html
 #### 添加友链
 
 在 `.md` 中直接添加以下内容即可
-```
+``` md
 - [![标题](https://example.com/logo.png)](https://example.com/ "标题")
 ```
 例如:
-```
+``` md
 - [![轻惋导航](https://www.chainwon.com/static/logo.png)](https://www.chainwon.com/ "轻惋导航")
 ```
 
@@ -48,7 +48,7 @@ permalink: PY.html
 
 在 Front-matter 中插入 cover 值，该值可以是图片的远程链接，可以是图片的绝对路径
 
-```
+``` yaml
 ---
 title: Hello World
 date: 2013/7/13 20:46:25
@@ -68,7 +68,7 @@ cover: https://i.loli.net/2019/07/21/5d33d5dc1531213134.png
 #### site_verification
 
 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
-```
+``` yaml
 site_verification:
   google:
   baidu:
@@ -88,15 +88,15 @@ site_verification:
 你可以设置所有文章的版权协议，这将会显示在文章结尾；支持 `HTML`。版权中会包含 `本文作者、本文链接和协议` 等信息。
 
 比如，你可以这样设置：
-```
+``` yaml
 copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
 ```
 你也可以在文章的 `Front-Matter` 中覆盖这一设置
-```
+``` yaml
 copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc/3.0/cn/deed.zh" target="_blank">CC BY-NC 3.0 CN</a> 协议进行许可'
 ```
 同时你可以使用下面的 `Front-Matter`
-```
+``` yaml
 hide_copyright: true
 ```
 来隐藏本篇文章的版权协议

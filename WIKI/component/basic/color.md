@@ -87,7 +87,7 @@
         </div>
     </div>
     <div class="demo-color-box" style="background: #64b9ff"> 蓝
-        <div class="value">#ffaa73</div>
+        <div class="value">#64b9ff</div>
         <div class="bg-color-sub">
             <div class="bg-success-sub-item" style="background: rgba(100, 185, 255,.3)"></div>
             <div class="bg-success-sub-item" style="background: rgba(100, 185, 255,.15)"></div>

@@ -8,7 +8,7 @@ Nexmoe目前支持 7 种的评论系统，它们分别是 Gitment、Gitalk、Val
 
 ## [Gitment](https://github.com/imsun/gitment)
 
-```
+``` yaml
 comment: gitment
 ......
 gitment:
@@ -21,7 +21,7 @@ gitment:
 
 ## [Gitalk](https://github.com/gitalk/gitalk)
 
-```
+``` yaml
 comment: gitalk
 ......
 gitalk:
@@ -35,7 +35,7 @@ gitalk:
 
 ## [Valine](https://valine.js.org/)
 
-```
+``` yaml
 comment: valine
 ......
 valine: 
@@ -46,7 +46,7 @@ valine:
 
 ## [Disqus](https://disqus.com)
 
-```
+``` yaml
 comment: disqus
 ......
 disqus:
@@ -60,7 +60,7 @@ disqus:
 
 >这项设置有助于在 **公开、平等、有序 的 网络审查 地区** 下的浏览者正常阅读评论内容。
 
-```
+``` yaml
 disqusjs:
   shortname: <shortname> # 你的 Disqus shortname
   sitename: <sitename> # 你站点的名称，将会显示在「评论基础模式」的 header 中；该配置应该和 Disqus Admin - Settings - General - Website Name 一致
@@ -74,7 +74,7 @@ disqusjs:
 
 ## [搜狐畅言](http://changyan.kuaizhan.com/)
 
-```
+``` yaml
 comment: changyan
 ......
 changyan:
@@ -82,14 +82,17 @@ changyan:
   conf: <CONF> # 畅言的 CONF
   thread_key_type: path # 可选 id 或 path
 ```
+
 在畅言的后台找到安装方式，畅言应该提供了下述两个代码，你可以从其中找到你的 APPID 和 CONF：
-```
+
+``` html
 !-- 畅言公共 js 代码 start -->
 <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId={这个就是你的 APPID}">
 </script>
 <!-- 畅言公共 js 代码 end -->
 ```
-```
+
+``` html
 <script>
 (function(){
 var appid = '{这个就是你的 APPID}';
@@ -103,7 +106,7 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="http
 
 ## [来必力 livere](https://livere.com/)
 
-```
+```  yaml
 comment: livere
 ......
 livere:
@@ -112,11 +115,11 @@ livere:
 
 ## [DiscussBot](https://comments.app/)
 
-使用此评论，您需要一个 `Telegram账户` 。注册网站步骤非常简单，不另行阐述。
+使用此评论，您需要一个 `Telegram 账户` 。注册网站步骤非常简单，不另行阐述。
 
 注册完成后您可以通过使用按钮来对比进行设置 `主题配置文件` 。
 
-```
+```  yaml
 DiscussBot:
   id: <id> # 站点id
   comments: 5 # 可能是限制每位用户单页面评论最多条数？

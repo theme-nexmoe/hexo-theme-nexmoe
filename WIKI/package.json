@@ -5,5 +5,6 @@
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.0.1",
     "vuepress": "^1.0.3"
-  }
+  },
+  "dependencies": {}
 }
