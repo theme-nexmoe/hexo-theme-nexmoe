@@ -10,6 +10,7 @@ function: # 功能开关，可选值（true,false）
   pjax: false # Pjax 无刷新加载页面，暂时存在较大问题
   avatarRotateZ: false # 头像旋转
   clickHeart: false # 鼠标点击小心心 ♥
+  globalToc: false # 开启该功能会自动开启文章 TOC（文章目录） 功能
   
 # 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
