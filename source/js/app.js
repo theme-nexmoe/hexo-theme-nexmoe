@@ -36,7 +36,6 @@ $("#nexmoe-content img").each(function() {
   $(this).attr("data-src", $(this).attr("src"));
   $(this).attr("src", "");
   $(this).addClass("lazyload");
-  $(this).attr("referrerPolicy", "no-referrer");
 });
 
 $("article:not(.nexmoe-py) img").each(function() {
