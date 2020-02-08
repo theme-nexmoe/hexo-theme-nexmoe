@@ -37,10 +37,12 @@
 
   <div class="nexmoe-post-right">
     <% if (page.toc || theme.function.globalToc){ %>
-      <div id="toc" class="toc-article">
-          <ul class="markdownIt-TOC">
-              <%- toc(page.content, {list_number: false}) %>
-          </ul>
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <%- toc(page.content, {list_number: true}) %>
+            </div>
+        </div>
       </div>
     <%} %>
   </div>

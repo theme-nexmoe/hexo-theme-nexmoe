@@ -941,78 +941,48 @@ font.douyin {
     text-align: right;
 }
 
-.toc-article a {
-    color: #fff
+.nexmoe-valign {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    height: 100%;
 }
 
-.toc-article {
-    color: #fff;
-    background-color: #1f2022;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    display: inline;
-    list-style: none;
+.nexmoe-post-right .nexmoe-fixed {
     position: fixed;
     z-index: 1000;
     height: 100vh;
+    display: inline-block;
     top: 0;
-    width: 0;
+}
+
+.nexmoe-post-right .nexmoe-toc {
+    margin-left: 16px;
+    width: 240px;
     text-align: left;
-     -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
 }
 
-.toc-article:hover {
-    width: 240px;
+.nexmoe-post-right .nexmoe-toc a {
+    color: rgba(0,0,0,.6);
 }
 
-.toc-article .markdownIt-TOC {
-    display: block;
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: 240px;
-    padding: 10px;
+.nexmoe-post-right .nexmoe-toc ol {
+    padding-left: 1em;
 }
 
-.toc-article .markdownIt-TOC {
-    opacity: 0;
-    a {
-        line-height: 52px;
-        width: 100%;
-        border-bottom: 1px solid hsla(0,0%,100%,.05);
-    }
-    li {
-        border-bottom: 1px solid hsla(0,0%,100%,.05);
-    }
+.nexmoe-post-right .nexmoe-toc li {
+    margin: 1em 0;
 }
 
-.toc-article:hover .markdownIt-TOC {
-    opacity: 1;
+.nexmoe-post-right .nexmoe-toc > ol {
+    padding-left: 0;
 }
 
-.toc-article::after {
-    background-color: #1f2022;
-    border-radius: 6px 6px 0 0;
-    content: 'TOC';
-    position: absolute;
-    width: 60px;
-    line-height: 30px;
-    top: 50%;
-    right: -16px;
-    text-align: center;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
-.toc-article:hover::after {
-    opacity: 0;
+.nexmoe-toc * {
+    list-style: none;
 }
