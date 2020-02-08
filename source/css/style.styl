@@ -326,7 +326,6 @@ body {
                 overflow: hidden;
                 border-radius: 10px;
                 margin-bottom: 10px;
-                max-height: 500px;
                 min-height: 65px;
                 background-color: #eee;
                 img {
@@ -335,6 +334,9 @@ body {
                     -webkit-filter: blur(5px);
                     filter: blur(5px);
                     transition: filter 400ms, -webkit-filter 400ms;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
                 }
                 img.lazyloaded {
                     -webkit-filter: blur(0);
