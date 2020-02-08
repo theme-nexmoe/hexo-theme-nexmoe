@@ -331,7 +331,14 @@ body {
                 background-color: #eee;
                 img {
                     width: 100%;
-                        display: block;
+                    display: block;
+                    -webkit-filter: blur(5px);
+                    filter: blur(5px);
+                    transition: filter 400ms, -webkit-filter 400ms;
+                }
+                img.lazyloaded {
+                    -webkit-filter: blur(0);
+                    filter: blur(0);
                 }
                 h1 {
                     position: absolute;
