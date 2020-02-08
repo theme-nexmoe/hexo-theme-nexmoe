@@ -1,6 +1,6 @@
-avatar: /images/avatar.png # 网站 Logo
+avatar: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
-  path: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/5c3aec85a4343.jpg
+  path: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg
   width: 1440
   height: 960
 favicon:
@@ -9,7 +9,6 @@ favicon:
 
 function: # 功能开关，可选值（true,false）
   fancybox: true # 灯箱功能
-  SmoothScroll: false # 平滑滚动
   pjax: false # Pjax 无刷新加载页面，暂时存在较大问题
   avatarRotateZ: false # 头像旋转
   clickHeart: false # 鼠标点击小心心 ♥
@@ -29,8 +28,6 @@ cdn: # 这里可以修改站点使用的库的CDN
   fancybox:
     css: https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
     js: https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
-  SmoothScroll:
-    js: https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js
   pjax:
     js: //cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js
   lazysizes:
