@@ -1,0 +1,19 @@
+continue: 続きを読む
+nav:
+  home: ホーム
+
+search: 検索
+archive: アーカイブ
+recent_posts: 最近の文章
+categories: カテゴリ
+tagcloud: タグクラウド
+social: タグクラウド
+
+count:
+  articles: 文章
+  tags: タグ
+  categories: カテゴリ
+  
+copyright:
+  author: 著者
+  permalink: リンク
