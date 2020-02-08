@@ -46,22 +46,17 @@ permalink: PY.html
 
 ## 文章封面图
 
-在 Front-matter 中插入 cover 值，该值可以是图片的远程链接，可以是图片的绝对路径
+在 Front-matter 中插入 cover 值，该值可以是图片的远程链接，可以是图片的绝对路径，为防止图片抖动，你需要手动填写封面图原长度和高度
 
 ``` yaml
 ---
 title: Hello World
 date: 2013/7/13 20:46:25
 cover: https://i.loli.net/2019/07/21/5d33d5dc1531213134.png
+coverWidth: 1200
+coverHeight: 750
 ---
 ```
-
-
-## 图片灯箱
-
-自动开启功能，为文章中每一个图片提供灯箱功能
-![图片灯箱](https://nexmoe.com/images/pasted-4.png "图片灯箱")
-
 
 ## 站点设置
 
