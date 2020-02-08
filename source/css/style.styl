@@ -665,6 +665,13 @@ article img {
     display:block;
     border-radius: 6px;
     border: 1px solid #eee;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 400ms, -webkit-filter 400ms;
+}
+article img.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
 }
 article h1, article h2, article h3, article h4, article h5, article h6 {
     color:#111;

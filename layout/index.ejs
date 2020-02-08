@@ -6,12 +6,12 @@
                 <div class="nexmoe-post-cover mdui-ripple" 
                     style="padding-bottom: <%- page.coverHeight/page.coverWidth*100 %>%;"
                 > 
-                    <img data-src="<%- page.cover %>" data-sizes="auto" alt="<%= page.title %>">
+                    <img data-src="<%- page.cover %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
                     <h1><%= page.title %></h1>
                 </div>
             <% } else { %>
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: <%- theme.background.height/theme.background.width*100 %>%;"> 
-                    <img data-src="<%- theme.background.path %>" data-sizes="auto" alt="<%= page.title %>">
+                    <img data-src="<%- theme.background.path %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
                     <h1><%= page.title %></h1>
                 </div>
             <% } %>
@@ -39,9 +39,9 @@
         </div>
         <article>
             <% if(page.excerpt) {%>
-            <%- page.excerpt %>
+                <%- image_auto_lazyload(page.excerpt) %>
             <%}  else{ %>
-            <%- page.content %>
+                <%- image_auto_lazyload(page.content) %>
             <% } %>
         </article>
     </div>
