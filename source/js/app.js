@@ -38,16 +38,6 @@ $("#nexmoe-content img").each(function() {
   $(this).addClass("lazyload");
 });
 
-$("article:not(.nexmoe-py) img").each(function() {
-  if($(this).parent()[0].localName!=="a"){
-    var element = document.createElement("a");
-    $(element).attr("data-fancybox", "gallery");
-    $(element).attr("href", $(this).attr("data-src"));
-    $(this).wrap(element);
-  }  
-});
-
-
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();
 
