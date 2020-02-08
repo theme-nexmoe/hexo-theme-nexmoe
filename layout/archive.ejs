@@ -1,14 +1,23 @@
+<style>
+    #nexmoe-content .nexmoe-archives .nexmoe-post .nexmoe-post-cover {
+        max-height: 65px;
+    }
+</style>
 <section class="nexmoe-archives">
+    <% page.posts.each(function (page) { %>
     <div class="nexmoe-post">
         <a href="<%- url_for(page.path) %>">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                <% if (page.cover){ %>
-                <img src="<%- page.cover %>" alt="<%= page.title %>">
-                <%}  else{ %>
-                    <img src="<%= theme.background %>" alt="<%= page.title %>">
-                <% } %>
-                <h1><%= page.title %></h1>
-            </div>
+            <% if (page.cover){ %>
+                <div class="nexmoe-post-cover mdui-ripple"> 
+                    <img data-src="<%- page.cover %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
+                    <h1><%= page.title %></h1>
+                </div>
+            <% } else { %>
+                <div class="nexmoe-post-cover mdui-ripple"> 
+                    <img data-src="<%- theme.background.path %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
+                    <h1><%= page.title %></h1>
+                </div>
+            <% } %>
         </a>
         <div class="nexmoe-post-meta">
             <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
@@ -31,6 +40,8 @@
                 }) %>
             <% } %>
         </div>
+        <div style="height: 50px;"></div>
     </div>
+    <% }) %>
 </section>
 <%- partial('_partial/paginator') %>

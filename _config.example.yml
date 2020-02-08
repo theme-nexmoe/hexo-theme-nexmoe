@@ -8,7 +8,6 @@ favicon:
   type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 function: # 功能开关，可选值（true,false）
-  pjax: false # Pjax 无刷新加载页面，暂时存在较大问题
   avatarRotateZ: false # 头像旋转
   clickHeart: false # 鼠标点击小心心 ♥
   globalToc: false # 开启该功能会自动开启文章 TOC（文章目录） 功能
