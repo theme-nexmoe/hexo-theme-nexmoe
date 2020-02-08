@@ -28,10 +28,11 @@ for (let link of links) {
     link.className = "active nexmoe-list-item mdui-list-item mdui-ripple";
   }
 }
+
+var $ = mdui.JQ;
 $("table")
   .has("img")
   .addClass("nexmoe-album");
-
 
 $("#nexmoe-sidebar a").addClass("mdui-ripple");
 mdui.mutation();

@@ -22,10 +22,6 @@ cdn: # 这里可以修改站点使用的库的CDN
   mdui:
     css: https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css
     js: https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js
-  jquery:
-    js: https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js
-  pjax:
-    js: //cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js
   lazysizes:
     js: https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js
   highlight:

@@ -1,35 +1,12 @@
 <script src="<%- theme.cdn.mdui.js %>"></script>
-<script src="<%- theme.cdn.jquery.js %>"></script>
-
 <script src="<%- theme.cdn.highlight.js %>"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="<%- theme.cdn.lazysizes.js %>"></script>
 
 <%- js_auto_version('js/app') %>
-<script src="<%- theme.cdn.lazysizes.js %>"></script>
 
 <% if (theme.cdn.copy) { %>
     <script src="<%- theme.cdn.copy %>"></script>
-<% } %>
-
-<% if(theme.function.pjax) { %> 
-    <script src="<%- theme.cdn.pjax.js %>"></script>
-    <script>
-        var pjax = new Pjax({
-            elements: 'a[href]:not([href^="#"])',
-            cacheBust: false,
-            debug: false,
-            selectors: [
-                'title',
-                '#nexmoe-content'
-            ]
-        });
-        document.addEventListener('pjax:send', function () {
-            
-        });
-        document.addEventListener('pjax:complete', function () {
-            
-        });
-    </script>
 <% } %>
 
 <% if(theme.function.clickHeart) { %> 
