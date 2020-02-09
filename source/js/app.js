@@ -29,6 +29,8 @@ for (let link of links) {
   }
 }
 
+hljs.initHighlightingOnLoad();
+
 var $ = mdui.JQ;
 $("table")
   .has("img")

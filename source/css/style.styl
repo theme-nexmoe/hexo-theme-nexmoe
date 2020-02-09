@@ -336,7 +336,7 @@ body {
                     display: block;
                     -webkit-filter: blur(5px);
                     filter: blur(5px);
-                    transition: filter 400ms, -webkit-filter 400ms;
+                    transition: filter 400ms ease-in, -webkit-filter 400ms ease-in;
                     position: absolute;
                     left: 0;
                     top: 0;
@@ -352,7 +352,7 @@ body {
                     bottom: 0;
                     padding: 20px;
                     color: #fff;
-                    font-size: 2em;
+                    font-size: 2.2em;
                     width: 100%;
                     box-sizing: border-box;
                     text-transform: none;
@@ -384,7 +384,7 @@ body {
                 margin-bottom: -10px;
                 a {
                     border-radius: 10px;
-                    padding:5px 10px;
+                    padding: 6px 10px;
                     color:#fff;
                     font-size:14px;
                     display:inline-block;
@@ -591,8 +591,8 @@ article pre code::after  {
     background: #282c34;
 }
 article a {
-    -webkit-transition:all .35s;
-    transition:all .35s;
+    -webkit-transition: all .35s ease-in;
+    transition: all .35s ease-in;
     color:#ff4e6a;
     text-decoration:none;
     position:relative;
@@ -602,8 +602,8 @@ article a:hover, article a:focus {
     color:#ff4e6a
 }
 article a::after {
-    -webkit-transition:width .35s;
-    transition:width .35s;
+    -webkit-transition: width .35s ease-in;
+    transition: width .35s ease-in;
     content:"";
     right:0;
     width:0;
@@ -671,7 +671,7 @@ article img {
     border: 1px solid #eee;
     -webkit-filter: blur(5px);
     filter: blur(5px);
-    transition: filter 400ms, -webkit-filter 400ms;
+    transition: filter 400ms ease-in, -webkit-filter 400ms ease-in;
 }
 article img.lazyloaded {
     -webkit-filter: blur(0);
@@ -707,7 +707,7 @@ article h2:before {
     left: -20px;
 }
 article h2:after {
-    transition: all .35s;
+    transition: all .35s ease-in;
     content:"";
     position:absolute;
     background: rgba(255, 78, 106, .85);
@@ -891,8 +891,8 @@ details[open] > summary .remove {
     right:3px!important;
     -webkit-box-shadow:0 0 5px 0 rgba(0, 0, 0, .18)!important;
     box-shadow:0 0 5px 0 rgba(0, 0, 0, .18)!important;
-    -webkit-transition:all .35s;
-    transition:all .35s
+    -webkit-transition: all .35s ease-in;
+    transition: all .35s ease-in;
 }
 .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar, .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
     border-radius:6px;
