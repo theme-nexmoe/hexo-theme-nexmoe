@@ -16,10 +16,10 @@
 <img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
 </p>
 
-### 教程
+## 🎓 教程
 请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
 
-### 演示
+## 💻 演示
 
 - [Nexmoe](https://nexmoe.com/)
 - [深海小涛](https://hexo.xtaolink.cn/)
@@ -28,18 +28,18 @@
 
 > 欢迎将你的网站提交到这里来
 
-### 移植版
+## 🎇 移植版
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
 
 > 完全 Copy Hexo 版本的样式
 
-### 修改版
+## 🎆 修改版
  - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
  - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
 
 > 与官方版略有不同
 
-### 🌏 国际化
+## 🌏 国际化
 
 支持多语言，默认语言为简体中文。
 目前中文翻译较全，其他语言翻译不完全，有余力的大佬可以来贡献一下
@@ -47,17 +47,17 @@
 
 > 非常欢迎你帮助我们将 Nexmoe 翻译至其他语言！
 
-### 许可证
+## 📄 许可证
 
 <a href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/hexo-theme-nexmoe.svg"/></a>
 
 根据 Apache License 2.0 许可证开源。
 
-### 后续更新
+## 🍻 后续更新
 就读高中，
 star 以及 issue 是我更新的动力!
 欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
 
-### 交流
+## 💬 交流
 论坛提问：https://club.chainwon.com/t/nexmoe
 主题讨论群：614621637
