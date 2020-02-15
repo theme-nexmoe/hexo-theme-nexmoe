@@ -1,47 +1,71 @@
-<style>
-    #nexmoe-content .nexmoe-archives .nexmoe-post .nexmoe-post-cover {
-        max-height: 75px;
-    }
-</style>
+<% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
 <section class="nexmoe-archives">
-    <% page.posts.each(function (page) { %>
-    <div class="nexmoe-post">
-        <a href="<%- url_for(page.path) %>">
-            <% if (page.cover){ %>
-                <div class="nexmoe-post-cover mdui-ripple"> 
-                    <img data-src="<%- page.cover %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
-                    <h1><%= page.title %></h1>
-                </div>
-            <% } else { %>
-                <div class="nexmoe-post-cover mdui-ripple"> 
-                    <img data-src="<%- theme.background.path %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
-                    <h1><%= page.title %></h1>
-                </div>
-            <% } %>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-            <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
-            <% if (page.categories && page.categories.length){ %>
-                <%- list_categories(page.categories, {
-                    show_count: false,
-                    class: 'nexmoefont icon-appstore-fill ',
-                    style: 'none',
-                    separator: ''
-                }) %>
-            <% } %>
-            <% if (page.tags && page.tags.length){ %>
-                <%- list_tags(page.tags, {
-                    show_count: false,
-                    class: 'nexmoefont icon-tag-fill ',
-                    style: 'none',
-                    separator: ' '
-                }) %>
-            <% } %>
-        </div>
-        <div style="height: 50px;"></div>
-    </div>
-    <% }) %>
+
+    <article>
+        <% function buildArchive(posts, year) { %>
+            <h2><%= year %></h2>
+            <ul>
+            <% posts.each(post => { %>
+                <li><span><%= date(post.date, 'MM-DD') %></span><a href="<%- url_for(post.path) %>" ><%- post.title %></a></li>
+            <% }) %>
+            </ul>
+        <% } %>
+
+        <% if (!page.year) {
+            let years = {};
+            page.posts.each(post => years[post.date.year()] = null);
+            
+            for (let year of Object.keys(years).sort((a, b) => b - a)) {
+                let posts = page.posts.filter(p => p.date.year() == year);
+                buildArchive(posts, year)
+            }
+        } 
+        %>
+    </article>
 </section>
-<%- partial('_partial/paginator') %>
+
+<style>
+.nexmoe-archives article > *:first-child {
+    margin-top: 0;
+}
+.nexmoe-archives article > *:last-child {
+    margin-bottom: 0;
+}
+.nexmoe-archives ul {
+    list-style: none;
+    padding-left: 0!important;
+}
+.nexmoe-archives li {
+    position: relative;
+    padding: 10px 0;
+}
+.nexmoe-archives li::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #ff4e6a;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 11px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    z-index: 100;
+    position: relative;
+}
+.nexmoe-archives li::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 78, 106, 0.2);
+    position: absolute;
+    left: 6px;
+    top: 20px;
+}
+.nexmoe-archives li:last-child:after {
+    display: none;
+}
+.nexmoe-archives span {
+    margin-right: 15px;
+}
+</style>

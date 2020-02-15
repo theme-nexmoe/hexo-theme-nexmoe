@@ -1,8 +1,6 @@
 <div class="nexmoe-post">
   <% if (page.cover){ %>
-      <div class="nexmoe-post-cover" 
-          style="padding-bottom: <%- page.coverHeight/page.coverWidth*100 %>%;"
-      > 
+      <div class="nexmoe-post-cover" style="padding-bottom: <%- page.coverHeight/page.coverWidth*100 %>%;"> 
           <img data-src="<%- page.cover %>" data-sizes="auto" alt="<%= page.title %>" class="lazyload">
           <h1><%= page.title %></h1>
       </div>
@@ -12,28 +10,8 @@
           <h1><%= page.title %></h1>
       </div>
   <% } %>
-  <div class="nexmoe-post-meta">
-    <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-    <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
-    <% if (page.categories && page.categories.length){ %>
-      <%- list_categories(page.categories, {
-        show_count: false,
-        class: 'nexmoefont icon-appstore-fill ',
-        style: 'none',
-        separator: ''
-      }) %>
-    <% } %>
-    <% if (page.tags && page.tags.length){ %>
-      <%- list_tags(page.tags, {
-        show_count: false,
-        class: 'nexmoefont icon-tag-fill ',
-        style: 'none',
-        separator: ' '
-      }) %>
-    <% } %>
-    
-  </div>
+  
+  <%- partial('_partial/_post/meta') %>
 
   <div class="nexmoe-post-right">
     <% if (page.toc || theme.function.globalToc){ %>
@@ -50,8 +28,13 @@
   <article>
     <%- image_auto_lazyload(page.content) %>
   </article>
-  <% if (!page.reprint){ %>
-    <%- partial('_partial/copyright') %>
-  <% } %>
-  <%- partial('_partial/comment') %>
+
+  <%- partial('_partial/_post/tag') %>
+
+  <div class="nexmoe-post-footer">
+    <% if (!page.reprint){ %>
+      <%- partial('_partial/copyright') %>
+    <% } %>
+    <%- partial('_partial/comment') %>
+  </div>
 </div>

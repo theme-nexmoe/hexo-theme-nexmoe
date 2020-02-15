@@ -1,0 +1,5 @@
+<div class="nexmoe-post-meta" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+    <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
+</div>

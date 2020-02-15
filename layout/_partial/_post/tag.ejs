@@ -1,0 +1,18 @@
+<div class="nexmoe-post-meta">
+    <% if (page.categories && page.categories.length){ %>
+        <%- list_categories(page.categories, {
+            show_count: false,
+            class: 'nexmoefont icon-appstore-fill ',
+            style: 'none',
+            separator: ''
+        }) %>
+    <% } %>
+    <% if (page.tags && page.tags.length){ %>
+        <%- list_tags(page.tags, {
+            show_count: false,
+            class: 'nexmoefont icon-tag-fill ',
+            style: 'none',
+            separator: ' '
+        }) %>
+    <% } %>
+</div>
