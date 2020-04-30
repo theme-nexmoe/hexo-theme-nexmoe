@@ -28,6 +28,10 @@
 
 > 欢迎将你的网站提交到这里来
 
+## 💻 贡献者
+
+![](https://opencollective.com/hexo-theme-nexmoe/contributors.svg)
+
 ## 🎇 移植版
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
 
