@@ -11,6 +11,9 @@ InstantClick.init();
 InstantClick.on('change', function() {
     loadMeting();
     mdui.mutation();
+    $("table")
+    .has("img")
+    .addClass("nexmoe-album");
     document.querySelectorAll('pre code').forEach((block) => {
         hljs.highlightBlock(block);
     });
