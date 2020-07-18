@@ -29,12 +29,13 @@
     <%- image_auto_lazyload(page.content) %>
   </article>
 
+  <% if (!page.reprint){ %>
+    <%- partial('_partial/copyright') %>
+  <% } %>
+  
   <%- partial('_partial/_post/tag') %>
 
   <div class="nexmoe-post-footer">
-    <% if (!page.reprint){ %>
-      <%- partial('_partial/copyright') %>
-    <% } %>
     <%- partial('_partial/comment') %>
   </div>
 </div>
