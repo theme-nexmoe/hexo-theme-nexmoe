@@ -50,6 +50,11 @@ widgets:
 maxTagcloud: 0  # 0 表示不限制
 
 social:
+  QQ群: 
+    - https://jq.qq.com/?_wv=1027&k=5CfKHun
+    - icon-QQ
+    - rgb(249, 174, 8)
+    - rgba(249, 174, 8, .1)
   哔哩哔哩:
     - https://space.bilibili.com/20238211
     - icon-bilibili
