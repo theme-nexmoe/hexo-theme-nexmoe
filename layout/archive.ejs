@@ -14,14 +14,8 @@
         <%
         if (!page.year) {
             let years = {};
-            let allpost = [];
-            if(page.tag){
-                allpost = site.tags.findOne({name: page.tag}).posts;
-                allpost.each(p => years[p.date.year()] = null);
-            } else {
-                allpost = site.posts;
-                site.posts.each(post => years[post.date.year()] = null);
-            }
+            let allpost = page.tag ? site.tags.findOne({name: page.tag}).posts :  site.posts;
+            allpost.each(post => years[post.date.year()] = null);
             for (let year of Object.keys(years).sort((a, b) => b - a)) {
                 let posts = allpost.filter(p => p.date.year() == year);
                 buildArchive(posts, year)
