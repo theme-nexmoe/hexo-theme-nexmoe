@@ -5,21 +5,26 @@
         <% function buildArchive(posts, year) { %>
             <h2><%= year %></h2>
             <ul>
-            <% posts.each(post => { %>
+            <% posts.sort('date',-1).each(post => { %>
                 <li><span><%= date(post.date, 'MM-DD') %></span><a href="<%- url_for(post.path) %>" ><%- post.title %></a></li>
             <% }) %>
             </ul>
         <% } %>
 
-        <% if (!page.year) {
+        <%
+        if (!page.year) {
             let years = {};
-            page.posts.each(post => years[post.date.year()] = null);
-            
+            let allpost = page.tag ? site.tags.findOne({name: page.tag}).posts :  site.posts;
+            allpost.each(post => years[post.date.year()] = null);
             for (let year of Object.keys(years).sort((a, b) => b - a)) {
-                let posts = page.posts.filter(p => p.date.year() == year);
+                let posts = allpost.filter(p => p.date.year() == year);
                 buildArchive(posts, year)
             }
-        } 
+        } else {
+			let year = page.year;
+			let posts = site.posts.filter(p => p.date.year() == year);
+			buildArchive(posts, year)
+        }
         %>
     </article>
 </section>
@@ -70,4 +75,5 @@
 .nexmoe-archives span {
     margin-right: 15px;
 }
+
 </style>
