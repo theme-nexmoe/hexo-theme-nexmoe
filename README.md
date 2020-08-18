@@ -40,7 +40,7 @@
 ## 🎆 修改版
  - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
  - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
- - hexo-Dark： https://github.com/mimangren/hexo-theme-dark
+ - hexo-Dark： https://github.com/confuseder/hexo-theme-dark
 
 > 与官方版略有不同
 
