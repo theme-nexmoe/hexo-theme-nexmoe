@@ -29,7 +29,6 @@ for (let link of links) {
   }
 }
 
-var $ = mdui.JQ;
 $("table")
   .has("img")
   .addClass("nexmoe-album");
