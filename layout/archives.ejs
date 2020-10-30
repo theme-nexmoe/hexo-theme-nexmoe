@@ -1,0 +1,30 @@
+<% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
+<section class="nexmoe-archives">
+
+    <article>
+        <% function buildArchive(posts, year) { %>
+            <h2><%= year %></h2>
+            <ul>
+            <% posts.sort('date',-1).each(post => { %>
+                <li><span><%= date(post.date, 'MM-DD') %></span><a href="<%- url_for(post.path) %>" ><%- post.title %></a></li>
+            <% }) %>
+            </ul>
+        <% } %>
+
+        <%
+        if (!page.year) {
+            let years = {};
+            let allpost = page.tag ? site.tags.findOne({name: page.tag}).posts :  site.posts;
+            allpost.each(post => years[post.date.year()] = null);
+            for (let year of Object.keys(years).sort((a, b) => b - a)) {
+                let posts = allpost.filter(p => p.date.year() == year);
+                buildArchive(posts, year)
+            }
+        } else {
+			let year = page.year;
+			let posts = site.posts.filter(p => p.date.year() == year);
+			buildArchive(posts, year)
+        }
+        %>
+    </article>
+</section>
