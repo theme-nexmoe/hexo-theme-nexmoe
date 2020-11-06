@@ -1,0 +1,65 @@
+article.nexmoe-py > *:first-child {
+    margin-top: 0!important;
+}
+article.nexmoe-py ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+article.nexmoe-py ul li {
+    transition: all .03s;
+    width: calc(12.5% - 10px);
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-size: 0;
+    overflow: hidden;
+}
+article.nexmoe-py ul li > a {
+    padding-top: 100%;
+    display: block;
+    position: relative;
+}
+article.nexmoe-py ul li > a::after {
+    font-size: 13px;
+    color: #606266;
+    -webkit-transition: none;
+    transition: none;
+    content: attr(title);
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 3px 10px 5px 10px;
+    margin-top: -2px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+article.nexmoe-py ul li img {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+article.nexmoe-py ul li img.lazyload {
+    padding-bottom: 100%;
+    opacity: 0;
+}
+article.nexmoe-py ul li img.lazyloaded {
+    padding-bottom: 0;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    article.nexmoe-py ul li {
+        width: calc(33.3333333333% - 10px);
+    }
+}
