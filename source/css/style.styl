@@ -1,9 +1,10 @@
-$gutter  = 25px
+$gutter = 25px
 $radius = 15px
 
 @import './archives.styl';
 @import './article.styl';
 @import './py.styl';
+
 *
 *::after 
 *::before {
@@ -310,13 +311,13 @@ body {
     .nexmoe-post {
             .nexmoe-post-cover {
                 width: 100%;
+                padding-bottom: 66%;
                 position: relative;
                 overflow: hidden;
                 border-radius: $radius;
                 min-height: 95px;
                 background-color: #eee;
                 img {
-                    width: 100%;
                     display: block;
                     opacity: 0;
 		            transition: opacity 400ms ease-out;
@@ -325,6 +326,9 @@ body {
                     top: 0;
                     border-radius: $radius;
                     border: 1px solid #eee;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
                 }
                 img.lazyloaded {
                     opacity: 1;
