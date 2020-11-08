@@ -1,9 +1,25 @@
-<% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
 <section class="nexmoe-archives">
+    
     <div class="tagcloud nexmoe-rainbow">
-        <%- tagcloud() %>
+        <%- list_tags({
+            show_count: true,
+            style: "unordered list",
+            class: "mdui-ripple ",
+            separator: ""
+        }) %>
     </div>
+
+    <div class="categories nexmoe-rainbow">
+        <%- list_categories({
+            show_count: true,
+            style: "unordered list",
+            class: "mdui-ripple ",
+            separator: ""
+        }) %>
+    </div>
+    
     <article>
+        <% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
         <% function buildArchive(posts, year) { %>
             <h2><%= year %></h2>
             <ul>
