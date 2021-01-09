@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "13553517",
+      "name": "douban-fill",
+      "font_class": "douban-fill",
+      "unicode": "eeae",
+      "unicode_decimal": 61102
+    },
+    {
       "icon_id": "13253915",
       "name": "coffee",
       "font_class": "coffee",
