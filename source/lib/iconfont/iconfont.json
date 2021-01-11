@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "10214",
+      "name": "图",
+      "font_class": "tuchong",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1314961",
+      "name": "站酷",
+      "font_class": "zhanku",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
       "icon_id": "13553517",
       "name": "douban-fill",
       "font_class": "douban-fill",
