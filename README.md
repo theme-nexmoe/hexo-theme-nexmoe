@@ -68,3 +68,8 @@ star 以及 issue 是我更新的动力!
 
 ## 💬 交流
 主题讨论群：614621637
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/theme-nexmoe/hexo-theme-nexmoe.svg)](https://starchart.cc/theme-nexmoe/hexo-theme-nexmoe)
+      
