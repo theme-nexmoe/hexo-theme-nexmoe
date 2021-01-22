@@ -1,8 +1,8 @@
 {
 	"name": "hexo-theme-nexmoe",
 	"version": "2.3.0",
-    "description": "🔥 A special hexo theme.",
-    "keywords": [
+	"description": "🔥 A special hexo theme.",
+	"keywords": [
 		"hexo",
 		"theme",
 		"nexmoe"
@@ -24,5 +24,8 @@
 	"homepage": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
 	"devDependencies": {
 		"eslint": "^7.16.0"
+	},
+	"dependencies": {
+		"hexo-wordcount": "^6.0.1"
 	}
 }
