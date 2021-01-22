@@ -21,28 +21,30 @@
 
 ## 💻 演示
 
+欢迎将你的网站提交到这里来
+
 - [Nexmoe](https://nexmoe.com/)
 - [深海小涛](https://hexo.xtaolink.cn/)
 - [西瓜星 🍉✨](https://suikastar.com/)
 - [我妻善逸](http://fguby.love/)
-
-> 欢迎将你的网站提交到这里来
 
 ## 💻 贡献者
 
 ![](https://opencollective.com/hexo-theme-nexmoe/contributors.svg)
 
 ## 🎇 移植版
+
+完全 Copy Hexo 版本的样式
+
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
 
-> 完全 Copy Hexo 版本的样式
-
 ## 🎆 修改版
+
+与官方版略有不同
+
  - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
  - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
  - hexo-Dark： https://github.com/confuseder/hexo-theme-dark
-
-> 与官方版略有不同
 
 ## 🌏 国际化
 
