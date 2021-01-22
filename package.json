@@ -1,0 +1,28 @@
+{
+	"name": "hexo-theme-nexmoe",
+	"version": "2.3.0",
+    "description": "🔥 A special hexo theme.",
+    "keywords": [
+		"hexo",
+		"theme",
+		"nexmoe"
+	],
+	"author": "Nexmoe (https://github.com/nexmoe)",
+	"license": "Apache-2.0",
+	"main": "package.json",
+	"scripts": {
+		"eslint": "eslint scripts/ source/js --fix",
+		"test": "echo test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/theme-nexmoe/hexo-theme-nexmoe.git"
+	},
+	"bugs": {
+		"url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues"
+	},
+	"homepage": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+	"devDependencies": {
+		"eslint": "^7.16.0"
+	}
+}

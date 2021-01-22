@@ -2,7 +2,7 @@
 
 *.log
 
-_config.yml
+
 
 node_modules
 

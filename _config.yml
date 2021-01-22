@@ -1,0 +1,144 @@
+avatar: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png # 网站 Logo
+background: # 既是博客的背景，又是文章默认头图
+  path: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg
+  width: 1440
+  height: 960
+favicon:
+  href: /favicon.ico # 网站图标
+  type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+
+function: # 功能开关，可选值（true,false）
+  globalToc: false # 开启该功能会自动开启文章 TOC（文章目录） 功能
+  
+# 附加图标库 用于自定义字体 www.iconfont.cn 登录->创建项目->添加图标->获取链接
+iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
+
+search: https://cn.bing.com/search?q=site:nexmoe.com # https://www.google.com/search?q={你的博客链接}
+
+cdn: # 这里可以修改站点使用的库的CDN
+  disqusjs: 
+    css: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.min.css
+    js: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.min.js
+  gitalk:
+    css: https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css
+    js: https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js
+  valine:
+    js: https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js
+  copy: https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js
+
+menu:
+  回到首页: 
+    - /
+    - icon-home
+#  文章归档: 
+#    - /archives
+#    - icon-container
+  关于博客:
+    - /about.html
+    - icon-info-circle
+  我的朋友: 
+    - /PY.html
+
+widgets:
+- search
+- social
+- category
+- tagcloud
+- archive #settings: widgetAchive
+# - recent_posts
+# - link #settings: widgetLink
+
+maxTagcloud: 0  # 0 表示不限制
+
+social:
+  QQ群: 
+    - https://jq.qq.com/?_wv=1027&k=5CfKHun
+    - icon-QQ
+    - rgb(249, 174, 8)
+    - rgba(249, 174, 8, .1)
+  哔哩哔哩:
+    - https://space.bilibili.com/20238211
+    - icon-bilibili
+    - rgb(231, 106, 141)
+    - rgba(231, 106, 141, .15)
+  GitHub:
+    - https://github.com/nexmoe/
+    - icon-github
+    - rgb(25, 23, 23)
+    - rgba(25, 23, 23, .15)
+
+site_verification: # 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
+  google:
+  baidu:
+
+analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
+  google_site_id: #<ID>
+  gtags_site_id: #<ID>
+  cnzz_site_id: #<ID>
+  tencent_site_id: #<ID>
+  la_site_id: #<ID>
+  baidu_site_id: #<ID>
+  gtm_container_id: #<ID>
+
+comment: gitalk # 评论框，目前支持 gitalk,gitment,valine,disqus,disqusjs,changyan,livere,DiscussBot
+
+gitalk:
+  admin: nexmoe # 拥有对该repo进行操作的 GitHub username
+  owner: nexmoe # 持有该 repo 的 GitHub username
+  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
+  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
+
+gitment:
+  owner: nexmoe # 持有该 repo 的 GitHub username
+  repo: nexmoe.github.io # 存放评论的 issue 所在的 repo
+  clientID: 80b2453b6d5f37ad6225 # GitHub Client ID
+  clientSecret: 43e99fa852795c9a7b3eb924b2558c64b84bbdeb # GitHub Client Secret
+
+valine: 
+  appId: <API_ID> # leancloud application app id
+  appKey: <API_Key> # leancloud application app key
+
+disqus:
+  shortname: <shortname> # 你的 Disqus shortname
+
+disqusjs:
+  shortname: <shortname> # 你的 Disqus shortname
+  sitename: <sitename> # 你站点的名称，将会显示在「评论基础模式」的 header 中；该配置应该和 Disqus Admin - Settings - General - Website Name 一致
+  api: https://disqus.skk.moe/disqus/ # DisqusJS 请求的 API Endpoint，通常情况下你应该配置一个 Disqus API 的反代并填入反代的地址。你也可以直接使用 DISQUS 官方 API 的 Endpoint https://disqus.com/api/，或是使用SukkaW搭建的 Disqus API 反代 Endpoint https://disqus.skk.moe/disqus/。
+  apikey: <api_key> # DisqusJS 向 API 发起请求时使用的 API Key，你应该在配置 Disqus Application 时获取了 API Key;DisqusJS 支持填入一个 包含多个 API Key 的 Array，在每次请求时会随机使用其中一个；如果你只需要填入一个 API Key，则可以填入 String 或 Array。
+  admin: <admin> # 你的站点的 Disqus Moderator 的用户名（也就是你的用户名）。你可以在 Disqus - Settings - Account - Username 获取你的 Username
+  adminLabel: <adminLabel> # 你想显示在 Disqus Moderator Badge 中的文字。该配置应和 Disqus Admin - Settings - Community - Moderator Badge Text 相同
+
+changyan:
+  appid: <APP_ID> # 畅言的 APPID
+  conf: <CONF> # 畅言的 CONF
+  thread_key_type: path # 可选 id 或 path
+
+livere:
+  data_uid: <data_uid> # 你的来必力 UID，可以在来必力后台获取
+
+DiscussBot:
+  id: <id> # 站点id
+  comments: 5 # 可能是限制每位用户单页面评论最多条数？
+  color: # 评论框主色调
+  dislike: 0 # 显示差评按钮
+  icons: 0 # 图标主题
+  diff: 0 # 每位用户name不同颜色
+
+copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
+
+
+
+# achive widget behavior
+widgetAchive: #文章归档组件
+  archive_type: 'year' #按月展示还是按年展示
+  show_count: true  #是否展示数量
+
+widgetLink: #链接组件
+  - title: <title>
+    img : <img_path>
+    link : <url>
+  - title: <title>
+    img : <img_path>
+    link : <url>
