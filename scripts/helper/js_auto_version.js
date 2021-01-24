@@ -5,7 +5,7 @@ function jsAutoVersionHelper(...args) {
         if (i) result += '\n';
 
         if (Array.isArray(path)) {
-            return result + Reflect.apply(jsHelper, this, path);
+            return result + Reflect.apply(jsAutoVersionHelper, this, path);
         }
         if (!path.includes('?') && !path.endsWith('.js')) path += '.js';
         let url_suffix = "?v=" + new Date().getTime();
