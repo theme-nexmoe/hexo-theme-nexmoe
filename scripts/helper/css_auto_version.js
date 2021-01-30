@@ -5,7 +5,7 @@ function cssAutoVersionHelper(...args) {
         if (i) result += '\n';
 
         if (Array.isArray(path)) {
-            return result + Reflect.apply(cssHelper, this, path);
+            return result + Reflect.apply(cssAutoVersionHelper, this, path);
         }
         if (!path.includes('?') && !path.endsWith('.css')) path += '.css';
         let url_suffix = "?v=" + new Date().getTime();
