@@ -9,3 +9,11 @@
 <% if (theme.cdn.copy) { %>
 <script src="<%- theme.cdn.copy %>"></script>
 <% } %> <%- js_auto_version('js/app') %>
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 200,
+		margins: 10,
+	});
+</script>
