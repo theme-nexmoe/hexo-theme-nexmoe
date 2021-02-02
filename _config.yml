@@ -128,8 +128,6 @@ DiscussBot:
 
 copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
 
-
-
 # achive widget behavior
 widgetAchive: #文章归档组件
   archive_type: 'year' #按月展示还是按年展示
@@ -142,3 +140,5 @@ widgetLink: #链接组件
   - title: <title>
     img : <img_path>
     link : <url>
+
+sidebar: ''
