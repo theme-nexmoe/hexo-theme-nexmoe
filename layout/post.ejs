@@ -18,7 +18,10 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <%- toc(page.content, {list_number: true}) %>
+                <% const toc_obj = toc(page.content, {list_number: true}); %>
+                <% if (toc_obj.length > 0) { %>
+                  <%- toc_obj %>
+                <% } %>
             </div>
         </div>
       </div>
