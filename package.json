@@ -1,5 +1,5 @@
 {
-	"name": "hexo-theme-nexmoe",
+	"name": "@theme-nexmoe/hexo-theme-nexmoe",
 	"version": "2.5.4",
 	"description": "🔥 A special hexo theme.",
 	"keywords": [
@@ -16,7 +16,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/theme-nexmoe/hexo-theme-nexmoe.git"
+		"url": "git://github.com/theme-nexmoe/hexo-theme-nexmoe.git"
 	},
 	"bugs": {
 		"url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues"
@@ -27,5 +27,8 @@
 	},
 	"dependencies": {
 		"hexo-wordcount": "^6.0.1"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/nexmoe"
 	}
 }
