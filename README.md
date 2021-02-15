@@ -1,10 +1,6 @@
 
 ![预览图](cover.png)
 
-<h1><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
-
-> 一个比较特别的 Hexo 主题
-
 ## ✨ 特性
  - 图片懒加载
  - 内置多语言
