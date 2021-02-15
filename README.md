@@ -1,11 +1,11 @@
 
 ![预览图](cover.png)
 
-<h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
+<h1><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
 
 > 一个比较特别的 Hexo 主题
 
-<p align="center">
+<p>
 <img alt="star" src="https://img.shields.io/github/stars/nexmoe/hexo-theme-nexmoe.svg"/>
 <img alt="fork" src="https://img.shields.io/github/forks/nexmoe/hexo-theme-nexmoe.svg"/>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nexmoe/hexo-theme-nexmoe.svg?label=commits">
