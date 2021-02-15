@@ -28,8 +28,6 @@
 
 ## 🎇 其他版本
 
-完全 Copy Hexo 版本的样式
-
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
  - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
  - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
