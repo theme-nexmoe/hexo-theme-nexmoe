@@ -38,19 +38,14 @@
 :triangular_flag_on_post: [报告错误](https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues/new) |
 :electric_plug: [提交新功能](https://github.com/theme-nexmoe/hexo-theme-nexmoe/pulls)
 
-## 🎇 移植版
+## 🎇 其他版本
 
 完全 Copy Hexo 版本的样式
 
  - Typecho：https://github.com/nexmoe/typecho-theme-nexmoe
-
-## 🎆 修改版
-
-与官方版略有不同
-
  - Hexo-Saigyou_Ayakashi: https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme
  - Solo-InkDP：https://github.com/InkDP/solo-nexmoe
- - hexo-Dark： https://github.com/confuseder/hexo-theme-dark
+ - Hexo-Dark： https://github.com/confuseder/hexo-theme-dark
 
 ## 🌏 国际化
 
