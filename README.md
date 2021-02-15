@@ -33,10 +33,10 @@
 
 ## 🎉 贡献
 
-:black_nib: [完善教程](https://github.com/theme-nexmoe/docs) |
-:earth_asia: [完善翻译](https://github.com/theme-nexmoe/hexo-theme-nexmoe/tree/master/languages) |
-:triangular_flag_on_post: [报告错误](https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues/new) |
-:electric_plug: [提交新功能](https://github.com/theme-nexmoe/hexo-theme-nexmoe/pulls)
+[完善教程](https://github.com/theme-nexmoe/docs) |
+[完善翻译](https://github.com/theme-nexmoe/hexo-theme-nexmoe/tree/master/languages) |
+[报告错误](https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues/new) |
+[提交新功能](https://github.com/theme-nexmoe/hexo-theme-nexmoe/pulls)
 
 ## 🎇 其他版本
 
