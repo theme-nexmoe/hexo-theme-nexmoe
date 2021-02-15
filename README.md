@@ -26,13 +26,6 @@
 
 ![贡献者](https://opencollective.com/hexo-theme-nexmoe/contributors.svg?width=890&button=false)
 
-## 🎉 贡献
-
-[完善教程](https://github.com/theme-nexmoe/docs) |
-[完善翻译](https://github.com/theme-nexmoe/hexo-theme-nexmoe/tree/master/languages) |
-[报告错误](https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues/new) |
-[提交新功能](https://github.com/theme-nexmoe/hexo-theme-nexmoe/pulls)
-
 ## 🎇 其他版本
 
 完全 Copy Hexo 版本的样式
