@@ -16,6 +16,16 @@
 <img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
 </p>
 
+## ✨ 特性
+ - 图片懒加载
+ - 内置多语言
+ - 支持多款评论插件
+ - 网页访问统计
+ - 侧栏备案信息
+ - 灯箱大图
+ - 图片瀑布流
+ - 社交按钮
+
 ## 🎓 教程
 请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
 
@@ -29,7 +39,7 @@
 
 ## 💻 贡献者
 
-![](https://opencollective.com/hexo-theme-nexmoe/contributors.svg)
+![贡献者](https://opencollective.com/hexo-theme-nexmoe/contributors.svg?width=890&button=false)
 
 ## 🎉 贡献
 
@@ -70,8 +80,4 @@ star 以及 issue 是我更新的动力!
 欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
 
 主题讨论群：614621637
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/theme-nexmoe/hexo-theme-nexmoe.svg)](https://starchart.cc/theme-nexmoe/hexo-theme-nexmoe)
       
