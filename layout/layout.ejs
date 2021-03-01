@@ -56,13 +56,11 @@
     <div class="nexmoe-primary">
         <%- body %>
         <div class="nexmoe-post-right">
-          <% if (page.toc || theme.function.globalToc){ %>
-            <div class="nexmoe-fixed">
-              <div class="nexmoe-tool">
-                <a href="#" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
-              </div>
+          <div class="nexmoe-fixed">
+            <div class="nexmoe-tool">
+              <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
             </div>
-          <%} %>
+          </div>
         </div>
     </div>
   </div>
