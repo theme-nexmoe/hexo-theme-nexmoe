@@ -47,7 +47,8 @@
 
 根据 Apache License 2.0 许可证开源。
 
-## 请我喝奶茶
+## 赞助我促进更新
+爱发电链接：https://afdian.net/@nexmoe
 ![支付二维码](https://i.speed.moe/images/d2c45ec8fb10867e4c2d53ded62fbfb6.png)
 
 ## 🍻 后续更新
