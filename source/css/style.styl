@@ -1,12 +1,13 @@
 $gutter = 25px
-$radius = 15px
+$radius = 13px
+$color = #ff4e6a
 
 @import '_partial/archives.styl';
 @import '_partial/article.styl';
 @import '_partial/py.styl';
 
 *
-*::after 
+*:after 
 *::before {
     box-sizing border-box
 }
@@ -122,12 +123,13 @@ body {
         }
     }
     .nexmoe-social {
-        padding: 5px;
+        padding: 12px;
+        font-size: 0;
         a {
             width: 36px;
             height: 36px;
             line-height: 36px;
-            margin: 5px;
+            margin: 4px;
             border-radius: 100%;
             display: inline-block;
             text-align: center;
@@ -151,8 +153,8 @@ body {
         
         .nexmoe-list-item.active {
             opacity: .9;
-            background: #ff4e6a;
-            box-shadow: 0 2px 12px #ff4e6a;
+            background: $color;
+            box-shadow: 0 2px 12px $color;
         }
         .nexmoe-list-item i {
             font-size: 22px;
@@ -171,11 +173,11 @@ body {
             overflow: hidden;
             white-space: normal;
             .nexmoe-widget-title {
-                font-size: 1.2em;
-                font-weight: normal;
-                padding: 12px 10px 10px;
-                border-bottom: 1px solid #eee;
+                font-size: 1em;
+                font-weight: 400;
+                padding: 24px 18px 12px;
                 margin: 0;
+                color $color
             }
             .nexmoe-widget {
                 ul {
@@ -186,19 +188,18 @@ body {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
-                        border-bottom: 1px solid #eee;
                         position: relative;
+                        padding: 12px 18px;
                         a {
-                            padding: 14px 10px;
-                            display: block;
                             color: #606266;
                         }
                     }
                     li:last-child {
                         border-bottom: none;
+                        padding-bottom: 24px;
                     }
                 }
-                .category-list-count {
+                .category-list-count, .archive-list-count {
                     background-color: rgba(255, 78, 106, .1);
                     display: inline-block;
                     width: 26px;
@@ -208,7 +209,7 @@ body {
                     border-radius: 100%;
                     color: rgba(255, 78, 106, 1);
                     position: absolute;
-                    right: 10px;
+                    right: 18px;
                     top: 10px;
                 }
             }
@@ -274,9 +275,9 @@ body {
             }
             .current {
                 color: #fff;
-                background: #ff4e6a;
+                background: $color;
                 opacity: .9;
-                box-shadow: 0 2px 12px #ff4e6a;
+                box-shadow: 0 2px 12px $color;
             }
         }
         .nexmoe-page-nav > * {
@@ -314,7 +315,7 @@ body {
                 padding-bottom: 56.25%;
                 position: relative;
                 overflow: hidden;
-                border-radius: $radius;
+                border-radius: 16px;
                 min-height: 95px;
                 background-color: #eee;
                 img {
@@ -324,8 +325,7 @@ body {
                     position: absolute;
                     left: 0;
                     top: 0;
-                    border-radius: $radius;
-                    border: 1px solid #eee;
+                   
                     object-fit: cover;
                     width: 100%;
                     height: 100%;
@@ -420,7 +420,7 @@ body {
     }
 
 }
-#nexmoe-content::after{
+#nexmoe-content:after{
     clear: both;
     display: table;
     content: ' ';
@@ -480,13 +480,13 @@ body {
 }
 
 article .mdui-btn {
-	background-color: #ff4e6a;
+	background-color: $color;
 	color: #fff;
 	border-radius: 10px;
 }
 
 article .mdui-btn:focus, article .mdui-btn:hover {
-	background-color: #ff4e6a;
+	background-color: $color;
 	color: #fff;
 }
 
@@ -567,9 +567,9 @@ font.douyin {
     }
     #nexmoe-header .nexmoe-social a {
         margin: 10px;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
     }
 }
 

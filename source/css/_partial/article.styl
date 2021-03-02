@@ -44,7 +44,7 @@ article pre::before {
 	display: block;
 }
 
-article pre::after {
+article pre:after {
 	// content: " ";
 	position: absolute;
 	border-radius: 50%;
@@ -66,7 +66,7 @@ article pre code {
     font-family: Consolas;
 }
 
-article pre code::after {
+article pre code:after {
 	color: #5c6370;
 	position: absolute;
 	top: .5em;
@@ -84,13 +84,13 @@ article pre code::after {
 article a {
 	-webkit-transition: all .35s ease-out;
 	transition: all .35s ease-out;
-	color: #ff4e6a;
+	color: $color;
 	text-decoration: none;
 	word-wrap: break-word
 }
 
 article a:hover, article a:focus {
-	color: #ff4e6a
+	color: $color
 }
 
 article a:hover {
@@ -102,7 +102,7 @@ article p {
 	position: relative;
 }
 
-article p::after {
+article p:after {
 	content: "";
 	clear: both;
 	display: block
@@ -140,8 +140,8 @@ article table.nexmoe-album td {
 	height: 300px;
 }
 
-article table.nexmoe-album th a::after,
-article table.nexmoe-album td a::after {
+article table.nexmoe-album th a:after,
+article table.nexmoe-album td a:after {
 	display: none;
 }
 
@@ -170,7 +170,7 @@ article table.nexmoe-album img {
 
 article img {
 	display: block;
-	border-radius: 10px;
+	border-radius: $radius;
 	border: 1px solid #eee;
 }
 
@@ -197,7 +197,7 @@ article h4:before, article h5:before, article h6:before {
 	display: inline-block;
 	width: 1em;
 	content: '#';
-	color: #ff4e6a
+	color: $color
 }
 
 article h1 {
@@ -225,13 +225,12 @@ article h2:after {
 	transition: all .35s ease-out;
 	content: "";
 	position: absolute;
-	background: rgba(255, 78, 106, 1);
+	background: $color;
 	width: 1em;
 	height: 5px;
 	bottom: -3px;
 	left: 0;
 	border-radius: 10px;
-	box-shadow: 0 2px 12px rgba(255, 78, 106, .85);
 }
 
 article h2:hover:after {
@@ -347,7 +346,7 @@ article > ol > li::before {
     border-radius: 8px;
     line-height: 1.6rem;
     background-color: rgba(255,78,106,.1);
-    color: #ff4e6a;
+    color: $color;
 }
 
 article li {
@@ -495,4 +494,44 @@ details[open] > summary .remove {
 
 .aplayer .aplayer-list ol li.aplayer-list-light {
 	background: #f8f8f8!important
+}
+
+.justified-gallery > a > .jg-caption, .justified-gallery > div > .jg-caption, .justified-gallery > figure > .jg-caption {
+	background-color: transparent
+
+}
+
+.justified-gallery > a > .jg-caption,
+.justified-gallery > div > .jg-caption, 
+.justified-gallery > figure > .jg-caption {
+	padding: 10px;
+	transition: all .35s ease-out!important;
+}
+
+
+.justified-gallery > a > .jg-caption.jg-caption-visible, .justified-gallery > div > .jg-caption.jg-caption-visible, .justified-gallery > figure > .jg-caption.jg-caption-visible {
+	opacity 0.99
+
+}
+
+.justified-gallery > a > .jg-caption:after, 
+.justified-gallery > div > .jg-caption:after, 
+.justified-gallery > figure > .jg-caption:after {
+    background-image: -moz-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
+    background-image: -webkit-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
+    background-image: -ms-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
+    background-image: linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
 }
