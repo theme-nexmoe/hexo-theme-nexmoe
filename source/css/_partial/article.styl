@@ -447,6 +447,51 @@ details[open] > summary .remove {
 	display: inline-block;
 }
 
+article ul {
+    list-style: none;
+    padding-left: 0!important;
+}
+
+article li {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 25px;
+}
+
+article li::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: #ff4e6a;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 11px;
+    margin-left: -25px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    z-index: 100;
+    position: relative;
+}
+
+article li::after {
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 78, 106, 0.2);
+    position: absolute;
+    left: 6px;
+    top: 20px;
+}
+
+article li:last-child:after {
+    display: none;
+}
+
+article ul span {
+    margin-right: 15px;
+}
+
 .aplayer {
 	-webkit-box-shadow: 0 0 0 1px #eee!important;
 	box-shadow: 0 0 0 1px #eee!important;

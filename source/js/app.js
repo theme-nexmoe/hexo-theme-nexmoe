@@ -42,7 +42,6 @@ function search() {
 
 // 平滑跳转同时修复锚点链接被转义
 $(document).ready(function () {
-
   $("a.toc-link").click(function (ev) {
     ev.preventDefault();
     $("html, body").animate({
@@ -52,5 +51,4 @@ $(document).ready(function () {
       easing: "swing"
     });
   });
-  return false;
 });
