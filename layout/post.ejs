@@ -39,6 +39,6 @@
   <%- partial('_partial/_post/tag') %>
 
   <div class="nexmoe-post-footer">
-    <%- partial('_partial/comment') %>
+    <%- theme.comment ? partial('_partial/comment') : '' %>
   </div>
 </div>
