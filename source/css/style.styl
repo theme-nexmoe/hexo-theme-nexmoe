@@ -11,22 +11,26 @@ $color = #ff4e6a
 *::before {
     box-sizing border-box
 }
+
 a {
     text-decoration none
 }
 
 body {
-    max-width: 1200px;
+    max-width: 1160px;
     margin: auto!important;
 }
+
 .medium-zoom-overlay {
     z-index: 9999;
 }
+
 .medium-zoom-image--opened {
     z-index: 9999;
     background: rgba(31, 34, 36, 0.925);
     box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
 }
+
 #nexmoe-background {
     .nexmoe-bg {
         opacity: 0.2;
@@ -49,11 +53,13 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
-    .nexmoe-bg {
-        position: relative;
-    }
-    .mdui-appbar {
-        display: block!important;
+    #nexmoe-background {
+        .nexmoe-bg {
+            position: relative;
+        }
+        .mdui-appbar {
+            display: block!important;
+        }
     }
 }
 
@@ -479,21 +485,7 @@ body {
     }
 }
 
-article .mdui-btn {
-	background-color: $color;
-	color: #fff;
-	border-radius: 10px;
-}
 
-article .mdui-btn:focus, article .mdui-btn:hover {
-	background-color: $color;
-	color: #fff;
-}
-
-font.douyin {
-	text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
-	animation: shake-it .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
 
 @keyframes shake-it {
 	0% {
@@ -631,5 +623,36 @@ photos img {
     a:nth-child(7n+7) {
         background-color: rgba(144, 144, 255,.15);
         color: rgb(144, 144, 255);
+    }
+}
+
+.nexmoe-rainbow-fill {
+    a:nth-child(7n+1) {
+        color:#fff;
+        background-color: rgba(255,78,106,.9);
+    }
+    a:nth-child(7n+2) {
+        color: #fff;
+        background-color: rgb(255, 118, 30,.8);
+    }
+    a:nth-child(7n+3) {
+        color: #fff;
+        background-color: rgb(255, 185, 0,.8);
+    }
+    a:nth-child(7n+4) {
+        color: #fff;
+        background-color: rgb(51, 213, 122,.8);
+    }
+    a:nth-child(7n+5) {
+        color: #fff;
+        background-color: rgb(0, 219, 255,.8);
+    }
+    a:nth-child(7n+6) {
+        color: #fff;
+        background-color: rgb(26, 152, 255,.8);
+    }
+    a:nth-child(7n+7) {
+        color: #fff;
+        background-color: rgb(144, 144, 255,.8);
     }
 }
