@@ -12,7 +12,7 @@
     <div class="categories nexmoe-rainbow-fill">
         <% site.categories.sort('name').map(function(category){  %>
             <% let coverx = "" %>
-            <% category.posts.map(function(post){  %>
+            <% category.posts.sort('-date')..map(function(post){  %>
                 
                 <% if(post.cover!==undefined && coverx==""){ %> 
                     <% coverx = post.cover %> 
