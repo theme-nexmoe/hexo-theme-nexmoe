@@ -10,12 +10,20 @@
     </div>
 
     <div class="categories nexmoe-rainbow-fill">
-        <%- list_categories({
-            show_count: true,
-            style: "unordered list",
-            class: "mdui-ripple ",
-            separator: ""
-        }) %>
+        <% site.categories.sort('name').map(function(category){  %>
+            <% let coverx = "" %>
+            <% category.posts.map(function(post){  %>
+                
+                <% if(post.cover!==undefined && coverx==""){ %> 
+                    <% coverx = post.cover %> 
+                <% } %>
+            <% }) %>
+
+            <a class="mdui-ripple" href="<%= category.permalink %>">
+                <div class="bg" style="background-image:url(<%= coverx %>)"></div>
+                <h1><%= category.name %></h1>
+            </a>
+        <% }) %>
     </div>
     
     <article>

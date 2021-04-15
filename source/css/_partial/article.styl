@@ -1,35 +1,35 @@
 article {
 	color: #444;
-	font-family: microsoft yahei
+	font-family: microsoft yahei;
 }
 
 article p {
-	line-height: 24px
+	line-height: 24px;
 }
 
 article code {
-	background-color: rgba(27,31,35,.05);
+	background-color: rgba(27, 31, 35, 0.05);
 	border-radius: 10px;
 	font-size: 85%;
-	padding: .2em .4em;
+	padding: 0.2em 0.4em;
 }
 
 article code::-webkit-scrollbar {
 	width: 10px;
-	height: 10px
+	height: 10px;
 }
 
 article code::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background-color: #888
+	background-color: #888;
 }
 
 article pre {
 	border-radius: $radius;
 	overflow: hidden;
-    -webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: $gutter  0;
+	margin: $gutter 0;
 	padding: 15px;
 	position: relative;
 	background: #282c34;
@@ -63,14 +63,14 @@ article pre code {
 	border: none;
 	border-radius: 0;
 	font-size: 100%;
-    font-family: Consolas;
+	font-family: Consolas;
 }
 
 article pre code:after {
 	color: #5c6370;
 	position: absolute;
-	top: .5em;
-	bottom: .5em;
+	top: 0.5em;
+	bottom: 0.5em;
 	left: 0;
 	text-align: left;
 	clip: rect(-100px 2em 9999px 0);
@@ -82,15 +82,15 @@ article pre code:after {
 }
 
 article a {
-	-webkit-transition: all .35s ease-out;
-	transition: all .35s ease-out;
+	-webkit-transition: all 0.35s ease-out;
+	transition: all 0.35s ease-out;
 	color: $color;
 	text-decoration: none;
-	word-wrap: break-word
+	word-wrap: break-word;
 }
 
 article a:hover, article a:focus {
-	color: $color
+	color: $color;
 }
 
 article a:hover {
@@ -98,19 +98,19 @@ article a:hover {
 }
 
 article p {
-	margin: $gutter  0;
+	margin: $gutter 0;
 	position: relative;
 }
 
 article p:after {
-	content: "";
+	content: '';
 	clear: both;
-	display: block
+	display: block;
 }
 
 article del {
 	color: #999;
-	font-size: .9em
+	font-size: 0.9em;
 }
 
 article table.nexmoe-album {
@@ -122,32 +122,26 @@ article table.nexmoe-album + .nexmoe-album {
 	margin-top: 5px;
 }
 
-article table.nexmoe-album,
-article table.nexmoe-album thead,
-article table.nexmoe-album th,
-article table.nexmoe-album td {
+article table.nexmoe-album, article table.nexmoe-album thead, article table.nexmoe-album th, article table.nexmoe-album td {
 	border: none;
 	box-shadow: none;
 }
 
 article table.nexmoe-album * {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
-article table.nexmoe-album th,
-article table.nexmoe-album td {
+article table.nexmoe-album th, article table.nexmoe-album td {
 	padding: 5px;
 	height: 300px;
 }
 
-article table.nexmoe-album th a:after,
-article table.nexmoe-album td a:after {
+article table.nexmoe-album th a:after, article table.nexmoe-album td a:after {
 	display: none;
 }
 
-@media screen and (max-width:1024px) {
-	article table.nexmoe-album th,
-    article table.nexmoe-album td {
+@media screen and (max-width: 1024px) {
+	article table.nexmoe-album th, article table.nexmoe-album td {
 		height: 100px;
 	}
 }
@@ -165,7 +159,7 @@ article table.nexmoe-album img {
 
 .jg-entry {
 	border-radius: 10px;
-	overflow hidden
+	overflow: hidden;
 }
 
 article img {
@@ -173,8 +167,7 @@ article img {
 	border-radius: $radius;
 }
 
-article img.lazyload,
-article img.lazyloading {
+article img.lazyload, article img.lazyloading {
 	opacity: 0;
 	transition: opacity 400ms ease-out;
 }
@@ -185,18 +178,18 @@ article img.lazyloaded {
 
 article h1, article h2, article h3, article h4, article h5, article h6 {
 	color: #111;
-	margin: $gutter  0
+	margin: $gutter 0;
 }
 
 article h4, article h5, article h6 {
-	position: relative
+	position: relative;
 }
 
 article h4:before, article h5:before, article h6:before {
 	display: inline-block;
 	width: 1em;
 	content: '#';
-	color: $color
+	color: $color;
 }
 
 article h1 {
@@ -210,19 +203,19 @@ article h2 {
 }
 
 article h2:before {
-	content: "";
+	content: '';
 	width: 100%;
-    padding: 0px $gutter;
+	padding: 0px $gutter;
 	border-bottom: 1px solid #eee;
 	position: absolute;
 	bottom: -1px;
 	left: -($gutter);
-    box-sizing: unset;
+	box-sizing: unset;
 }
 
 article h2:after {
-	transition: all .35s ease-out;
-	content: "";
+	transition: all 0.35s ease-out;
+	content: '';
 	position: absolute;
 	background: $color;
 	width: 1em;
@@ -237,77 +230,77 @@ article h2:hover:after {
 }
 
 article h3 {
-	font-size: 1.3em
+	font-size: 1.3em;
 }
 
 article h4 {
-	font-size: 1.15em
+	font-size: 1.15em;
 }
 
 article h5 {
-	font-size: 1em
+	font-size: 1em;
 }
 
 article h6 {
-	font-size: .9em
+	font-size: 0.9em;
 }
 
 article blockquote {
 	color: #666;
-	margin: $gutter  0;
-	padding: .1em 2.2em;
+	margin: $gutter 0;
+	padding: 0.1em 2.2em;
 	background-color: #f8f8f8;
 	line-height: 28px;
 	position: relative;
 	border-radius: 10px;
 	border: 1px solid #eee;
-	font-family: sf pro sc, sf pro display, sf pro icons, aos icons, pingfang sc, helvetica neue, helvetica, arial, sans-serif
+	font-family: sf pro sc, sf pro display, sf pro icons, aos icons, pingfang sc, helvetica neue, helvetica, arial, sans-serif;
 }
 
 article blockquote:before {
-	content: "\201C";
+	content: '\201C';
 	top: 15px;
 	left: 10px;
 	position: absolute;
 	color: #888;
-	font-size: 3em
+	font-size: 3em;
 }
 
 article blockquote:after {
-	content: "\201D";
+	content: '\201D';
 	bottom: -8px;
 	right: 10px;
 	position: absolute;
 	color: #888;
-	font-size: 3em
+	font-size: 3em;
 }
 
 article hr {
 	display: block;
 	border: 0;
 	border-top: 1px dashed #ccc;
-	margin: $gutter  0;
-	padding: 0
+	margin: $gutter 0;
+	padding: 0;
 }
 
 article sub, article sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: baseline
+	vertical-align: baseline;
 }
 
 article sup {
-	top: -.5em
+	top: -0.5em;
 }
 
 article sub {
-	bottom: -.25em
+	bottom: -0.25em;
 }
 
 article ul {
 	padding: 0 0 0 2em;
-	margin-top: 0
+	margin-top: 0;
 }
 
 article ul .mdui-checkbox {
@@ -321,7 +314,7 @@ article ul .mdui-checkbox-icon {
 
 article ol {
 	padding: 0 0 0 2.5em;
-	margin-top: 0
+	margin-top: 0;
 }
 
 article > ol {
@@ -330,22 +323,22 @@ article > ol {
 }
 
 article > ol > li {
-    position: relative;
+	position: relative;
 }
 
 article > ol > li::before {
-    content: counter(item);
-    counter-increment: item;
-    position: absolute;
-    top: 0.2rem;
-    left: -2.5em;
-    height: 1.6rem;
-    width: 1.6rem;
-    text-align: center;
-    border-radius: 8px;
-    line-height: 1.6rem;
-    background-color: rgba(255,78,106,.1);
-    color: $color;
+	content: counter(item);
+	counter-increment: item;
+	position: absolute;
+	top: 0.2rem;
+	left: -2.5em;
+	height: 1.6rem;
+	width: 1.6rem;
+	text-align: center;
+	border-radius: 8px;
+	line-height: 1.6rem;
+	background-color: rgba(255, 78, 106, 0.1);
+	color: $color;
 }
 
 article li {
@@ -353,11 +346,11 @@ article li {
 }
 
 article li p {
-	margin: 0!important
+	margin: 0 !important;
 }
 
 article dd {
-	margin: 0 0 0 2em
+	margin: 0 0 0 2em;
 }
 
 article table {
@@ -372,53 +365,53 @@ article table {
 	overflow: auto;
 	white-space: nowrap;
 	margin: auto;
-	border-radius: 10px
+	border-radius: 10px;
 }
 
 article table::-webkit-scrollbar {
 	width: 6px;
-	height: 6px
+	height: 6px;
 }
 
 article table::-webkit-scrollbar-thumb {
-	background-color: #888
+	background-color: #888;
 }
 
 article table thead {
 	border-bottom: 1px solid #eee;
-	background-color: #f8f8f8
+	background-color: #f8f8f8;
 }
 
 article table thead tr {
-	background-color: #f8f8f8
+	background-color: #f8f8f8;
 }
 
 article table th {
 	border-right: 1px solid #eee;
 	padding: 13px 26px;
-	font-weight: 400
+	font-weight: 400;
 }
 
 article table td {
 	border-right: 1px solid #eee;
-	padding: 13px 26px
+	padding: 13px 26px;
 }
 
 article table th:last-child, article table td:last-child {
-	border: none
+	border: none;
 }
 
 article table tr {
-	background-color: #fff
+	background-color: #fff;
 }
 
 article table tr:nth-child(2n) {
-	background-color: #f8f8f8
+	background-color: #f8f8f8;
 }
 
 article img, article canvas, article iframe, article video, article svg, article select, article textarea {
 	width: auto;
-	max-width: 100%
+	max-width: 100%;
 }
 
 details ul {
@@ -447,48 +440,48 @@ details[open] > summary .remove {
 }
 
 article ul {
-    list-style: none;
-    padding-left: 0!important;
+	list-style: none;
+	padding-left: 0 !important;
 }
 
 article ul li {
-    position: relative;
-    padding: 10px 0;
-    padding-left: 25px;
+	position: relative;
+	padding: 10px 0;
+	padding-left: 25px;
 }
 
 article ul li::before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background: #ff4e6a;
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -2px;
-    margin-right: 11px;
-    margin-left: -25px;
-    border-radius: 100%;
-    border: 3px solid #fff;
-    z-index: 100;
-    position: relative;
+	content: '';
+	width: 14px;
+	height: 14px;
+	background: #ff4e6a;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 11px;
+	margin-left: -25px;
+	border-radius: 100%;
+	border: 3px solid #fff;
+	z-index: 100;
+	position: relative;
 }
 
 article ul li::after {
-    content: "";
-    height: 100%;
-    width: 2px;
-    background: rgba(255, 78, 106, 0.2);
-    position: absolute;
-    left: 6px;
-    top: 20px;
+	content: '';
+	height: 100%;
+	width: 2px;
+	background: rgba(255, 78, 106, 0.2);
+	position: absolute;
+	left: 6px;
+	top: 20px;
 }
 
 article ul li:last-child:after {
-    display: none;
+	display: none;
 }
 
 article ul span {
-    margin-right: 15px;
+	margin-right: 15px;
 }
 
 article .mdui-btn {
@@ -503,95 +496,88 @@ article .mdui-btn:focus, article .mdui-btn:hover {
 }
 
 font.douyin {
-	text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
-	animation: shake-it .5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	text-shadow: -2px 0 rgba(0, 255, 255, 0.5), 2px 0 rgba(255, 0, 0, 0.5);
+	animation: shake-it 0.5s reverse infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .aplayer {
-	-webkit-box-shadow: 0 0 0 1px #eee!important;
-	box-shadow: 0 0 0 1px #eee!important;
-	border-radius: 10px!important;
-	margin: $gutter  0!important;
-    height: 90px;
+	-webkit-box-shadow: 0 0 0 1px #eee !important;
+	box-shadow: 0 0 0 1px #eee !important;
+	border-radius: 10px !important;
+	margin: $gutter 0 !important;
+	height: 90px;
 }
 
 .aplayer .aplayer-info {
-	padding: 9px 7px 0 10px!important
+	padding: 9px 7px 0 10px !important;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
-	margin-left: 1px!important;
-	padding-right: 3px
+	margin-left: 1px !important;
+	padding-right: 3px;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar, .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded, .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-	height: 6px!important;
-	border-radius: 10px!important
+	height: 6px !important;
+	border-radius: 10px !important;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
-	height: 12px!important;
-	width: 12px!important;
-	right: 3px!important;
-	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .18)!important;
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .18)!important;
-	-webkit-transition: all .35s ease-out;
-	transition: all .35s ease-out;
+	height: 12px !important;
+	width: 12px !important;
+	right: 3px !important;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18) !important;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18) !important;
+	-webkit-transition: all 0.35s ease-out;
+	transition: all 0.35s ease-out;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar, .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
 	border-radius: 10px;
-	width: 6px
+	width: 6px;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
-	right: 10.5px
+	right: 10.5px;
 }
 
 .aplayer .aplayer-list ol li {
-	border-top: none!important
+	border-top: none !important;
 }
 
 .aplayer .aplayer-list ol li.aplayer-list-light {
-	background: #f8f8f8!important
+	background: #f8f8f8 !important;
 }
 
 .justified-gallery > a > .jg-caption, .justified-gallery > div > .jg-caption, .justified-gallery > figure > .jg-caption {
-	background-color: transparent
-
+	background-color: transparent;
 }
 
-.justified-gallery > a > .jg-caption,
-.justified-gallery > div > .jg-caption, 
-.justified-gallery > figure > .jg-caption {
+.justified-gallery > a > .jg-caption, .justified-gallery > div > .jg-caption, .justified-gallery > figure > .jg-caption {
 	padding: 10px;
-	transition: all .35s ease-out!important;
+	transition: all 0.35s ease-out !important;
 }
-
 
 .justified-gallery > a > .jg-caption.jg-caption-visible, .justified-gallery > div > .jg-caption.jg-caption-visible, .justified-gallery > figure > .jg-caption.jg-caption-visible {
-	opacity 0.99
-
+	opacity: 0.99;
 }
 
-.justified-gallery > a > .jg-caption:after, 
-.justified-gallery > div > .jg-caption:after, 
-.justified-gallery > figure > .jg-caption:after {
-    background-image: -moz-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
-    background-image: -webkit-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
-    background-image: -ms-linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
-    background-image: linear-gradient(to top,rgba(16,16,16,.35) 25%,rgba(16,16,16,0) 100%);
-    -moz-pointer-events: none;
-    -webkit-pointer-events: none;
-    -ms-pointer-events: none;
-    pointer-events: none;
-    background-size: cover;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+.justified-gallery > a > .jg-caption:after, .justified-gallery > div > .jg-caption:after, .justified-gallery > figure > .jg-caption:after {
+	background-image: -moz-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+	background-image: -webkit-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+	background-image: -ms-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+	background-image: linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+	-moz-pointer-events: none;
+	-webkit-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	background-size: cover;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
 }

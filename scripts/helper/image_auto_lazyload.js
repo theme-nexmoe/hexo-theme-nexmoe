@@ -1,7 +1,7 @@
 "use strict";
 
 function imageAutoLazyloadHelper(content) {
-	var str = content.replace(
+	let str = content.replace(
 		/<img.*?src="(.*?)" alt="(.*?)".*?\/?>/gi,
 		'<img data-fancybox="gallery" data-sizes="auto" data-src="$1" alt="$2" class="lazyload">'
 	);
