@@ -31,7 +31,7 @@ menu:
     - /
     - icon-home
 #  文章归档: 
-#    - /archives
+#    - /archives.html
 #    - icon-container
   关于博客:
     - /about.html
