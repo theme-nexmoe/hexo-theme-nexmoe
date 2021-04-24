@@ -52,3 +52,9 @@ $(document).ready(function () {
     });
   });
 });
+
+function catalogue() {
+  var inst = new mdui.Drawer('#drawer');
+  inst.toggle();
+  $("body").toggleClass("catalogue");
+}

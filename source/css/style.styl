@@ -19,6 +19,9 @@ body {
     margin: auto !important;
 }
 
+.catalogue {
+}
+
 .medium-zoom-overlay {
     z-index: 9999;
 }
@@ -494,12 +497,11 @@ body {
 
 @media screen and (min-width: 1024px) {
     body {
-        padding-left: 80px;
+        padding-left: 0px;
     }
 
     #nexmoe-header .mdui-drawer-close {
-        -webkit-transform: translateX(-160px);
-        transform: translateX(-160px);
+        display: none;
 
         .nexmoe-avatar {
             padding: 16px;
@@ -590,6 +592,19 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    width: 56px;
+
+    button {
+        margin-top: 20px;
+
+        .icon-i-catalog {
+            font-size: 22px;
+        }
+
+        .icon-caret-top {
+            font-size: 20px;
+        }
+    }
 }
 
 .nexmoe-post-right .nexmoe-tool .mdui-fab {
@@ -605,9 +620,9 @@ body {
 
     .nexmoe-post-right .nexmoe-fixed {
         height: auto;
-        width: 100%;
         top: auto;
         bottom: 0;
+        right: 0;
     }
 
     .nexmoe-post-right .nexmoe-tool {
@@ -623,26 +638,40 @@ body {
     }
 }
 
-.nexmoe-post-right .nexmoe-toc {
-    margin-left: 16px;
-    width: 240px;
+.nexmoe-toc {
+    width: auto;
     text-align: left;
+    background: #eee;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 16px;
+    display: none;
+    z-index 0
 }
 
-.nexmoe-post-right .nexmoe-toc a {
+.nexmoe-tool .catalog:hover .nexmoe-toc {
+    display: block;
+}
+
+.nexmoe-toc a {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.nexmoe-post-right .nexmoe-toc ol {
+.nexmoe-toc ol {
     padding-left: 1em;
 }
 
-.nexmoe-post-right .nexmoe-toc li {
-    margin: 1em 0;
+.nexmoe-toc li {
+    margin: 0;
+    line-height: 1.5rem;
 }
 
-.nexmoe-post-right .nexmoe-toc > ol {
-    padding-left: 0;
+.nexmoe-toc > ol {
+    margin: 0;
+    padding: 0;
 }
 
 .nexmoe-toc * {

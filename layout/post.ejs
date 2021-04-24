@@ -1,20 +1,5 @@
 <div class="nexmoe-post">
 
-  <div class="nexmoe-post-right">
-    <% if (page.toc || theme.function.globalToc){ %>
-      <div class="nexmoe-fixed">
-        <div class="nexmoe-valign">
-            <div class="nexmoe-toc">
-                <% const toc_obj = toc(page.content, {list_number: true}); %>
-                <% if (toc_obj.length > 0) { %>
-                  <%- toc_obj %>
-                <% } %>
-            </div>
-        </div>
-      </div>
-    <%} %>
-  </div>
-
   <article>
     <% if (page.cover){ %>
         <div class="nexmoe-post-cover" style="padding-bottom: <%- page.coverHeight/page.coverWidth*100 %>%;"> 
@@ -29,6 +14,8 @@
     <% } %>
     
     <%- partial('_partial/_post/meta') %>
+
+    
 
     <%- image_auto_lazyload(page.content) %>
   </article>
