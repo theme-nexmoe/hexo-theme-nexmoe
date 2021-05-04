@@ -641,7 +641,8 @@ body {
 .nexmoe-toc {
     width: auto;
     text-align: left;
-    background: #eee;
+    box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
+    background-color: #fff;
     position: absolute;
     bottom: 0px;
     right: 0;
@@ -649,7 +650,9 @@ body {
     padding: 20px;
     font-size: 16px;
     display: none;
-    z-index 0
+    z-index: 0;
+    max-height: calc(100vh - 130px);
+    overflow-y: scroll;
 }
 
 .nexmoe-tool .catalog:hover .nexmoe-toc {
@@ -660,13 +663,18 @@ body {
     color: rgba(0, 0, 0, 0.6);
 }
 
+.nexmoe-toc a:hover {
+    text-decoration: underline;
+    color: $color;
+}
+
 .nexmoe-toc ol {
     padding-left: 1em;
 }
 
 .nexmoe-toc li {
     margin: 0;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 .nexmoe-toc > ol {
