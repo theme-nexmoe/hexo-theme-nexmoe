@@ -62,7 +62,7 @@
               
                 <% if (page.toc || theme.function.globalToc){ %>
                   
-                  <% const toc_obj = toc(page.content, {list_number: false}); %>
+                  <% const toc_obj = toc(page.content, {list_number: true}); %>
                   <% if (toc_obj.length > 0) { %>
                     <button class="mdui-fab catalog mdui-ripple" style="overflow:unset;">
                       <i class="nexmoefont icon-i-catalog"></i>
