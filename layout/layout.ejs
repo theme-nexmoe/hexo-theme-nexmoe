@@ -23,6 +23,7 @@
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta charset="UTF-8">
   <meta name="description" content="<%= config.description %>">
+  <meta name="keywords" content="<%= config.keywords %>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <%- partial('_partial/_analytics/gtm-head') %>
   <%- partial('_partial/site-verification') %>
@@ -33,7 +34,6 @@
   <% if (theme.iconlib) { %>
     <link rel="stylesheet" href="<%= theme.iconlib %>">
   <% } %>
-  <%- css_auto_version('css/style') %>
   <%- css_auto_version('lib/iconfont/iconfont.css') %>
 </head>
 
