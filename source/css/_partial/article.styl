@@ -24,13 +24,33 @@ article code::-webkit-scrollbar-thumb {
 	background-color: #888;
 }
 
+.highlight {
+	padding: 0 0.5em;
+    background: #282c34;
+	color: #abb2bf;
+	margin: 0;
+	border-radius: $radius;
+}
+
+.highlight * {
+	font-family: monospace;
+}
+
+.highlight .line {
+	padding: 0 1em;
+}
+
+.highlight .gutter {
+	border-right: 1px solid #eee;
+}
+
 article pre {
 	border-radius: $radius;
 	overflow: hidden;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: $gutter 0;
-	padding: 15px;
+	margin: 0;
+	padding: 10px;
 	position: relative;
 	background: #282c34;
 	line-height: 1.3em;
@@ -113,40 +133,40 @@ article del {
 	font-size: 0.9em;
 }
 
-article table.nexmoe-album {
+article > table.nexmoe-album {
 	margin: -5px;
 	max-width: calc(100% + 10px);
 }
 
-article table.nexmoe-album + .nexmoe-album {
+article > table.nexmoe-album + .nexmoe-album {
 	margin-top: 5px;
 }
 
-article table.nexmoe-album, article table.nexmoe-album thead, article table.nexmoe-album th, article table.nexmoe-album td {
+article > table.nexmoe-album, article > table.nexmoe-album thead, article > table.nexmoe-album th, article > table.nexmoe-album td {
 	border: none;
 	box-shadow: none;
 }
 
-article table.nexmoe-album * {
+article > table.nexmoe-album * {
 	background-color: transparent !important;
 }
 
-article table.nexmoe-album th, article table.nexmoe-album td {
+article > table.nexmoe-album th, article > table.nexmoe-album td {
 	padding: 5px;
 	height: 300px;
 }
 
-article table.nexmoe-album th a:after, article table.nexmoe-album td a:after {
+article > table.nexmoe-album th a:after, article > table.nexmoe-album td a:after {
 	display: none;
 }
 
 @media screen and (max-width: 1024px) {
-	article table.nexmoe-album th, article table.nexmoe-album td {
+	article > table.nexmoe-album th, article > table.nexmoe-album td {
 		height: 100px;
 	}
 }
 
-article table.nexmoe-album img {
+article > table.nexmoe-album img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -353,7 +373,7 @@ article dd {
 	margin: 0 0 0 2em;
 }
 
-article table {
+article > table {
 	color: #5b6064;
 	border-spacing: 0;
 	text-align: center;
@@ -368,44 +388,44 @@ article table {
 	border-radius: 10px;
 }
 
-article table::-webkit-scrollbar {
+article > table::-webkit-scrollbar {
 	width: 6px;
 	height: 6px;
 }
 
-article table::-webkit-scrollbar-thumb {
+article > table::-webkit-scrollbar-thumb {
 	background-color: #888;
 }
 
-article table thead {
+article > table thead {
 	border-bottom: 1px solid #eee;
 	background-color: #f8f8f8;
 }
 
-article table thead tr {
+article > table thead tr {
 	background-color: #f8f8f8;
 }
 
-article table th {
+article > table th {
 	border-right: 1px solid #eee;
 	padding: 13px 26px;
 	font-weight: 400;
 }
 
-article table td {
+article > table td {
 	border-right: 1px solid #eee;
 	padding: 13px 26px;
 }
 
-article table th:last-child, article table td:last-child {
+article > table th:last-child, article > table td:last-child {
 	border: none;
 }
 
-article table tr {
+article > table tr {
 	background-color: #fff;
 }
 
-article table tr:nth-child(2n) {
+article > table tr:nth-child(2n) {
 	background-color: #f8f8f8;
 }
 
