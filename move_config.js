@@ -6,8 +6,10 @@ if (fs.existsSync('../hexo/package.json')){
     const oldConfigPath = '../../_config.old.yml'
     const configPath = '../../_config.nexmoe.yml'
     if (!fs.existsSync(configPath) && !fs.existsSync(oldConfigPath)) {
-      fs.writeFileSync(oldConfigPath, fs.readFileSync(configPath))
       fs.writeFileSync(configPath, fs.readFileSync('./_config.yml'))
+    }
+    if (fs.existsSync(configPath) && !fs.existsSync(oldConfigPath)){
+      fs.writeFileSync(oldConfigPath, fs.readFileSync(configPath))
     }
     fs.unlinkSync('./_config.yml')
   }
