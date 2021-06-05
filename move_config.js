@@ -11,3 +11,5 @@ if (fs.existsSync('../hexo/package.json')){
     fs.unlinkSync('./_config.yml')
   }
 }
+
+// 借鉴自 https://github.com/HCLonely/hexo-theme-webstack/blob/master/move_config.js
