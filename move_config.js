@@ -10,9 +10,8 @@ if (fs.existsSync('../hexo/package.json')){
       console.log('Successful installation!');
       console.log('Please modify the file `_config.nexmoe.yml` in the root directory');
     }
-    if (fs.existsSync(configPath) && !fs.existsSync(oldConfigPath)){
-      fs.writeFileSync(oldConfigPath, fs.readFileSync(configPath))
-      console.warn('Please delete the file `_config.old.yml` in the root directory before upgrading!');
+    if (fs.existsSync(configPath)){
+      fs.writeFileSync( '../../_config.new.yml', fs.readFileSync('./_config.yml'))
     }
     fs.unlinkSync('./_config.yml')
   }
