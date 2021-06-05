@@ -10,7 +10,7 @@ function jsAutoVersionHelper(...args) {
         if (!path.includes('?') && !path.endsWith('.js')) path += '.js';
         let url_suffix = "?v=" + new Date().getTime();
         let url = this.url_for(path) + url_suffix;
-        return `${result}<script src="${url}"></script>`;
+        return `${result}<script async src="${url}"></script>`;
     }, '');
 }
 

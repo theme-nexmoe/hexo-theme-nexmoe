@@ -9,10 +9,11 @@
 	],
 	"author": "Nexmoe (https://github.com/nexmoe)",
 	"license": "Apache-2.0",
-	"main": "package.json",
+	"main": "index.js",
 	"scripts": {
 		"eslint": "eslint scripts/ source/js --fix",
-		"test": "echo test"
+		"test": "echo test",
+		"postinstall": "node ./move_config.js"
 	},
 	"repository": {
 		"type": "git",
