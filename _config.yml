@@ -20,8 +20,8 @@ cdn: # 这里可以修改站点使用的库的CDN
     css: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.min.css
     js: https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.min.js
   gitalk:
-    css: https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css
-    js: https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js
+    css: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css
+    js: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   valine:
     js: https://cdn.jsdelivr.net/npm/valine
   copy: https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js
