@@ -41,15 +41,9 @@
 
 > 非常欢迎你帮助我们将 Nexmoe 翻译至其他语言！
 
-## 📄 许可证
-
-<a href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/hexo-theme-nexmoe.svg"/></a>
-
-根据 Apache License 2.0 许可证开源。
-
-## 赞助我促进更新
-爱发电链接：https://afdian.net/@nexmoe
-![支付二维码](https://i.speed.moe/images/d2c45ec8fb10867e4c2d53ded62fbfb6.png)
+## 💴 赞助我促进更新
+有问题可以在留言处提问
+![支付二维码](https://i.dawnlab.me/ee0093ead3ca8145522ba766c3f9a0ee.png)
 
 ## 🍻 后续更新
 就读高中，
