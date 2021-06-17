@@ -58,3 +58,12 @@ function catalogue() {
   inst.toggle();
   $("body").toggleClass("catalogue");
 }
+
+$(document).on("copy", function(){
+  var sel = document.getSelection();
+  var ele = document.createElement("div");
+  ele.innerHTML = '<div style="position: fixed;opacity: 0;white-space: pre;">' + sel + "\n\n著作权归作者所有。\n商业转载请联系作者获得授权，非商业转载请注明出处。\n来源：" + document.location.href + ' </div>' 
+  document.body.appendChild(ele);
+  sel.selectAllChildren(ele);
+  setTimeout(function () {document.body.removeChild(ele);});
+});
