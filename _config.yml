@@ -24,7 +24,6 @@ cdn: # 这里可以修改站点使用的库的CDN
     js: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   valine:
     js: https://cdn.jsdelivr.net/npm/valine
-  copy: https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js
 
 menu:
   回到首页: 
@@ -127,6 +126,7 @@ DiscussBot:
   diff: 0 # 每位用户name不同颜色
 
 copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
+copyTip: "著作权归作者所有。\n商业转载请联系作者获得授权，非商业转载请注明出处。\n来源：%url" # 自定义复制版权文案,使用 %url 代替当前页面URL, 修改为false禁用
 
 # achive widget behavior
 widgetAchive: #文章归档组件

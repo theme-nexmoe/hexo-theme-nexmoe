@@ -2,8 +2,8 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<% if (theme.cdn.copy) { %>
-<script src="<%- theme.cdn.copy %>"></script>
+<% if (theme.copyText) { %>
+	<script>var copyTip = "<%- theme.copyText %>"</script>
 <% } %> 
 
 <%- js_auto_version('js/app') %>

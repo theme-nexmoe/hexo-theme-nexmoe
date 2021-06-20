@@ -58,3 +58,13 @@ function catalogue() {
   inst.toggle();
   $("body").toggleClass("catalogue");
 }
+
+$(document).on("copy", function(){
+  if(!window.copyTip){ return; }
+  var sel = document.getSelection();
+  var ele = document.createElement("div");
+  ele.innerHTML = '<div style="position: fixed;opacity: 0;white-space: pre;">' + sel + "\n\n" + window.copyTip.replaceAll("%url",document.location.href) + ' </div>' 
+  document.body.appendChild(ele);
+  sel.selectAllChildren(ele);
+  setTimeout(function () {document.body.removeChild(ele);});
+});
