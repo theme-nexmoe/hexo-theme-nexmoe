@@ -11,7 +11,7 @@
  - 图片瀑布流
  - 社交按钮
 
-## 🎓 教程
+## 🎓 使用说明
 请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
 
 ## 💻 演示
