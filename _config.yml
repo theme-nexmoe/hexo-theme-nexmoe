@@ -14,9 +14,9 @@ function: # 功能开关，可选值（true,false）
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 
 search: 
-  type: engine # 可选engine（搜索引擎）或 swiftype
-  url: https://cn.bing.com/search?q=site:nexmoe.com # 搜索引擎地址，如果type为engine无效 e.g:https://www.google.com/search?q={你的博客链接}
-  id: <swiftype-id> # swiftype的id
+  type: engine # 可选engine（用搜索引擎搜索）或 swiftype
+  url: https://cn.bing.com/search?q=site:nexmoe.com # 搜索引擎地址，在type为swiftype时无效 e.g:https://www.google.com/search?q={你的博客链接}
+  id: <swiftype-id> # swiftype的id，见启用教程。在type为engine时无效
 
 cdn: # 这里可以修改站点使用的库的CDN
   disqusjs: 
