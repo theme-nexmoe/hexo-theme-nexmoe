@@ -5,7 +5,7 @@ background: # 既是博客的背景，又是文章默认头图
   height: 960
 favicon:
   href: /favicon.ico # 网站图标
-  type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+  type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 function: # 功能开关，可选值（true,false）
   globalToc: false # 开启该功能会自动开启文章 TOC（文章目录） 功能
@@ -50,7 +50,7 @@ widgets:
 # - recent_posts
 # - link #settings: widgetLink
 
-maxTagcloud: 0  # 0 表示不限制
+maxTagcloud: 0  # 标签云组件显示的标签数量，0 表示不限制
 
 social:
   QQ群: 
