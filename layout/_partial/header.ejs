@@ -11,7 +11,7 @@
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         <% for (name in theme.menu) { %>
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="<%- url_for(theme.menu[name][0]) -%>" title="<%= name %>">
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple <%= is_current(theme.menu[name][0]) %>" href="<%- url_for(theme.menu[name][0]) -%>" title="<%= name %>">
             <i class="mdui-list-item-icon nexmoefont <% if (theme.menu[name][1]){ %><%= theme.menu[name][1] %><%} else{ %><%= 'icon-unorderedlist' %><% } %>"></i>
             <div class="mdui-list-item-content">
                 <%= name %>
