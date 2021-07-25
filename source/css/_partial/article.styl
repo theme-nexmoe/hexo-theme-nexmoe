@@ -99,8 +99,8 @@ article pre code:after {
 }
 
 article a {
-	-webkit-transition: all 0.35s ease-out;
-	transition: all 0.35s ease-out;
+	-webkit-transition: color 0.35s ease-out;
+	transition: color 0.35s ease-out;
 	color: $color;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -372,17 +372,14 @@ article dd {
 
 article > table {
 	color: #5b6064;
-	border-spacing: 0;
-	text-align: center;
-	border-collapse: collapse;
-	-webkit-box-shadow: 0 0 0 1px #eee;
-	box-shadow: 0 0 0 1px #eee;
-	display: inline-block;
-	max-width: 100%;
-	overflow: auto;
-	white-space: nowrap;
-	margin: auto;
-	border-radius: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 25px auto;
+    background: transparent;
+    display: block;
 }
 
 article > table::-webkit-scrollbar {
@@ -404,18 +401,14 @@ article > table thead tr {
 }
 
 article > table th {
-	border-right: 1px solid #eee;
+	border: 1px solid #eee;
 	padding: 13px 26px;
 	font-weight: 400;
 }
 
 article > table td {
-	border-right: 1px solid #eee;
+	border: 1px solid #eee;
 	padding: 13px 26px;
-}
-
-article > table th:last-child, article > table td:last-child {
-	border: none;
 }
 
 article > table tr {
