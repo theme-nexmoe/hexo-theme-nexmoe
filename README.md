@@ -26,6 +26,7 @@
 | [糖羽仙](https://www.tangyuxian.com/) | ![萌糖官方网站](https://img.shields.io/website?url=https://www.tangyuxian.com/)  |
 | [深海小涛](https://hexo.xtaolink.cn/) | ![](https://img.shields.io/website?url=https://hexo.xtaolink.cn/)  |
 | [西瓜星 🍉✨](https://suikastar.com/)   | ![](https://img.shields.io/website?url=https://suikastar.com/)  |
+| [LittleDeng](https://lde.ng/)   | ![](https://img.shields.io/website?url=https://lde.ng/)  |
 
 ## 💻 贡献者
 
