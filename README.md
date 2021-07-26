@@ -16,6 +16,8 @@
 
 ## 💻 演示
 
+[视频演示点我](https://www.bilibili.com/video/BV1Gv411J79T)
+
 欢迎将你的网站提交到这里来
 
 - [Nexmoe](https://nexmoe.com/)
