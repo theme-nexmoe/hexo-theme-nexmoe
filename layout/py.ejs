@@ -1,6 +1,10 @@
 <div class="nexmoe-post">
-    <article class="nexmoe-py">
-        <%- image_auto_lazyload(page.content) %>
-    </article>
-    <%- partial('_partial/comment') %>
+	<article class="nexmoe-py">
+		<%- image_auto_lazyload(page.content) %>
+	</article>
+	<% if (page.comments){ %>
+        <div class="nexmoe-post-footer">
+            <%- theme.comment ? partial('_partial/comment') : '' %>
+        </div>
+    <% } %>
 </div>
