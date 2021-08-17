@@ -23,9 +23,9 @@
 
         <article>
             <% if(page.excerpt) {%>
-                <%- image_auto_lazyload(page.excerpt) %>
+                <%- truncate(image_auto_lazyload(page.excerpt), {length: 150}) %>
             <%}  else{ %>
-                <%- image_auto_lazyload(page.content) %>
+                <%- truncate(image_auto_lazyload(page.content), {length: 150}) %>
             <% } %>
         </article>
     </div>
