@@ -13,7 +13,8 @@
 	"scripts": {
 		"eslint": "eslint scripts/ source/js --fix",
 		"test": "echo test",
-		"postinstall": "node ./move_config.js"
+		"postinstall": "node ./move_config.js",
+		"start": "powershell ./.vscode/start.ps1"
 	},
 	"repository": {
 		"type": "git",

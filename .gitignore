@@ -11,3 +11,5 @@ node_modules
 .directory
 
 WIKI/.vuepress/dist
+
+.vscode/
