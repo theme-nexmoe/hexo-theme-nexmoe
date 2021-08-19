@@ -28,6 +28,7 @@
 | [深海小涛](https://hexo.xtaolink.cn/) | ![深海小涛](https://img.shields.io/website?url=https://hexo.xtaolink.cn/)  |
 | [西瓜星 🍉✨](https://suikastar.com/)   | ![西瓜星 🍉✨](https://img.shields.io/website?url=https://suikastar.com/)  |
 | [LittleDeng](https://lde.ng/)   | ![LittleDeng](https://img.shields.io/website?url=https://lde.ng/)  |
+| [fly6022's Blog](https://blog.fly6022.fun)   | ![fly6022's Blog](https://img.shields.io/website?url=https://blog.fly6022.fun)  |
 
 ## 💻 贡献者
 
