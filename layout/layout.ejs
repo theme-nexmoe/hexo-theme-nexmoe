@@ -31,6 +31,9 @@
     <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
     <%- css_auto_version('css/style') %>
+    <% if (theme.darkmode) { %>
+        <%- css_auto_version('css/dark') %>
+    <% } %> 
     <% if (theme.iconlib) { %>
         <link rel="stylesheet" href="<%= theme.iconlib %>">
     <% } %>

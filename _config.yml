@@ -13,6 +13,8 @@ function: # 功能开关，可选值（true,false）
 # 附加图标库 使用说明：https://docs.nexmoe.com/config/icon
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 
+darkmode: true # 是否启用暗色主题，可选值（true,false）
+
 search: 
   type: engine # 可选engine（用搜索引擎搜索）或 swiftype
   url: https://cn.bing.com/search?q=site:nexmoe.com # 搜索引擎地址，在type为swiftype时无效 e.g:https://www.google.com/search?q={你的博客链接}
