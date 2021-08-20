@@ -2,8 +2,6 @@
 
 *.log
 
-start.ps1
-
 node_modules
 
 .idea
