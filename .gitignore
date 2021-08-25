@@ -2,8 +2,6 @@
 
 *.log
 
-
-
 node_modules
 
 .idea
@@ -11,3 +9,5 @@ node_modules
 .directory
 
 WIKI/.vuepress/dist
+
+.vscode/
