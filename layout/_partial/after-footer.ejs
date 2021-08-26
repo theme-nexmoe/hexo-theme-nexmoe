@@ -8,6 +8,10 @@
 
 <%- js_auto_version('js/app') %>
 
+<% if (theme.search.type == 'local') { %>
+	<%- js_auto_version('js/search') %>
+<%  } %>
+
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
 	$(".justified-gallery").justifiedGallery({
