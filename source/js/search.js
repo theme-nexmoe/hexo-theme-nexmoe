@@ -57,10 +57,10 @@ function render(data) {
 }
 
 // 主程序
-let key = location.search.split('?q=');
-if (key[1] !== undefined) {
-    document.getElementsByClassName('search-input')[0].value = key[1];
-    loadData(format(key[1]));
+let key = decodeURI(location.search.split('?q=')[1]);
+if (key !== undefined && key !== 'undefined') {
+    document.getElementsByClassName('search-input')[0].value = key;
+    loadData(format(key));
     document.getElementById('nexmoe-search-space').style.display = 'flex';
 }
 
