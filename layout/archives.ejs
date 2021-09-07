@@ -19,7 +19,7 @@
                 <% } %>
             <% }) %>
 
-            <a class="mdui-ripple" href="<%= category.permalink %>">
+            <a class="mdui-ripple" href="<%- url_for(category.path) %>">
                 <div class="bg" style="background-image:url(<%= coverx %>)"></div>
                 <h1><%= category.name %></h1>
             </a>
