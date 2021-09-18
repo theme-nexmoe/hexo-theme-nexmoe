@@ -50,5 +50,6 @@ star 以及 issue 是我更新的动力!
 欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
 
 讨论主题，进主题讨论群：614621637
+社区讨论：https://github.com/theme-nexmoe/hexo-theme-nexmoe/discussions
      
 [![Powered By Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg "Powered By Vercel")](https://vercel.com/?utm_source=theme-nexmoe&utm_campaign=oss "Powered By Vercel")
