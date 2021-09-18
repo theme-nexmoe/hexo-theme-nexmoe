@@ -14,9 +14,6 @@ function: # 功能开关，可选值（true,false）
 # 附加图标库 使用说明：https://docs.nexmoe.com/config/icon
 iconlib: # //at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css
 
-# 自定义样式，启用后可在站点的source文件夹下新建custom.css自定义站点样式
-customstyle: true
-
 search: 
   type: engine # 可选engine（用搜索引擎搜索）、swiftype、或local（本地搜索）
   url: https://cn.bing.com/search?q=site:nexmoe.com # 搜索引擎地址，在type为swiftype时无效 e.g:https://www.google.com/search?q={你的博客链接}
@@ -72,7 +69,9 @@ social:
     - icon-github
     - rgb(25, 23, 23)
     - rgba(25, 23, 23, .15)
-    
+
+# 自定义样式，启用后可在站点的source文件夹下新建custom.css自定义站点样式
+customstyle: false  
 color: # 配色方案，从first到seventh为优先级为1-7的颜色，默认为彩虹配色
   first: # 同时作为主题色
     r: 255 
