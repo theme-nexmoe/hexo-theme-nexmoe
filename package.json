@@ -22,7 +22,7 @@
 	"bugs": {
 		"url": "https://github.com/theme-nexmoe/hexo-theme-nexmoe/issues"
 	},
-	"homepage": "https://github.com/theme-nexmoe/hexo-theme-nexmoe",
+	"homepage": "https://docs.nexmoe.com/",
 	"devDependencies": {
 		"eslint": "^7.16.0"
 	},
