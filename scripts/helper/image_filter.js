@@ -10,7 +10,7 @@ hexo.extend.filter.register('after_post_render', function(data){
 	
 	if(themeCfg.imageCDN.enable){
 		data.content = data.content.replace(
-			themeCfg.imageCDN.origin,
+			new RegExp(themeCfg.imageCDN.origin,"gm"),
 			themeCfg.imageCDN.to
 		);
 	}
