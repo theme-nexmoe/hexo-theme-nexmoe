@@ -9,8 +9,8 @@ if (fs.existsSync('../hexo/package.json')){
       fs.writeFileSync( '../../_config.new.yml', fs.readFileSync('./source/_config.yml'))
     } else if(!fs.existsSync(oldConfigPath)) {
       fs.writeFileSync(configPath, fs.readFileSync('./source/_config.yml'))
-      console.log('Successful installation!')
-      console.log('Please modify the file `_config.nexmoe.yml` in the root directory')
+      logger.info('Successful installation!')
+      logger.info('Please modify the file `_config.nexmoe.yml` in the root directory')
     }
     fs.unlinkSync('./source/_config.yml')
   }
