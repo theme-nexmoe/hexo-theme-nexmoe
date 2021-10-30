@@ -24,7 +24,7 @@
 	},
 	"homepage": "https://docs.nexmoe.com/",
 	"devDependencies": {
-		"eslint": "^7.16.0"
+		"eslint": "8.1.0"
 	},
 	"dependencies": {
 		"hexo-generator-json-content": "^4.2.3",
