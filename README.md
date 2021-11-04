@@ -50,17 +50,5 @@
 ## 💴 赞助我促进更新
 有问题可以在留言处提问
 ![支付二维码](https://i.dawnlab.me/ee0093ead3ca8145522ba766c3f9a0ee.png)
-
-## 🍻 后续更新
-star 以及 issue 是我更新的动力!
-新闻聊天划水群： [482634342 轻惋摸🐟社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 
-
-## 社区
-
-讨论主题，进主题讨论群 614621637：[Hexo Nexmoe 主题](https://jq.qq.com/?_wv=1027&k=1YL6FmUS)
-
-Telegram 群：https://t.me/hexo_theme_nexmoe
-
-社区讨论：https://github.com/theme-nexmoe/hexo-theme-nexmoe/discussions
      
 [![Powered By Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg "Powered By Vercel")](https://vercel.com/?utm_source=theme-nexmoe&utm_campaign=oss "Powered By Vercel")
