@@ -1,17 +1,17 @@
 ---
-continue: 查看更多
+continue: もっと見る
 nav:
-  home: 回到首页
-search: 搜索
-archive: 文章归档
-recent_posts: 最新文章
-categories: 文章分类
-tagcloud: 标签云
-social: 社交按钮
+  home: ホームに戻る
+search: 検索
+archive: 記事のアーカイブ
+recent_posts: 最新記事
+categories: カテゴリ管理
+tagcloud: タグクラウド
+social: ソーシャルボタン
 count:
-  articles: 文章
-  tags: 标签
-  categories: 分类
+  articles: 記事
+  tags: タグ
+  categories: カテゴリ
 copyright:
-  author: 本文作者
-  permalink: 本文链接
+  author: オリジナルの投稿者
+  permalink: 本文リンク
