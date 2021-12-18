@@ -1,17 +1,17 @@
 ---
-continue: 查看更多
+continue: Mostra di più
 nav:
-  home: 回到首页
-search: 搜索
-archive: 文章归档
-recent_posts: 最新文章
-categories: 文章分类
-tagcloud: 标签云
-social: 社交按钮
+  home: Home
+search: Cerca
+archive: Archivio
+recent_posts: Post recenti
+categories: Categorie
+tagcloud: Tagcloud
+social: Social
 count:
-  articles: 文章
-  tags: 标签
-  categories: 分类
+  articles: Articoli
+  tags: Tags
+  categories: Categorie
 copyright:
-  author: 本文作者
-  permalink: 本文链接
+  author: Autore
+  permalink: Link
