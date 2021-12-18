@@ -2,6 +2,6 @@
 "files": [
     {
         source: "/languages/zh-CN.yml",
-        translation: "/languages/%locale%.yml",
+        translation: "/languages/%two_letters_code%.yml",
     },
 ]
