@@ -1,0 +1,17 @@
+---
+continue: More
+nav:
+  home: Home
+search: Search
+archive: Archive
+recent_posts: Recent Posts
+categories: Categories
+tagcloud: Tag Cloud
+social: Social Button
+count:
+  articles: Articles
+  tags: Tags
+  categories: Categories
+copyright:
+  author: Author
+  permalink: Link
