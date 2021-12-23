@@ -3,15 +3,15 @@ continue: 查看更多
 nav:
   home: 返回主頁
 search: 掃描
-archive: 文章归档
+archive: 文章歸檔
 recent_posts: 最新文章
 categories: 文章分類
 tagcloud: 標籤雲
-social: 社交按钮
+social: 社交按鈕
 count:
   articles: 文章
   tags: 標籤
-  categories: 分类
+  categories: 分類
 copyright:
-  author: 本文作者
-  permalink: 本文链接
+  author: 作者
+  permalink: 文章連結
