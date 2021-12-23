@@ -1,16 +1,16 @@
 ---
 continue: 查看更多
 nav:
-  home: 回到首页
-search: 搜索
+  home: 返回主頁
+search: 掃描
 archive: 文章归档
 recent_posts: 最新文章
-categories: 文章分类
-tagcloud: 标签云
+categories: 文章分類
+tagcloud: 標籤雲
 social: 社交按钮
 count:
   articles: 文章
-  tags: 标签
+  tags: 標籤
   categories: 分类
 copyright:
   author: 本文作者
