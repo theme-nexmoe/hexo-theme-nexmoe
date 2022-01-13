@@ -27,7 +27,6 @@
 		"eslint": "8.1.0"
 	},
 	"dependencies": {
-		"hexo-generator-json-content": "^4.2.3",
-		"hexo-wordcount": "^6.0.1"
+		"hexo-generator-json-content": "^4.2.3"
 	}
 }
