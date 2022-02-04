@@ -35,6 +35,7 @@
 | [LittleDeng](https://lde.ng/)   | ![LittleDeng](https://img.shields.io/website?url=https://lde.ng/)  |
 | [fly6022's Blog](https://blog.fly6022.fun)   | ![fly6022's Blog](https://img.shields.io/website?url=https://blog.fly6022.fun)  |
 | [繁华是客 Blog](https://nexmoe-demo.kract.xyz)   | ![繁华是客 Blog](https://img.shields.io/website?url=https://nexmoe-demo.kract.xyz)  |
+| [Fentaniao](https://fentaniao.github.io)   | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io)  |
 
 ## 💻 贡献者
 
