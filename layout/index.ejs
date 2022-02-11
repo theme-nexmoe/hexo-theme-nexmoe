@@ -17,14 +17,26 @@
 
         <div class="nexmoe-post-meta nexmoe-rainbow">
             <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+            <% if (page.categories && page.categories.length){ %>
+                <%- list_categories(page.categories, {
+                    show_count: false,
+                    class: 'nexmoefont icon-appstore-fill ',
+                    style: 'none',
+                    separator: ''
+                }) %>
+            <% } %>
+            <% if (page.tags && page.tags.length){ %>
+                <%- list_tags(page.tags, {
+                    show_count: false,
+                    class: 'nexmoefont icon-tag-fill ',
+                    style: 'none',
+                    separator: ' '
+                }) %>
+            <% } %>
         </div>
 
         <article>
-            <% if(page.excerpt) {%>
-                <%- page.excerpt %>
-            <%}  else{ %>
-                <%- truncate(page.content, {length: 150, separator: ' '}) %>
-            <% } %>
+            <%- page.excerpt %>
         </article>
     </div>
     <% }) %>
