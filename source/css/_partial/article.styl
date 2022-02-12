@@ -333,17 +333,17 @@ article ol {
 	margin-top: 0;
 }
 
-article > ol {
+article ol {
 	list-style-type: none;
 	counter-reset: item;
 }
 
-article > ol > li {
+article ol > li {
 	position: relative;
 	padding: 0.4rem 0;
 }
 
-article > ol > li::before {
+article ol > li::before {
 	content: counter(item);
 	counter-increment: item;
 	position: absolute;
