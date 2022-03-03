@@ -37,6 +37,7 @@
 | [繁华是客 Blog](https://nexmoe-demo.kract.xyz)   | ![繁华是客 Blog](https://img.shields.io/website?url=https://nexmoe-demo.kract.xyz)  |
 | [Fentaniao](https://fentaniao.github.io)   | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io)  |
 | [萌小志のBlog](https://mengxiaozhi.galigali.club)   | ![萌小志のBlog](https://img.shields.io/website?url=https://mengxiaozhi.galigali.club)  |
+| [衬线柔骨](http://sxrekord.com)   | ![衬线柔骨](https://img.shields.io/website?url=http://sxrekord.com)  |
 
 ## 💻 贡献者
 
