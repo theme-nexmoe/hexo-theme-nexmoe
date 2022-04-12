@@ -8,7 +8,7 @@
           </div>
       <%}  else{ %>
           <div class="nexmoe-post-cover" style="padding-bottom: <%- theme.background.height/theme.background.width*100 %>%;"> 
-              <img src="<%- theme.background.path %>" alt="<%= page.title %>" loading="lazy">
+              <img data-fancybox="gallery" src="<%- theme.background.path %>" alt="<%= page.title %>" loading="lazy">
               <h1><%= page.title %></h1>
           </div>
       <% } %>
