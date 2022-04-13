@@ -6,14 +6,24 @@
 
 ## ✨ 特性
 
-- 图片懒加载
-- 内置多语言
-- 支持多款评论插件
-- 网页访问统计
-- 侧栏备案信息
-- 灯箱大图
-- 图片瀑布流
-- 社交按钮
+
+| 功能               | 可用 |
+| ------------------ | ---- |
+| 图片瀑布流         | ✅    |
+| 图片瀑布流 Pro     | ✅    |
+| 灯箱大图           | ✅    |
+| 自定义主题颜色     | ✅    |
+| 闪亮的归档页面     | ✅    |
+| 漂亮的友情链接页面 | ✅    |
+| 内置/外置搜索      | ✅    |
+| 侧栏备案信息       | ✅    |
+| 网页访问统计       | ✅    |
+| 支持多款评论插件   | ✅    |
+| 内置多语言         | ✅    |
+| 图片懒加载         | ✅    |
+| 社交按钮           | ✅    |
+
+  
 
 ## 🎓 使用说明
 
@@ -25,20 +35,14 @@
 
 欢迎将你的网站提交到这里来 [直接编辑](https://github.com/theme-nexmoe/hexo-theme-nexmoe/edit/master/README.md)
 
-| 站点                                  | 状态                                                         |
-| ------------------------------------- | ------------------------------------------------------------ |
-| [折影轻梦](https://nexmoe.com/)       | ![折影轻梦](https://img.shields.io/website?url=https://nexmoe.com/) |
-| [官方示例](https://hexo-theme-nexmoe-example.vercel.app/)   | ![官方示例](https://img.shields.io/website?url=https://hexo-theme-nexmoe-example.vercel.app/)  |
-| [糖羽仙](https://www.tangyuxian.com/) | ![萌糖官方网站](https://img.shields.io/website?url=https://www.tangyuxian.com/)  |
-| [深海小涛](https://hexo.xtaolink.cn/) | ![深海小涛](https://img.shields.io/website?url=https://hexo.xtaolink.cn/)  |
-| [西瓜星 🍉✨](https://suikastar.com/)   | ![西瓜星 🍉✨](https://img.shields.io/website?url=https://suikastar.com/)  |
-| [LittleDeng](https://lde.ng/)   | ![LittleDeng](https://img.shields.io/website?url=https://lde.ng/)  |
-| [fly6022's Blog](https://blog.fly6022.fun)   | ![fly6022's Blog](https://img.shields.io/website?url=https://blog.fly6022.fun)  |
-| [繁华是客 Blog](https://nexmoe-demo.kract.xyz)   | ![繁华是客 Blog](https://img.shields.io/website?url=https://nexmoe-demo.kract.xyz)  |
-| [Fentaniao](https://fentaniao.github.io)   | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io)  |
-| [萌小志のBlog](https://mengxiaozhi.galigali.club)   | ![萌小志のBlog](https://img.shields.io/website?url=https://mengxiaozhi.galigali.club)  |
-| [衬线柔骨](http://sxrekord.com)   | ![衬线柔骨](https://img.shields.io/website?url=http://sxrekord.com)  |
-| [DreamCcc](https://note.bequick.run)   | ![DreamCcc](https://img.shields.io/website?url=https://note.bequick.run)  |
+| 站点                                  | 状态                                                         | 站点                                                       | 状态                                                       |
+| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [折影轻梦](https://nexmoe.com/)       | ![折影轻梦](https://img.shields.io/website?url=https://nexmoe.com/) | [fly6022's Blog](https://blog.fly6022.fun) | ![fly6022's Blog](https://img.shields.io/website?url=https://blog.fly6022.fun) |
+| [官方示例](https://hexo-theme-nexmoe-example.vercel.app/)   | ![官方示例](https://img.shields.io/website?url=https://hexo-theme-nexmoe-example.vercel.app/)  | [LittleDeng](https://lde.ng/) | ![LittleDeng](https://img.shields.io/website?url=https://lde.ng/) |
+| [糖羽仙](https://www.tangyuxian.com/) | ![萌糖官方网站](https://img.shields.io/website?url=https://www.tangyuxian.com/)  | [繁华是客 Blog](https://nexmoe-demo.kract.xyz) | ![繁华是客 Blog](https://img.shields.io/website?url=https://nexmoe-demo.kract.xyz) |
+| [深海小涛](https://hexo.xtaolink.cn/) | ![深海小涛](https://img.shields.io/website?url=https://hexo.xtaolink.cn/)  | [DreamCcc](https://note.bequick.run) | ![DreamCcc](https://img.shields.io/website?url=https://note.bequick.run) |
+| [西瓜星 🍉✨](https://suikastar.com/)   | ![西瓜星 🍉✨](https://img.shields.io/website?url=https://suikastar.com/)  | [衬线柔骨](http://sxrekord.com) | ![衬线柔骨](https://img.shields.io/website?url=http://sxrekord.com) |
+| [Fentaniao](https://fentaniao.github.io)                  | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io) | [萌小志のBlog](https://mengxiaozhi.galigali.club) | ![萌小志のBlog](https://img.shields.io/website?url=https://mengxiaozhi.galigali.club) |
 
 ## 💻 贡献者
 
