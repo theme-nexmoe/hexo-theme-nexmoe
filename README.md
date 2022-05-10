@@ -43,7 +43,7 @@
 | [深海小涛](https://hexo.xtaolink.cn/)                     | ![深海小涛](https://img.shields.io/website?url=https://hexo.xtaolink.cn/) | [DreamCcc](https://note.bequick.run)              | ![DreamCcc](https://img.shields.io/website?url=https://note.bequick.run) |
 | [西瓜星 🍉✨](https://suikastar.com/)                       | ![西瓜星 🍉✨](https://img.shields.io/website?url=https://suikastar.com/) | [衬线柔骨](http://sxrekord.com)                   | ![衬线柔骨](https://img.shields.io/website?url=http://sxrekord.com) |
 | [Fentaniao](https://fentaniao.github.io)                  | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io) | [萌小志のBlog](https://mengxiaozhi.galigali.club) | ![萌小志のBlog](https://img.shields.io/website?url=https://mengxiaozhi.galigali.club) |
-| [矿快报](https://latestminer.github.io)                   | ![Fentaniao](https://img.shields.io/website?url=https://latestminer.github.io) |                                                   |                                                              |
+| [矿快报](https://latestminer.github.io)                   | ![Fentaniao](https://img.shields.io/website?url=https://latestminer.github.io) |    [nukiyoam's blog](https://nukiyoam.github.io)                                                |   ![nukiyoam](https://img.shields.io/website?url=https://nukiyoam.github.io)                                                           |
 ## 💻 贡献者
 
 ![贡献者](https://opencollective.com/hexo-theme-nexmoe/contributors.svg?width=890&button=false)
