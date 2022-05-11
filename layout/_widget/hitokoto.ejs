@@ -8,10 +8,10 @@
       <ul class="hitokoto-box">
         <li id="hitokoto_text_parent" class="hitokoto-text" hitokotoCategory="<%= theme.widgetHitokoto.category %>">
           <a href="#" id="hitokoto_text">
-            <%= theme.widgetHitokoto.loading_placeholder %>
+            <%if (!theme.widgetHitokoto.loading_placeholder) { %> 🚀 获取中... <% } %>
           </a>
           <a href="#" id="hitokoto_error_text" style="display: none;">
-            <%= theme.widgetHitokoto.loading_error_placeholder %>
+            <%if (!theme.widgetHitokoto.loading_error_placeholder) { %> 🐞 获取失败... <% } %>
           </a>
         </li>
       </ul>
