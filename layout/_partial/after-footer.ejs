@@ -1,7 +1,8 @@
-<%- js_auto_version('lib/mdui_043tiny/mdui.js') %>
-<%- js_auto_version('lib/jquery.min.js') %>
-<%- js_auto_version('lib/fancybox/fancybox.umd.js') %>
-
+<%- js([
+	'lib/mdui_043tiny/mdui.js','lib/jquery.min.js', 
+	'lib/justifiedGallery/jquery.justifiedGallery.min.js',
+	'lib/fancybox/fancybox.umd.js'
+]) %>
 
 <% if (theme.copyText) { %>
 	<script>var copyTip = "<%- theme.copyText %>"</script>
@@ -13,7 +14,6 @@
 	<%- js_auto_version('js/search') %>
 <%  } %>
 
-<%- js_auto_version('lib/justifiedGallery/jquery.justifiedGallery.min.js') %>
 <script>
 	$(".justified-gallery").justifiedGallery({
 		rowHeight: 160,
