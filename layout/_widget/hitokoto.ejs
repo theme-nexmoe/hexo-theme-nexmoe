@@ -1,0 +1,30 @@
+<!-- 一言 -->
+<% if (theme.widgets.includes('hitokoto')){ %>
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">
+      <%= __('hitokoto') %>
+    </h3>
+    <div class="nexmoe-widget">
+      <ul class="hitokoto-box">
+        <!-- 请注意，以下的示例包含超链接，您可能需要手动配置样式使其不变色。如果您嫌麻烦，可以移除。 -->
+        <li class="hitokoto-text">
+          <a href="#" id="hitokoto_text">:D 获取中...</a>
+        </li>
+        <!-- 以下写法，选取一种即可 -->
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- 现代写法，推荐(不支持 IE) -->
+  <script>
+    fetch('https://v1.hitokoto.cn')
+      .then(response => response.json())
+      .then(data => {
+        const hitokoto = document.getElementById('hitokoto_text')
+        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        hitokoto.innerText = data.hitokoto
+      })
+      .catch(console.error)
+  </script>
+  <% } %>

@@ -55,6 +55,7 @@ widgets:
 - social
 - category
 - tagcloud
+- hitokoto # 一言 widget
 # - archive #settings: widgetAchive
 # - recent_posts
 # - link #settings: widgetLink
