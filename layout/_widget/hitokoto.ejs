@@ -6,25 +6,38 @@
     </h3>
     <div class="nexmoe-widget">
       <ul class="hitokoto-box">
-        <!-- 请注意，以下的示例包含超链接，您可能需要手动配置样式使其不变色。如果您嫌麻烦，可以移除。 -->
-        <li class="hitokoto-text">
-          <a href="#" id="hitokoto_text">:D 获取中...</a>
+        <li id="hitokoto_text_parent" class="hitokoto-text" hitokotoCategory="<%= theme.widgetHitokoto.category %>">
+          <a href="#" id="hitokoto_text">
+            <%= theme.widgetHitokoto.loading_placeholder %>
+          </a>
+          <a href="#" id="hitokoto_error_text" style="display: none;">
+            <%= theme.widgetHitokoto.loading_error_placeholder %>
+          </a>
         </li>
-        <!-- 以下写法，选取一种即可 -->
       </ul>
-
     </div>
   </div>
 
-  <!-- 现代写法，推荐(不支持 IE) -->
   <script>
-    fetch('https://v1.hitokoto.cn')
-      .then(response => response.json())
-      .then(data => {
-        const hitokoto = document.getElementById('hitokoto_text')
-        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-        hitokoto.innerText = data.hitokoto
-      })
-      .catch(console.error)
+    let hitokotoText = document.getElementById('hitokoto_text')
+    let hitokotoErroText = document.getElementById('hitokoto_error_text')
+    let hitokotoCategory = document.getElementById('hitokoto_text_parent').getAttribute('hitokotoCategory')
+    window.onload = function () {
+      let url = 'https://v1.hitokoto.cn'
+      if (hitokotoCategory) {
+        url += '?c=' + hitokotoCategory
+      }
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          hitokotoText.innerText = "「 " + data.hitokoto + " 」 from " + data.from
+          hitokotoText.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        })
+        .catch((reason) => {
+          console.error(11, reason)
+          hitokotoText.style.display = 'none'
+          hitokotoErroText.style.display = 'block'
+        })
+    }
   </script>
   <% } %>
