@@ -1,9 +1,8 @@
 $gutter = 25px;
-$radius = 13px;
 
 :root {
-    --gutter: $gutter;
-    --radius: $radius;
+    --gutter: 25px;
+    --radius: 13px;
     --color-primary: #ff4e6a;
     --color2: #ff761e;
     --color3: #ffb900;
@@ -180,7 +179,7 @@ body {
         .nexmoe-list-item {
             padding: 0 36px;
             color: #9ca2a8;
-            border-radius: $radius;
+            border-radius: var(--radius);
             margin-bottom: 10px;
             text-align: center;
             transition: none !important;
@@ -210,7 +209,7 @@ body {
         box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
         background-color: #fff;
         margin: 20px;
-        border-radius: $radius;
+        border-radius: var(--radius);
         overflow: hidden;
         white-space: normal;
 
@@ -267,7 +266,7 @@ body {
             padding-top: 11px;
 
             a {
-                border-radius: $radius;
+                border-radius: var(--radius);
                 padding: 5px 10px;
                 font-size: 12px !important;
                 display: inline-block;
@@ -326,7 +325,7 @@ body {
             display: inline-block;
             color: #ddd;
             background-color: #f5f6f5;
-            border-radius: $radius;
+            border-radius: var(--radius);
             margin-top: -10px;
 
             .prev {
@@ -343,7 +342,7 @@ body {
 
         .nexmoe-page-nav > * {
             color: #999;
-            border-radius: $radius;
+            border-radius: var(--radius);
             width: 35px;
             height: 35px;
             line-height: 35px;
