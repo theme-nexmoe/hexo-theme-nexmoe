@@ -4,13 +4,26 @@ $radius = 13px;
 :root {
     --gutter: $gutter;
     --radius: $radius;
+    --color-primary: #ff4e6a;
+    --color2: #ff761e;
+    --color3: #ffb900;
+    --color4: #33d57a;
+    --color5: #00dbff;
+    --color6: #1a98ff;
+    --color7: #9090ff;
+    --color-primary-bg: rgba(255,78,106,0.15);
+    --color2-bg: rgba(255,118,30,0.15);
+    --color3-bg: rgba(255,185,0,0.15);
+    --color4-bg: rgba(51,213,122,0.15);
+    --color5-bg: rgba(0,219,255,0.15);
+    --color6-bg: rgba(26,152,255,0.15);
+    --color7-bg: rgba(144,144,255,0.15);
 }
 
 @import '_partial/archives.styl';
 @import '_partial/article.styl';
 @import '_partial/py.styl';
 @import '_partial/searchbox.styl';
-@import './color.styl';
 
 *, *:after, *::before {
     box-sizing: border-box;
@@ -179,8 +192,8 @@ body {
 
         .nexmoe-list-item.true {
             opacity: 0.9;
-            background: $color1;
-            box-shadow: 0 2px 12px $color1;
+            background: var(--color-primary);
+            box-shadow: 0 2px 12px var(--color-primary);
         }
 
         .nexmoe-list-item i {
@@ -206,7 +219,7 @@ body {
             font-weight: 400;
             padding: 24px 18px 12px;
             margin: 0;
-            color: $color1;
+            color: var(--color-primary);
         }
 
         .nexmoe-widget {
@@ -241,7 +254,7 @@ body {
                 line-height: 26px;
                 text-align: center;
                 border-radius: 100%;
-                color: $color1;
+                color: var(--color-primary);
                 position: absolute;
                 right: 18px;
                 top: 10px;
@@ -280,7 +293,7 @@ body {
         font-size: 12px;
 
         a {
-            color: $color1;
+            color: var(--color-primary);
         }
     }
 }
@@ -322,9 +335,9 @@ body {
 
             .current {
                 color: #fff;
-                background: $color1;
+                background: var(--color-primary);
                 opacity: 0.9;
-                box-shadow: 0 2px 12px $color1;
+                box-shadow: 0 2px 12px var(--color-primary);
             }
         }
 
@@ -456,7 +469,7 @@ body {
             overflow: hidden;
 
             a {
-                color: $color1;
+                color: var(--color-primary);
             }
         }
 
@@ -672,7 +685,7 @@ body {
 
 .nexmoe-toc a:hover {
     text-decoration: underline;
-    color: $color1;
+    color: var(--color-primary);
 }
 
 .nexmoe-toc ol {
@@ -700,75 +713,75 @@ photos img {
 
 .nexmoe-rainbow {
     a:nth-child(7n+1) {
-        background-color: $nrbgc1;
-        color: $color1;
+        background-color: var(--color-primary-bg);
+        color: var(--color-primary);
     }
 
     a:nth-child(7n+2) {
-        background-color: $nrbgc2;
-        color: $color2;
+        background-color: var(--color2-bg);
+        color: var(--color2);
     }
 
     a:nth-child(7n+3) {
-        background-color: $nrbgc3;
-        color: $color3;
+        background-color: var(--color3-bg);
+        color: var(--color3);
     }
 
     a:nth-child(7n+4) {
-        background-color: $nrbgc4;
-        color: $color4;
+        background-color: var(--color4-bg);
+        color: var(--color4);
     }
 
     a:nth-child(7n+5) {
-        background-color: $nrbgc5;
-        color: $color5;
+        background-color: var(--color5-bg);
+        color: var(--color5);
     }
 
     a:nth-child(7n+6) {
-        background-color: $nrbgc6;
-        color: $color6;
+        background-color: var(--color6-bg);
+        color: var(--color6);
     }
 
     a:nth-child(7n+7) {
-        background-color: $nrbgc7;
-        color: $color7;
+        background-color: var(--color7-bg);
+        color: var(--color7);
     }
 }
 
 .nexmoe-rainbow-fill {
     a:nth-child(7n+1) {
         color: #fff;
-        background-color: $nrfbgc1;
+        background-color: var(--color-primary);
     }
 
     a:nth-child(7n+2) {
         color: #fff;
-        background-color: $nrfbgc2;
+        background-color: var(--color2);
     }
 
     a:nth-child(7n+3) {
         color: #fff;
-        background-color: $nrfbgc3;
+        background-color: var(--color3);
     }
 
     a:nth-child(7n+4) {
         color: #fff;
-        background-color: $nrfbgc4;
+        background-color: var(--color4);
     }
 
     a:nth-child(7n+5) {
         color: #fff;
-        background-color: $nrfbgc5;
+        background-color: var(--color5);
     }
 
     a:nth-child(7n+6) {
         color: #fff;
-        background-color: $nrfbgc6;
+        background-color: var(--color6);
     }
 
     a:nth-child(7n+7) {
         color: #fff;
-        background-color: $nrfbgc7;
+        background-color: var(--color7);
     }
 }
 
