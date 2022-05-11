@@ -78,36 +78,7 @@ social:
     - rgba(25, 23, 23, .15)
 
 # 自定义样式，启用后可在站点的source文件夹下新建custom.css自定义站点样式
-customstyle: false  
-color: # 配色方案，从first到seventh为优先级为1-7的颜色，默认为彩虹配色
-  first: # 同时作为主题色
-    r: 255 
-    g: 78
-    b: 106
-  second:
-    r: 255
-    g: 118
-    b: 30
-  third:
-    r: 255
-    g: 185
-    b: 0
-  fourth:
-    r: 51
-    g: 213
-    b: 122
-  fifth:
-    r: 0
-    g: 219
-    b: 255
-  sixth:
-    r: 26
-    g: 152
-    b: 255
-  seventh:
-    r: 144
-    g: 144
-    b: 255
+customstyle: false
 
 # 向搜索引擎验证你对站点的所有权，用于向搜索引擎提交 sitemap 和管理站点被搜索引擎收录的情况。
 site_verification: 
