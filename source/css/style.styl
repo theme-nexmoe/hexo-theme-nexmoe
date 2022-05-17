@@ -23,6 +23,8 @@ $gutter = 25px;
 @import '_partial/article.styl';
 @import '_partial/py.styl';
 @import '_partial/searchbox.styl';
+@import '_widget/hitokoto.styl';
+
 
 *, *:after, *::before {
     box-sizing: border-box;
@@ -583,6 +585,8 @@ body {
 .nexmoe-post-right {
     margin: 0px 0 - $gutter;
     text-align: right;
+    width: calc(100vw - 350px);
+    max-width: calc(100% + 50px);
 }
 
 .nexmoe-valign {
@@ -633,8 +637,6 @@ body {
     .nexmoe-post-right {
         margin: $gutter 0px;
         text-align: left;
-        width: calc(100vw - 350px);
-        max-width: calc(100% + 50px);
     }
 
     .nexmoe-post-right .nexmoe-fixed {
