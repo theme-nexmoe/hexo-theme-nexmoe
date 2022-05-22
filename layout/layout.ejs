@@ -38,8 +38,11 @@
         <link rel="stylesheet" href="<%= theme.iconlib %>">
     <% } %>
     <%- css_auto_version('css/style') %>
-    <% if (theme.customstyle) { %>
-        <%- css_auto_version('custom.css') %>
+
+    <% if (theme.customStyles) { %>
+        <% theme.customStyles.forEach(function(custom){ %>
+            <%- css_auto_version('custom.css') %>
+        <% }) %>
     <% } %>
 </head>
 
