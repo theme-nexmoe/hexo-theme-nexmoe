@@ -14,10 +14,10 @@
       <% } %>
       
       <%- partial('_partial/_post/meta') %>
-
       <%- partial('_partial/_post/word-count', {post: page}) %>
 
       <%- page.content %>
+      <%- theme.slotArticleEnd %>
   </article>
 
   <% if (!page.reprint){ %>
@@ -28,7 +28,7 @@
 
   <% if (page.comments){ %>
       <div class="nexmoe-post-footer">
-          <%- theme.comment ? partial('_partial/comment') : '' %>
+          <%- theme.slotComment %>
       </div>
   <% } %>
 </div>
