@@ -24,8 +24,7 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="<%= config.keywords %>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <%- partial('_partial/_analytics/gtm-head') %>
-    <%- partial('_partial/site-verification') %>
+    <%- theme.slotHead %>
     <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
     <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
     <%- css([
@@ -45,7 +44,6 @@
 </head>
 
 <body class="mdui-drawer-body-left">
-    <%- partial('_partial/_analytics/gtm-body') %>
     <div id="nexmoe-background">
         <div class="nexmoe-bg" style="background-image: url(<%= theme.background.path %>)"></div>
         <div class="mdui-appbar mdui-shadow-0">
@@ -89,7 +87,6 @@
     </div>
     <%- partial('_partial/searchbox') %>
     <%- partial('_partial/after-footer') %>
-    <%- partial('_partial/analytics') %>
 </body>
 
 </html>
