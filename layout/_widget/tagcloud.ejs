@@ -3,9 +3,9 @@
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
       <%- tagcloud() %>
     </div>
-    <% if (theme.maxTagcloud){ %>
+    <% if (options.maxTagcloud){ %>
       <script>
-        var maxTagcloud = parseInt(<%= theme.maxTagcloud %>);
+        var maxTagcloud = parseInt(<%= options.maxTagcloud %>);
         var tags_length = parseInt(<%= site.tags.length %>);
         var tags_arr = [];
         for(var i = 0; i < tags_length; i++){

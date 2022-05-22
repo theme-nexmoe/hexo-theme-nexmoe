@@ -1,8 +1,8 @@
 <div class="nexmoe-widget-wrap">
     <div class="nexmoe-widget nexmoe-link">
 		<ul>
-        <% if(theme.widgetLink){
-            theme.widgetLink.forEach(widget => { %>
+        <% if(options.widgetLink){
+            options.widgetLink.forEach(widget => { %>
             <li>
                 <a href="<%- widget.link %>" target="_blank" >
                     <img src="<%- widget.img %>" alt="<%- widget.title %>"></img>
@@ -18,7 +18,7 @@
     text-align : center;
 }
 .nexmoe-widget-wrap .nexmoe-link ul li a img {
-    max-width : 200px;
+    max-width : 100%;
 }
 .nexmoe-widget-wrap .nexmoe-link ul li a p {
     margin: 10px 0;
