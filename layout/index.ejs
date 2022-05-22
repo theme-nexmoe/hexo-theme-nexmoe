@@ -33,9 +33,8 @@
                     separator: ' '
                 }) %>
             <% } %>
+            <%- partial('_partial/_post/word-count', {post: page}) %>
         </div>
-
-        <%- partial('_partial/_post/word-count', {post: page}) %>
 
         <article>
             <%- page.excerpt %>

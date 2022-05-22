@@ -25,7 +25,7 @@
 	"homepage": "https://docs.nexmoe.com/",
 	"devDependencies": {
 		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.13.0"
+		"eslint": "8.15.0"
 	},
 	"dependencies": {
 		"hexo-generator-json-content": "^4.2.3"
