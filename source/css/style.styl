@@ -17,6 +17,7 @@ $gutter = 25px;
     --color5-bg: rgba(0,219,255,0.15);
     --color6-bg: rgba(26,152,255,0.15);
     --color7-bg: rgba(144,144,255,0.15);
+    --color-shadow: rgba(161, 177, 204, 0.4);
 }
 
 @import '_partial/archives.styl';
@@ -115,7 +116,7 @@ body {
         width: calc(100% - 90px);
         overflow: hidden;
         border-radius: 100%;
-        box-shadow: 0 0.3rem 2rem rgba(161, 177, 204, 0.6);
+        box-shadow: 0 0.3rem 2rem var(--color-shadow);
 
         a {
             padding-bottom: 100%;
@@ -208,7 +209,7 @@ body {
     }
 
     .nexmoe-widget-wrap {
-        box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
+        box-shadow: 0 0 1rem var(--color-shadow);
         background-color: #fff;
         margin: 20px;
         border-radius: var(--radius);
@@ -313,7 +314,7 @@ body {
     position: relative;
 
     .nexmoe-primary {
-        box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
+        box-shadow: 0 0 1rem var(--color-shadow);
         background-color: #fff;
         float: left;
         width: 100%;
@@ -662,7 +663,7 @@ body {
 .nexmoe-toc {
     width: auto;
     text-align: left;
-    box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
+    box-shadow: 0 0 1rem var(--color-shadow);
     background-color: #fff;
     position: absolute;
     bottom: 0px;
