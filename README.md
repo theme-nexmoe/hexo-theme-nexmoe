@@ -27,7 +27,8 @@
 
 ## 🎓 使用说明
 
-请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
+英文，请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
+中文，旧版  <https://docs.nexmoe.com/v3.2/>
 
 ## 💻 演示
 
