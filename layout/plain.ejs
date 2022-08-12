@@ -1,0 +1,24 @@
+<div class="nexmoe-post">
+
+    <article>
+        <% if (page.cover){ %>
+            <div class="nexmoe-post-cover" style="padding-bottom: <%- page.coverHeight/page.coverWidth*100 %>%;"> 
+                <img src="<%- page.cover %>" alt="<%= page.title %>" loading="lazy">
+                <h1><%= page.title %></h1>
+            </div>
+        <%}  else{ %>
+            <div class="nexmoe-post-cover" style="padding-bottom: <%- theme.background.height/theme.background.width*100 %>%;"> 
+                <img data-fancybox="gallery" src="<%- theme.background.path %>" alt="<%= page.title %>" loading="lazy">
+                <h1><%= page.title %></h1>
+            </div>
+        <% } %>
+        
+        <%- page.content %>
+    </article>
+  
+    <% if (page.comments){ %>
+        <div class="nexmoe-post-footer">
+            <%- theme.slotComment %>
+        </div>
+    <% } %>
+  </div>
