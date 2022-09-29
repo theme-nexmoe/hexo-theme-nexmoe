@@ -31,3 +31,9 @@ $(document).on("copy", function(){
   sel.selectAllChildren(ele);
   setTimeout(function () {document.body.removeChild(ele);});
 });
+
+function imgOnError(_this) {
+  console.log(_this)
+  _this.onerror = null;
+  _this.src = "https://lib.xiaoshuapp.com/imgproxy/OS9HYzNi3gJUD0wywtfjUW6Hnw0OYsuMWB59Tq2ANF0/w:96/bG9jYWw6Ly8vMzMzNTg2NjYtN2MzMC00OTViLWIwZmItYWRjNDVkMDlhNzk2LnBuZw";
+}
