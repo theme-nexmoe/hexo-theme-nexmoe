@@ -10,13 +10,13 @@ $gutter = 25px;
     --color5: #00dbff;
     --color6: #1a98ff;
     --color7: #9090ff;
-    --color-primary-bg: rgba(255,78,106,0.15);
-    --color2-bg: rgba(255,118,30,0.15);
-    --color3-bg: rgba(255,185,0,0.15);
-    --color4-bg: rgba(51,213,122,0.15);
-    --color5-bg: rgba(0,219,255,0.15);
-    --color6-bg: rgba(26,152,255,0.15);
-    --color7-bg: rgba(144,144,255,0.15);
+    --color-primary-bg: rgba(255, 78, 106, 0.15);
+    --color2-bg: rgba(255, 118, 30, 0.15);
+    --color3-bg: rgba(255, 185, 0, 0.15);
+    --color4-bg: rgba(51, 213, 122, 0.15);
+    --color5-bg: rgba(0, 219, 255, 0.15);
+    --color6-bg: rgba(26, 152, 255, 0.15);
+    --color7-bg: rgba(144, 144, 255, 0.15);
     --color-shadow: rgba(161, 177, 204, 0.4);
 }
 
@@ -25,7 +25,6 @@ $gutter = 25px;
 @import '_partial/py.styl';
 @import '_partial/searchbox.styl';
 @import '_widget/hitokoto.styl';
-
 
 *, *:after, *::before {
     box-sizing: border-box;
@@ -401,7 +400,7 @@ body {
 
             h1 {
                 color: #fff;
-                font-size: 2.5em;
+                font-size: 2.5rem;
                 font-weight: normal;
                 margin: 0;
                 margin-top: 10px;
@@ -604,7 +603,7 @@ body {
 
 .nexmoe-post-right .nexmoe-fixed {
     position: fixed;
-    z-index: 1000;
+    z-index: 99999;
     height: 100vh;
     display: inline-block;
     top: 0;
@@ -661,7 +660,10 @@ body {
 }
 
 .nexmoe-toc {
-    width: auto;
+    text-transform: none;
+    width: 500px;
+    max-width: calc(100vw - 40px);
+    white-space: normal;
     text-align: left;
     box-shadow: 0 0 1rem var(--color-shadow);
     background-color: #fff;
@@ -672,9 +674,6 @@ body {
     padding: 20px;
     font-size: 16px;
     display: none;
-    z-index: 0;
-    max-height: calc(100vh - 130px);
-    overflow-y: scroll;
 }
 
 .nexmoe-tool .catalog:hover .nexmoe-toc {
@@ -703,6 +702,8 @@ body {
 .nexmoe-toc > ol {
     margin: 0;
     padding: 0;
+    max-height: calc(100vh - 155px);
+    overflow-y: scroll;
 }
 
 .nexmoe-toc * {
