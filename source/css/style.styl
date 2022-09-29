@@ -661,7 +661,7 @@ body {
 
 .nexmoe-toc {
     text-transform: none;
-    width: 500px;
+    width: 420px;
     max-width: calc(100vw - 40px);
     white-space: normal;
     text-align: left;
@@ -671,7 +671,6 @@ body {
     bottom: 0px;
     right: 0;
     border-radius: 16px;
-    padding: 20px;
     font-size: 16px;
     display: none;
 }
@@ -681,12 +680,17 @@ body {
 }
 
 .nexmoe-toc a {
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    display: block;
     color: rgba(0, 0, 0, 0.6);
 }
 
 .nexmoe-toc a:hover {
-    text-decoration: underline;
-    color: var(--color-primary);
+    color: #fff;
+    background-color: var(--color-primary);
+    box-shadow: 0 1px 10px var(--color-primary);
 }
 
 .nexmoe-toc ol {
@@ -696,7 +700,6 @@ body {
 
 .nexmoe-toc li {
     margin: 0;
-    line-height: 1.7rem;
 }
 
 .nexmoe-toc > ol {
@@ -704,6 +707,7 @@ body {
     padding: 0;
     max-height: calc(100vh - 155px);
     overflow-y: scroll;
+    padding: 20px;
 }
 
 .nexmoe-toc * {
