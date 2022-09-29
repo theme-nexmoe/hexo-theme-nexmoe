@@ -1,4 +1,4 @@
-$gutter = 25px;
+$gutter = 24px;
 
 :root {
     --gutter: 25px;
@@ -369,10 +369,6 @@ body {
             }
         }
 
-        .nexmoe-post-meta {
-            margin: 10px 0 !important;
-        }
-
         .nexmoe-post:last-child {
             margin-bottom: $gutter;
         }
@@ -381,7 +377,6 @@ body {
     .nexmoe-post {
         .nexmoe-post-cover {
             width: 100%;
-            padding-bottom: 56.25%;
             position: relative;
             overflow: hidden;
             border-radius: 16px;
@@ -399,20 +394,16 @@ body {
             }
 
             h1 {
+                position: relative;
                 color: #fff;
                 font-size: 2.5rem;
-                font-weight: normal;
-                margin: 0;
                 margin-top: 10px;
-                padding-left: 1px;
-                position: absolute;
-                bottom: 0;
                 width: 100%;
                 box-sizing: border-box;
                 text-transform: none;
-                z-index: 1;
                 margin: 0;
                 padding: $gutter;
+                z-index: 1;
             }
 
             h1:after {
@@ -436,8 +427,18 @@ body {
             }
         }
 
+        .nexmoe-post-cover.absolute {
+            padding-bottom: 56.25%;
+
+            h1 {
+                position: absolute;
+                bottom: 0;
+                z-index: 1;
+            }
+        }
+
         .nexmoe-post-meta {
-            margin: $gutter 0px;
+            margin: 10px 0px;
             font-size: 0;
 
             a {
