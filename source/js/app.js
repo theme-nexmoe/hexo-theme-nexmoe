@@ -1,9 +1,9 @@
-// 表格相册
+// tabble gallery
 $("table")
   .has("img")
   .addClass("nexmoe-album");
 
-// 搜索
+// search
 function search() {
   window.open($("#search_form").attr("action_e") + " " + $("#search_value").val());
   return false;
@@ -13,11 +13,9 @@ function search() {
 $(document).ready(function () {
   $("a.toc-link").click(function (ev) {
     ev.preventDefault();
-    $("html, body").animate({
-      scrollTop: $(decodeURI($(this).attr("href"))).offset().top - 25
-    }, {
-      duration: 500,
-      easing: "swing"
+    window.scroll({
+      top: $(decodeURI($(this).attr("href"))).offset().top - 24,
+      behavior: 'smooth'
     });
   });
 });
