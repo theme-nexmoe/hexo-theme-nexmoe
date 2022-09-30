@@ -1,6 +1,5 @@
 <%- js([
 	'lib/mdui_043tiny/mdui.js','lib/jquery.min.js', 
-	'lib/justifiedGallery/jquery.justifiedGallery.min.js',
 	'lib/fancybox/fancybox.umd.js'
 ]) %>
 
@@ -11,10 +10,3 @@
 <%- js_auto_version('js/app') %>
 
 <%- theme.slotFooter %>
-
-<script>
-	$(".justified-gallery").justifiedGallery({
-		rowHeight: 160,
-		margins: 10,
-	});
-</script>
