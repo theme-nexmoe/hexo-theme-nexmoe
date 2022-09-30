@@ -1,26 +1,31 @@
 // tabble gallery
-$("table").has("img").addClass("nexmoe-album");
+document.querySelectorAll("table:has(img)").forEach(function (item) {
+	item.classList.add("nexmoe-album");
+});
 
 // search
 function search() {
 	window.open(
-		$("#search_form").attr("action_e") + " " + $("#search_value").val()
+		document.querySelector("#search_form").getAttribute("action_e") +
+			" " +
+			document.querySelector("#search_value").value
 	);
 	return false;
 }
 
-// 平滑跳转同时修复锚点链接被转义
-$(document).ready(function () {
-	$("a.toc-link").click(function (ev) {
+// catalog
+document.querySelectorAll("a.toc-link").forEach(function (item) {
+	item.addEventListener("click", function (ev) {
 		ev.preventDefault();
+		let title = this.getAttribute("href");
 		window.scroll({
-			top: $(decodeURI($(this).attr("href"))).offset().top - 24,
+			top: document.querySelector(decodeURI(title)).offsetTop - 24,
 			behavior: "smooth",
 		});
 	});
 });
 
-$(document).on("copy", function () {
+document.addEventListener("copy", function () {
 	if (!window.copyTip) {
 		return;
 	}
