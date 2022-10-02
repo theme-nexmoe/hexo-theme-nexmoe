@@ -1,12 +1,21 @@
-<div class="nexmoe-post-meta nexmoe-rainbow">
-    <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-    <% if (page.categories && page.categories.length){ %>
-        <%- list_categories(page.categories, {
-            show_count: false,
-            class: 'nexmoefont icon-appstore-fill ',
-            style: 'none',
-            separator: ''
-        }) %>
+<div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+        <% if (page.categories && page.categories.length){ %>
+            <%- list_categories(page.categories, {
+                show_count: false,
+                class: 'nexmoefont icon-appstore-fill ',
+                style: 'none',
+                separator: ''
+            }) %>
+        <% } %>
+        <%- partial('_partial/_post/word-count', {post: page}) %>
+    </div>
+    
+    <% if (page.wechat){ %>
+        <a class="wechat" href="<%- page.wechat %>" target="_blank"><i class="nexmoefont icon-wechat-fill"></i>微信</a>
     <% } %>
-    <%- partial('_partial/_post/word-count', {post: page}) %>
+    <% if (page.zhihu){ %>
+        <a class="zhihu" href="<%- page.zhihu %>" target="_blank"><i class="nexmoefont icon-zhihu"></i>知乎</a>
+    <% } %>
 </div>
