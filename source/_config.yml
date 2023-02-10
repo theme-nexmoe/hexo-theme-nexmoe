@@ -115,19 +115,32 @@ widgets:
 
 copyTip: "著作权归作者所有。\n商业转载请联系作者获得授权，非商业转载请注明出处。\n来源：%url" # 自定义复制版权文案,使用 %url 代替当前页面URL, 修改为false禁用
 
-slotHead: ''
+slotHead: | 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
 
-slotFooter: '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>'
+    gtag("config", "G-4D4ZJ9G024");
+  </script>
+
+slotFooter: | 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
 
 # 自定义侧边栏尾部内容
-slotSidebar: '<br><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2020018486号</a>
-    <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
-    <img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a>'
+slotSidebar: |
+  <br><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2020018486号</a>
+  <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+  <img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a>
 
 # 评论框插槽
-slotComment: '请在你的配置文件中设置评论框插槽'
+slotComment: | 
+  请在你的配置文件中设置评论框插槽
 
-slotCopyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
+slotCopyright: | 
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
-slotArticleEnd: '<p><img data-fancybox="gallery" src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" 
-alt="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" data-caption="53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>'
+slotArticleEnd: | 
+  <p><img src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>
