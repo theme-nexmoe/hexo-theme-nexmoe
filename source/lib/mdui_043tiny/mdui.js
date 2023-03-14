@@ -5003,6 +5003,9 @@
           // 没有强制关闭，则状态为打开状态
           if (!_this.$drawer.hasClass('mdui-drawer-close')) {
             _this.state = 'opened';
+          } else {
+            // 宽屏下应显示侧边栏
+            _this.$drawer.removeClass('mdui-drawer-close');
           }
         }
 
@@ -5211,9 +5214,9 @@
       _this.state = 'opening';
       componentEvent('open', 'drawer', _this, _this.$drawer);
 
-      if (!_this.options.overlay) {
-        $('body').addClass('mdui-drawer-body-' + _this.position);
-      }
+      // if (!_this.options.overlay) {
+      //   $('body').addClass('mdui-drawer-body-' + _this.position);
+      // }
 
       _this.$drawer
         .removeClass('mdui-drawer-close')
@@ -5245,9 +5248,9 @@
       _this.state = 'closing';
       componentEvent('close', 'drawer', _this, _this.$drawer);
 
-      if (!_this.options.overlay) {
-        $('body').removeClass('mdui-drawer-body-' + _this.position);
-      }
+      // if (!_this.options.overlay) {
+      //   $('body').removeClass('mdui-drawer-body-' + _this.position);
+      // }
 
       _this.$drawer
         .addClass('mdui-drawer-close')
