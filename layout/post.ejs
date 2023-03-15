@@ -24,6 +24,10 @@
   <% } %>
   
   <%- partial('_partial/_post/tag') %>
+  
+  <% if (theme.function.copyCode) { %>
+    <%- js_auto_version('js/copy-codeblock') %>
+  <% } %>
 
   <% if (page.comments){ %>
       <div class="nexmoe-post-footer">
