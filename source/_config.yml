@@ -10,6 +10,7 @@ favicon:
 function: # 功能开关，可选值（true,false）
   globalToc: true # 开启该功能会自动开启文章 TOC（文章目录） 功能
   wordCount: false # 是否开启文章字数统计 (true, false)
+  copyCode: true # 是否允许复制代码块
 
 imageCDN: # 图片 CDN 功能
   enable: false # 开启该功能  
