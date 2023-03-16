@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
   const codeBlocks = document.querySelectorAll('figure.highlight');
   if (!codeBlocks.length) return;
 
@@ -47,4 +47,4 @@ window.onload = () => {
   };
 
   codeBlocks.forEach(addCopyButton);
-};
+});
