@@ -21,7 +21,7 @@
   let hitokotoText = document.getElementById('hitokoto_text')
   let hitokotoErroText = document.getElementById('hitokoto_error_text')
   let hitokotoCategory = document.getElementById('hitokoto_text_parent').getAttribute('hitokotoCategory')
-  window.onload = function () {
+  window.addEventListener('load', function () {
     let url = 'https://v1.hitokoto.cn'
     if (hitokotoCategory) {
       url += '?c=' + hitokotoCategory
@@ -37,5 +37,5 @@
         hitokotoText.style.display = 'none'
         hitokotoErroText.style.display = 'block'
       })
-  }
+  });
 </script>
