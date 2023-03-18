@@ -19,7 +19,12 @@
         </a>
         <% } %>
     </div>
-    <%- partial('_partial/sidebar') %>
+    <aside id="nexmoe-sidebar">
+        <% theme.widgets.forEach(function(widget){ %>
+            <% if(widget.enable){ %>
+            <%- partial('_widget/' + widget.name, {options: widget.options}) %>
+        <% }}) %>
+    </aside>
     <div class="nexmoe-copyright">
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
