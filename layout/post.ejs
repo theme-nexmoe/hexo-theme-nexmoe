@@ -1,5 +1,4 @@
 <div class="nexmoe-post">
-
   <article>
     <% if (page.cover){ %>
         <div class="nexmoe-post-cover absolute" style="padding-top: <%- page.coverHeight/page.coverWidth*100 %>%;"> 
@@ -20,7 +19,7 @@
   </article>
 
   <% if (!page.reprint){ %>
-      <%- partial('_partial/copyright') %>
+      <%- partial('_partial/_post/copyright') %>
   <% } %>
   
   <%- partial('_partial/_post/tag') %>

@@ -2,52 +2,13 @@
 
 <html <% if (config.language) { %>lang="<%- config.language %>"<% } %>>
 
-<head>
-    <%
-    var title = page.title;
-
-    if (is_archive()){
-        title = __('archive');
-
-        if (is_month()){
-            title += '：' + page.year + '/' + page.month;
-        } else if (is_year()){
-            title += '：' + page.year;
-        }
-    } else if (is_category()){
-        title = __('count.categories') + '：' + page.category;
-    } else if (is_tag()){
-        title = __('count.tags') + '：' + page.tag;
-    }
-    %>
-    <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="<%= config.keywords %>">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <%- theme.slotHead %>
-    <link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
-    <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-    <%- css([
-        'lib/fancybox/fancybox.css', 
-        'lib/mdui_043tiny/mdui.css'
-    ]) %>
-
-    <%- css_auto_version('lib/iconfont/iconfont.css') %>
-    <% if (theme.iconlib) { %>
-        <link rel="stylesheet" href="<%= theme.iconlib %>">
-    <% } %>
-    <%- css_auto_version('css/style') %>
-
-    <% if (theme.customStyles) { %>
-        <% theme.customStyles.forEach(function(custom){ %>
-            <%- css_auto_version('custom.css') %>
-        <% }) %>
-    <% } %>
-</head>
+<%- partial('_partial/head') %>
 
 <body class="mdui-drawer-body-left">
     <div id="nexmoe-background">
-        <div class="nexmoe-bg" style="background-image: url(<%= theme.background.path %>)"></div>
+        <div class="nexmoe-bg" 
+            <%- `style="background-image: url(${theme.background.path})"` %>
+        ></div>
         <div class="mdui-appbar mdui-shadow-0">
             <div class="mdui-toolbar">
                 <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
@@ -58,12 +19,11 @@
         </div>
     </div>
     <div id="nexmoe-header">
-        <%- partial('_partial/header') %>
+        <%- partial('_layout/single/header') %>
     </div>
     <div id="nexmoe-content">
-        <div class="nexmoe-primary">
-            <%- body %>
-            <div class="nexmoe-post-right">
+        <%- partial('_layout/single/content') %>
+        <div class="nexmoe-post-right">
               <div class="nexmoe-fixed">
                   <div class="nexmoe-tool"> 
                     
@@ -85,10 +45,10 @@
                   </div>
               </div>
             </div>
-        </div>
     </div>
     <%- partial('_partial/searchbox') %>
-    <%- partial('_partial/after-footer') %>
+    
+    <%- theme.slotFooter %>
 </body>
 
 </html>
