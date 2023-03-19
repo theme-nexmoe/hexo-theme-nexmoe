@@ -23,7 +23,7 @@ hexo.extend.tag.register(
 			return e;
 		}
 		if (args.includes("shuffle")) {
-			console.warn("    [Nexmoe] Links tag is using shuffle mode");
+			console.warn("[Nexmoe] Links tag is using shuffle mode");
 			data = shuffle(data);
 		}
 
