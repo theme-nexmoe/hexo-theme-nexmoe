@@ -29,14 +29,18 @@ if (is_archive()){
 
 <%- css_auto_version('lib/iconfont/iconfont.css') %>
 <% if (theme.iconlib) { %>
-    <link rel="stylesheet" href="<%= theme.iconlib %>">
+<link rel="stylesheet" href="<%= theme.iconlib %>">
 <% } %>
 <%- css_auto_version('css/style') %>
 
+<% if (theme.preset) { %>
+<%- css_auto_version('preset/'＋theme.preset) %>
+<% } %>
+
 <% if (theme.customStyles) { %>
-    <% theme.customStyles.forEach(function(custom){ %>
-        <%- css_auto_version('custom.css') %>
-    <% }) %>
+<% theme.customStyles.forEach(function(custom){ %>
+<%- css_auto_version('custom.css') %>
+<% }) %>
 <% } %>
 
 <%- js([
@@ -47,7 +51,9 @@ if (is_archive()){
 <%- js_auto_version('js/app') %>
 
 <% if (theme.copyText) { %>
-    <script>var copyTip = "<%- theme.copyText %>"</script>
-<% } %> 
+<script>
+    var copyTip = "<%- theme.copyText %>"
+</script>
+<% } %>
 
 <%- theme.slotHead %>
