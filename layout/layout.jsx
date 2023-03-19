@@ -3,7 +3,7 @@ const Background = require("./_partial/background");
 
 module.exports = class extends Component {
 	render() {
-		const { config, page, theme, partial, url_for } = this.props;
+		const { config, page, theme, partial } = this.props;
 
 		const language = page.lang || page.language || config.language;
 
@@ -15,7 +15,7 @@ module.exports = class extends Component {
 					}}
 				></head>
 				<body class="mdui-drawer-body-left">
-					<Background theme={theme} config={config} url_for={url_for} />
+					<Background {...this.props} />
 					<div
 						id="nexmoe-header"
 						dangerouslySetInnerHTML={{
