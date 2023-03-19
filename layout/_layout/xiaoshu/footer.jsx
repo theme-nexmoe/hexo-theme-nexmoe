@@ -13,14 +13,16 @@ module.exports = class extends Component {
 					<a href="http://hexo.io/" target="_blank">
 						Hexo
 					</a>
-					&{" "}
+					&
 					<a
 						href="https://github.com/theme-nexmoe/hexo-theme-nexmoe"
 						target="_blank"
 					>
 						Nexmoe
 					</a>
-					{theme.slotSidebar}
+					<div
+						dangerouslySetInnerHTML={{ __html: theme.slotSidebar }}
+					></div>
 				</div>
 			</>
 		);

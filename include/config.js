@@ -27,7 +27,7 @@ function hashConfigFile(cfgPath) {
 
 function checkConfig(hexo) {
     if (!process.argv.includes('--nexmoe-dont-check-config')) {
-        logger.info('=== Checking theme configurations ===');
+        logger.info('[Nexmoe] Checking theme configurations');
 
         const themeSiteCfg = path.join(hexo.base_dir, '_config.nexmoe.yml');
         const themeDirCfg = path.join(hexo.theme_dir, '_config.yml');

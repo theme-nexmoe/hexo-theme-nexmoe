@@ -20,7 +20,7 @@ module.exports = hexo => {
         return false;
     }
 
-    logger.info('=== Checking package dependencies ===');
+    logger.info('[Nexmoe] Checking package dependencies');
     const dependencies = Object.assign({}, packageInfo.dependencies);
     const missingDeps = Object.keys(dependencies)
         .filter(name => !checkDependency(name, dependencies[name]));

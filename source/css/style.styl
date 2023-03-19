@@ -1,7 +1,7 @@
 $gutter = 24px;
 
 :root {
-    --gutter: 25px;
+    --gutter: 24px;
     --radius: 13px;
     --color-primary: #ff4e6a;
     --color2: #ff761e;
@@ -23,7 +23,13 @@ $gutter = 24px;
 @import '_partial/*';
 @import '_index/*';
 @import '_widget/*';
-@import '_layout/*/*';
+
+.xiaoshu {
+    @import '_layout/xiaoshu/*';    
+}
+.nexmoe {
+    @import '_layout/nexmoe/*';    
+}
 
 *, *:after, *::before {
     box-sizing: border-box;
