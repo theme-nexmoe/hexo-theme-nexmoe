@@ -54,3 +54,31 @@ document
 	.forEach(function (item) {
 		item.style.minHeight = item.childNodes[3].clientHeight + "px";
 	});
+
+window.onload = function () {
+	lax.init();
+
+	// Add a driver that we use to control our animations
+	lax.addDriver("scrollY", function () {
+		return window.scrollY;
+	});
+
+	// Add animation bindings to elements
+	lax.addElements(".backtop", {
+		scrollY: {
+			opacity: [
+				["screenHeight", "screenHeight+300", "screenHeight+600"],
+				[0, 0, 1],
+			],
+		},
+	});
+
+	lax.addElements(".nexmoe-post-cover", {
+		scrollY: {
+			opacity: [
+				["elInY", "elInY+200"],
+				[0, 1],
+			],
+		},
+	});
+};
