@@ -18,17 +18,33 @@ $gutter = 24px;
     --color6-bg: rgba(26, 152, 255, 0.15);
     --color7-bg: rgba(144, 144, 255, 0.15);
     --color-shadow: rgba(161, 177, 204, 0.4);
+    --color-card: #fff;
+    --color-h: #111;
+    --color-text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-card: #2b2b2b;
+        --color-h: #fff;
+        --color-text: #ccc;
+    }
 }
 
 @import '_partial/*';
 @import '_index/*';
 @import '_widget/*';
 
-.xiaoshu {
-    @import '_layout/xiaoshu/*';    
+body {
+    background: var(--color-card);
 }
+
+.xiaoshu {
+    @import '_layout/xiaoshu/*';
+}
+
 .nexmoe {
-    @import '_layout/nexmoe/*';    
+    @import '_layout/nexmoe/*';
 }
 
 *, *:after, *::before {
