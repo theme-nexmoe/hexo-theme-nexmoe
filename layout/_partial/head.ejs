@@ -34,7 +34,7 @@ if (is_archive()){
 <%- css_auto_version('css/style') %>
 
 <% if (theme.preset) { %>
-    <%- css_auto_version('preset/'＋theme.preset) %>
+    <%- css_auto_version(`preset/${theme.preset}`) %>
 <% } %>
 
 <% if (theme.customStyles) { %>
