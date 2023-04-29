@@ -18,7 +18,7 @@ module.exports = class extends Component {
 				></head>
 				<body class={layout + " " + bodyClass}>
 					<Background {...this.props} />
-					<Body {...this.props} />
+					<Body  {...this.props} />
 
 					<div
 						dangerouslySetInnerHTML={{
