@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@nexmoe/hexo-renderer-inferno':
     specifier: ^0.2.0
@@ -299,7 +303,7 @@ packages:
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
-      entities: 4.4.0
+      entities: 4.5.0
     dev: false
 
   /domelementtype@2.3.0:
@@ -328,8 +332,8 @@ packages:
       domhandler: 4.3.1
     dev: false
 
-  /domutils@3.0.1:
-    resolution: {integrity: sha512-z08c1l761iKhDFtfXO04C7kTdPBLi41zwOZl00WS8b5eiaebNpY00HKbztwBq+e3vyqWNwWF3mP9YLUeqIrF+Q==}
+  /domutils@3.1.0:
+    resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
     dependencies:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
@@ -345,8 +349,8 @@ packages:
     engines: {node: '>=0.12'}
     dev: false
 
-  /entities@4.4.0:
-    resolution: {integrity: sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==}
+  /entities@4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
     dev: false
 
@@ -602,16 +606,16 @@ packages:
       strip-indent: 3.0.0
     dev: false
 
-  /hexo-util@3.0.1:
-    resolution: {integrity: sha512-ri3WsEUWSfrjydYPeOaWvrYIzfVBiaXUy0846051MkuJxBcNtG2o87q0KFGiniSMmi0XxLQhSl415anU3+FFlA==}
+  /hexo-util@3.1.0:
+    resolution: {integrity: sha512-LmztAhkJHQ59VHqz6AnvwEKiNA0pCBBI0qW08cCzjhnpGoqZ8tlGDwElzy7oTxCvMChkiqg5V8VflhdI8tHsGg==}
     engines: {node: '>=14'}
+    requiresBuild: true
     dependencies:
-      bluebird: 3.7.2
       camel-case: 4.1.2
       cross-spawn: 7.0.3
       deepmerge: 4.3.1
       highlight.js: 11.7.0
-      htmlparser2: 8.0.1
+      htmlparser2: 9.0.0
       prismjs: 1.29.0
       strip-indent: 3.0.0
     dev: false
@@ -630,13 +634,13 @@ packages:
       entities: 3.0.1
     dev: false
 
-  /htmlparser2@8.0.1:
-    resolution: {integrity: sha512-4lVbmc1diZC7GUJQtRQ5yBAeUCL1exyMwmForWkRLnwyzWBFxN633SALPMGYaWZvKe9j1pRZJpauvmxENSp/EA==}
+  /htmlparser2@9.0.0:
+    resolution: {integrity: sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==}
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
-      domutils: 3.0.1
-      entities: 4.4.0
+      domutils: 3.1.0
+      entities: 4.5.0
     dev: false
 
   /ignore@5.2.4:
@@ -786,7 +790,7 @@ packages:
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
-      word-wrap: 1.2.3
+      word-wrap: 1.2.4
     dev: true
 
   /p-limit@2.3.0:
@@ -989,8 +993,8 @@ packages:
     dependencies:
       isexe: 2.0.0
 
-  /word-wrap@1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
+  /word-wrap@1.2.4:
+    resolution: {integrity: sha512-2V81OA4ugVo5pRo46hAoD2ivUJx8jXmWXfUkY4KFNw0hEptvN0QfH3K4nHiwzGeKl5rFKedV48QVoqYavy4YpA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -3294,7 +3298,7 @@ packages:
       conventional-commit-types: registry.npmmirror.com/conventional-commit-types@3.0.0
       lodash.map: registry.npmmirror.com/lodash.map@4.6.0
       longest: registry.npmmirror.com/longest@2.0.1
-      word-wrap: registry.npmmirror.com/word-wrap@1.2.3
+      word-wrap: 1.2.4
     optionalDependencies:
       '@commitlint/load': 17.4.4
     transitivePeerDependencies:
@@ -3965,7 +3969,7 @@ packages:
     name: hexo-generator-json-content
     version: 4.2.3
     dependencies:
-      hexo-util: 3.0.1
+      hexo-util: 3.1.0
       keyword-extractor: 0.0.25
       moment: 2.29.4
     dev: false
@@ -5611,13 +5615,6 @@ packages:
       gopd: registry.npmmirror.com/gopd@1.0.1
       has-tostringtag: registry.npmmirror.com/has-tostringtag@1.0.0
       is-typed-array: registry.npmmirror.com/is-typed-array@1.1.10
-    dev: true
-
-  registry.npmmirror.com/word-wrap@1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/word-wrap/-/word-wrap-1.2.3.tgz}
-    name: word-wrap
-    version: 1.2.3
-    engines: {node: '>=0.10.0'}
     dev: true
 
   registry.npmmirror.com/wrap-ansi@7.0.0:
