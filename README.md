@@ -33,6 +33,7 @@ English：<https://docs.nexmoe.com>
 - Hexo-Saigyou_Ayakashi: <https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme>
 - Solo-InkDP：<https://github.com/InkDP/solo-nexmoe>
 - Hexo-Dark： <https://github.com/confuseder/hexo-theme-dark>
+- Typora： <https://github.com/imyMuyang/typora-theme-nexmoe>
 
 ## 💴 Sponsor
 
