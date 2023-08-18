@@ -11,7 +11,7 @@
 	"license": "Apache-2.0",
 	"main": "index.js",
 	"scripts": {
-		"lint": "eslint --ext .js --ext .jsx --ext .json ."
+		"lint": "eslint --cache --ext .js --ext .jsx --ext .json ."
 	},
 	"repository": {
 		"type": "git",
