@@ -11,7 +11,8 @@
 	"license": "Apache-2.0",
 	"main": "index.js",
 	"scripts": {
-		"lint": "eslint --cache --ext .js --ext .jsx --ext .json ."
+		"lint": "eslint . --fix",
+		"lint:fix": "eslint . --fix"
 	},
 	"repository": {
 		"type": "git",
@@ -29,11 +30,12 @@
 		"eslint-plugin-react": "^7.33.2"
 	},
 	"dependencies": {
-		"@nexmoe/hexo-renderer-inferno": "^0.2.1",
 		"hexo-component-inferno": "^2.0.3",
 		"hexo-generator-json-content": "^4.2.3",
+		"@nexmoe/hexo-renderer-inferno": "^0.2.1",
 		"hexo-renderer-stylus": "^2.1.0",
-		"inferno": "^8.2.2"
+		"inferno": "^8.2.2",
+		"semver": "^7.5.4"
 	},
 	"config": {
 		"commitizen": {
