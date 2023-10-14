@@ -1,6 +1,6 @@
 {
 	"name": "hexo-theme-nexmoe",
-	"version": "4.1.7",
+	"version": "4.2.0",
 	"description": "🔥 A special hexo theme.",
 	"keywords": [
 		"hexo",
@@ -30,9 +30,9 @@
 		"eslint-plugin-react": "^7.33.2"
 	},
 	"dependencies": {
+		"@nexmoe/hexo-renderer-inferno": "^0.2.1",
 		"hexo-component-inferno": "^2.0.3",
 		"hexo-generator-json-content": "^4.2.3",
-		"@nexmoe/hexo-renderer-inferno": "^0.2.1",
 		"hexo-renderer-stylus": "^2.1.0",
 		"inferno": "^8.2.2",
 		"semver": "^7.5.4"
