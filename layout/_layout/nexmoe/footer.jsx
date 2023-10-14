@@ -1,11 +1,11 @@
-const { Component } = require("inferno");
+const { Component, Fragment } = require('inferno');
 
 module.exports = class extends Component {
-	render() {
-		const { body } = this.props;
+    render() {
+        // const { body } = this.props;
 
-		return (
-			<></>
-		);
-	}
+        return (
+            <Fragment></Fragment>
+        );
+    }
 };

@@ -1,4 +1,3 @@
-'use strict';
 
 function cssAutoVersionHelper(...args) {
     return args.reduce((result, path, i) => {
@@ -8,8 +7,8 @@ function cssAutoVersionHelper(...args) {
             return result + Reflect.apply(cssAutoVersionHelper, this, path);
         }
         if (!path.includes('?') && !path.endsWith('.css')) path += '.css';
-        let url_suffix = "?v=" + new Date().getTime();
-        let url = this.url_for(path) + url_suffix;
+        const url_suffix = '?v=' + new Date().getTime();
+        const url = this.url_for(path) + url_suffix;
         return `${result}<link rel="stylesheet" href="${url}">`;
     }, '');
 }

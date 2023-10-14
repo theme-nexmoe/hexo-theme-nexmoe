@@ -1,33 +1,33 @@
-const { Component } = require("inferno");
+const { Component, Fragment } = require('inferno');
 
 module.exports = class extends Component {
-	render() {
-		const { partial } = this.props;
-		const Header = require(`./header`);
-		const Content = require(`./content`);
-		const Footer = require(`./footer`);
+    render() {
+        const { partial } = this.props;
+        const Header = require('./header');
+        const Content = require('./content');
+        const Footer = require('./footer');
 
-		return (
-			<>
-				<div id="nexmoe-header">
-					<Header {...this.props} />
-				</div>
-				<div id="nexmoe-content">
-					<div class="nexmoe-container">
-						<Content {...this.props} />
-						<div
-							class="nexmoe-post-right"
-							dangerouslySetInnerHTML={{
-								__html: partial("_partial/right"),
-							}}
-						></div>
-					</div>
-				</div>
+        return (
+            <Fragment>
+                <div id="nexmoe-header">
+                    <Header {...this.props} />
+                </div>
+                <div id="nexmoe-content">
+                    <div class="nexmoe-container">
+                        <Content {...this.props} />
+                        <div
+                            class="nexmoe-post-right"
+                            dangerouslySetInnerHTML={{
+                                __html: partial('_partial/right')
+                            }}
+                        ></div>
+                    </div>
+                </div>
 
-				<div id="nexmoe-footer">
-					<Footer {...this.props} />
-				</div>
-			</>
-		);
-	}
+                <div id="nexmoe-footer">
+                    <Footer {...this.props} />
+                </div>
+            </Fragment>
+        );
+    }
 };
