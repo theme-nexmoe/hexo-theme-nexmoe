@@ -7,8 +7,6 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-  tag:
-    types: [published]
 
 jobs:
   publish-npm:
