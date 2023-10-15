@@ -13,6 +13,7 @@ module.exports = class extends Component {
                 <div class="mdui-appbar mdui-shadow-0">
                     <div class="mdui-toolbar">
                         <a
+                            // eslint-disable-next-line react/no-unknown-property
                             mdui-drawer="{target: '#drawer', swipe: true}"
                             title="menu"
                             class="mdui-btn mdui-btn-icon mdui-ripple"
