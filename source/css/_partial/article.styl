@@ -410,9 +410,14 @@ article > table tr:nth-child(2n) {
 	background-color: #f8f8f8;
 }
 
-article img, article canvas, article iframe, article video, article svg, article select, article textarea {
+article img, article canvas, article video, article svg, article select, article textarea {
 	width: auto;
 	max-width: 100%;
+}
+
+article iframe {
+	width: 100%;
+	aspect-ratio: 1.29/1;
 }
 
 details ul {
