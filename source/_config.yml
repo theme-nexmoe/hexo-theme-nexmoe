@@ -34,10 +34,10 @@ menu:
     我的朋友:
         - /PY.html
     给我赞助:
-        - /donate.html
+        - https://nexmoe.com/donate.html
         - icon-coffee
     关于博主:
-        - /about.html
+        - https://i.nexmoe.com/
         - icon-info-circle
 
 widgets:
@@ -107,9 +107,6 @@ widgets:
       enable: true
       options: 
         widgetLink: #链接组件
-            - title: 小舒同学
-              img: https://xsm.nexmoe.com/images/Infinite/Snipaste_2022-05-18_20-46-50.png
-              link : https://xiaoshu.app/
             - title: 折影轻梦
               img: https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png
               link : https://nexmoe.com/
