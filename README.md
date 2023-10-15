@@ -5,8 +5,7 @@
 | Links                                                                                                           | Gallery                                                                                                     |
 ## 🎓 Docs
 
-English：<https://docs.nexmoe.com>
-中文： <https://docs.nexmoe.com/zh/v4.0/>
+<https://docs.nexmoe.com>
 
 ## 💻 Preview
 
