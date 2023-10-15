@@ -8,7 +8,7 @@ module.exports = class extends Component {
         const layout = 'nexmoe';
         const bodyClass = layout === 'nexmoe' ? 'mdui-drawer-body-left' : '';
         const Body = require(`./_layout/${layout}/body`);
-
+        const SearchBox = require('./_partial/searchbox');
         return (
             <html lang={language ? language.substr(0, 2) : ''}>
                 <head
@@ -19,12 +19,7 @@ module.exports = class extends Component {
                 <body class={layout + ' ' + bodyClass}>
                     <Background {...this.props} />
                     <Body {...this.props} />
-
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: partial('_partial/searchbox')
-                        }}
-                    ></div>
+                    <SearchBox {...this.props} />
                     <div
                         dangerouslySetInnerHTML={{
                             __html: theme.slotFooter

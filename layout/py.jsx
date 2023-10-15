@@ -9,14 +9,13 @@ module.exports = class extends Component {
                     class="nexmoe-py"
                     dangerouslySetInnerHTML={{ __html: page.content }}
                 ></article>
-                {page.comments ? (
-                    <div
+                {page.comments
+                    ? <div
                         class="nexmoe-post-footer"
                         dangerouslySetInnerHTML={{ __html: theme.slotComment }}
                     ></div>
-                ) : (
-                    ''
-                )}
+                    : ''
+                }
             </div>
         );
     }
