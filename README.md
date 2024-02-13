@@ -21,6 +21,7 @@
 | [Fentaniao](https://fentaniao.github.io)                  | ![Fentaniao](https://img.shields.io/website?url=https://fentaniao.github.io)                  | [萌小志のBlog](https://mengxiaozhi.galigali.club) | ![萌小志のBlog](https://img.shields.io/website?url=https://mengxiaozhi.galigali.club) |
 | [矿快报](https://latestminer.github.io)                   | ![Fentaniao](https://img.shields.io/website?url=https://latestminer.github.io)                | [nukiyoam's blog](https://nukiyoam.github.io)     | ![nukiyoam](https://img.shields.io/website?url=https://nukiyoam.github.io)            |
 | [星月的海](https://hosizuki.github.io/)                   | ![星月的海](https://img.shields.io/website?url=https://hosizuki.github.io/)                   | [咔斯の小窝](https://kassama.top)                 | ![咔斯の小窝](https://img.shields.io/website?url=https://kassama.top)                 |
+| [ZL Asica的博客](https://www.zl-asica.com/)                   | ![ZL Asica的博客](https://img.shields.io/website?url=https://www.zl-asica.com/)                   |
 
 ## 💻 Contributors
 
