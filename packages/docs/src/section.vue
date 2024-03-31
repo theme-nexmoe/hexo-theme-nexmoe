@@ -42,7 +42,7 @@ const sections: LAutoSectionProps[] = [
           title: '友情链接页面',
           des: '预览：https://nexmoe.com/PY.html',
           shadow: true,
-          img: 'https://user-images.githubusercontent.com/16796652/134768466-cf580997-1201-48a8-812e-77eb0af6ce59.png'
+          img: '/v4.2/post/archive/image-20210721123359847.png'
         },
         {
           title: '文章内插入图片瀑布',
