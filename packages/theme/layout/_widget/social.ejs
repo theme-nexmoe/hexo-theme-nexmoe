@@ -1,0 +1,18 @@
+<div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<% for (name in options.social) { %><a
+			class="mdui-ripple"
+			href="<%- url_for(options.social[name][0]) -%>"
+			target="_blank"
+			mdui-tooltip="{content: '<%= name %>'}"
+			style="
+				color: <%= options.social[name][2] %>;
+				background-color: <%= options.social[name][3] %>;
+			"
+		>
+			<i
+				class="nexmoefont <% if (options.social[name][1]){ %><%= options.social[name][1] %><%} else{ %><%= 'icon-unorderedlist' %><% } %>"
+			></i> </a
+		><% } %>
+	</div>
+</div>

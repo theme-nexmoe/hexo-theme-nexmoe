@@ -1,0 +1,90 @@
+article.nexmoe-py > *:first-child {
+    margin-top: 0 !important;
+}
+
+article.nexmoe-py ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+
+article.nexmoe-py ul li {
+    transition: all 0.03s;
+    width: calc(14.285714285714286% - 10px);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #eee;
+    font-size: 0;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+article.nexmoe-py ul li:before, article.nexmoe-py ul li:after {
+    display: none;
+}
+
+article.nexmoe-py ul li > a {
+    padding-top: 100%;
+    display: block;
+    position: relative;
+}
+
+article.nexmoe-py ul li > a:before {
+    background-image: -moz-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+    background-image: -webkit-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+    background-image: -ms-linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+    background-image: linear-gradient(to top, rgba(16, 16, 16, 0.35) 25%, rgba(16, 16, 16, 0) 100%);
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 36px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+article.nexmoe-py ul li > a::after {
+    font-size: 13px;
+    color: #fff;
+    -webkit-transition: none;
+    transition: none;
+    content: attr(title);
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+article.nexmoe-py ul li img {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    article.nexmoe-py ul li {
+        width: calc(33.3333333333% - 10px);
+    }
+}

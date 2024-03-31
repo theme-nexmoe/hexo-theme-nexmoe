@@ -1,0 +1,320 @@
+$gutter = 24px;
+
+:root {
+    --gutter: 24px;
+    --radius: 13px;
+    --color-primary: #ff4e6a;
+    --color2: #ff761e;
+    --color3: #ffb900;
+    --color4: #33d57a;
+    --color5: #00dbff;
+    --color6: #1a98ff;
+    --color7: #9090ff;
+    --color-primary-bg: rgba(255, 78, 106, 0.15);
+    --color2-bg: rgba(255, 118, 30, 0.15);
+    --color3-bg: rgba(255, 185, 0, 0.15);
+    --color4-bg: rgba(51, 213, 122, 0.15);
+    --color5-bg: rgba(0, 219, 255, 0.15);
+    --color6-bg: rgba(26, 152, 255, 0.15);
+    --color7-bg: rgba(144, 144, 255, 0.15);
+    --color-shadow: rgba(161, 177, 204, 0.4);
+    --color-card: #fff;
+    --color-text-1: #111;
+    --color-text-2: #444;
+    --color-text-3: #363636;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-card: #2b2b2b;
+        --color-text-1: #fff;
+        --color-text-2: #ccc;
+    }
+}
+
+@import '_partial/*';
+@import '_index/*';
+@import '_widget/*';
+
+body {
+    background: var(--color-card);
+    font-size: 17px;
+}
+
+.xiaoshu {
+    @import '_layout/xiaoshu/*';
+}
+
+.nexmoe {
+    @import '_layout/nexmoe/*';
+}
+
+*, *:after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body.mdui-drawer-body-left {
+    max-width: 1100px;
+    margin: auto !important;
+}
+
+.medium-zoom-overlay {
+    z-index: 9999;
+}
+
+.medium-zoom-image--opened {
+    z-index: 9999;
+    background: rgba(31, 34, 36, 0.925);
+    box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+@keyframes shake-it {
+    0% {
+        text-shadow: 0 0 rgba(0, 255, 255, 0.5), 0 0 rgba(255, 0, 0, 0.5);
+    }
+
+    25% {
+        text-shadow: -1px 0 rgba(0, 255, 255, 0.5), 1px 0 rgba(255, 0, 0, 0.5);
+    }
+
+    50% {
+        text-shadow: -3px 0 rgba(0, 255, 255, 0.5), 1px 0 rgba(255, 0, 0, 0.5);
+    }
+
+    100% {
+        text-shadow: 1px 0 rgba(0, 255, 255, 0.5), 3px 0 rgba(255, 0, 0, 0.5);
+    }
+}
+
+.nexmoe-post-right {
+    margin: 0px 0 - $gutter;
+    text-align: right;
+    width: calc(100vw - 350px);
+    max-width: calc(100% + 50px);
+}
+
+.nexmoe-valign {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    height: 100%;
+}
+
+.nexmoe-post-right .nexmoe-fixed {
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    display: inline-block;
+    top: 0;
+}
+
+.nexmoe-post-right .nexmoe-tool {
+    position: absolute;
+    bottom: 20px;
+    width: 56px;
+
+    button {
+        margin-top: 20px;
+
+        .icon-i-catalog {
+            font-size: 22px;
+        }
+
+        .icon-caret-top {
+            font-size: 20px;
+        }
+    }
+
+    .backtop {
+        opacity: 0;
+    }
+}
+
+.nexmoe-post-right .nexmoe-tool .mdui-fab {
+    background: #fff;
+    color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+    .nexmoe-post-right {
+        margin: $gutter 0px;
+        text-align: left;
+    }
+
+    .nexmoe-post-right .nexmoe-fixed {
+        height: auto;
+        top: auto;
+        bottom: 0;
+        right: 0;
+    }
+
+    .nexmoe-post-right .nexmoe-tool {
+        right: 20px;
+        left: auto;
+    }
+}
+
+.nexmoe-toc {
+    text-transform: none;
+    width: 420px;
+    max-width: calc(100vw - 40px);
+    white-space: normal;
+    text-align: left;
+    box-shadow: 0 0 1rem var(--color-shadow);
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    border-radius: 16px;
+    font-size: 16px;
+    display: none;
+}
+
+.nexmoe-tool .catalog:hover .nexmoe-toc {
+    display: block;
+}
+
+.nexmoe-toc a {
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nexmoe-toc a:hover {
+    color: #fff;
+    background-color: var(--color-primary);
+    box-shadow: 0 1px 10px var(--color-primary);
+}
+
+.nexmoe-toc ol {
+    padding-left: 1em;
+    margin: 0;
+}
+
+.nexmoe-toc li {
+    margin: 0;
+}
+
+.nexmoe-toc > ol {
+    margin: 0;
+    padding: 0;
+    max-height: calc(100vh - 155px);
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.nexmoe-toc * {
+    list-style: none;
+}
+
+photos img {
+    width: 25%;
+}
+
+.nexmoe-rainbow {
+    a:nth-child(7n+1) {
+        background-color: var(--color-primary-bg);
+        color: var(--color-primary);
+    }
+
+    a:nth-child(7n+2) {
+        background-color: var(--color2-bg);
+        color: var(--color2);
+    }
+
+    a:nth-child(7n+3) {
+        background-color: var(--color3-bg);
+        color: var(--color3);
+    }
+
+    a:nth-child(7n+4) {
+        background-color: var(--color4-bg);
+        color: var(--color4);
+    }
+
+    a:nth-child(7n+5) {
+        background-color: var(--color5-bg);
+        color: var(--color5);
+    }
+
+    a:nth-child(7n+6) {
+        background-color: var(--color6-bg);
+        color: var(--color6);
+    }
+
+    a:nth-child(7n+7) {
+        background-color: var(--color7-bg);
+        color: var(--color7);
+    }
+}
+
+.nexmoe-rainbow-fill {
+    a:nth-child(7n+1) {
+        color: #fff;
+        background-color: var(--color-primary);
+    }
+
+    a:nth-child(7n+2) {
+        color: #fff;
+        background-color: var(--color2);
+    }
+
+    a:nth-child(7n+3) {
+        color: #fff;
+        background-color: var(--color3);
+    }
+
+    a:nth-child(7n+4) {
+        color: #fff;
+        background-color: var(--color4);
+    }
+
+    a:nth-child(7n+5) {
+        color: #fff;
+        background-color: var(--color5);
+    }
+
+    a:nth-child(7n+6) {
+        color: #fff;
+        background-color: var(--color6);
+    }
+
+    a:nth-child(7n+7) {
+        color: #fff;
+        background-color: var(--color7);
+    }
+}
+
+.fancybox__container {
+    z-index: 9999;
+}
+
+@media (min-width: 1024px) {
+    .mdui-drawer {
+        width: 260px;
+    }
+}
+
+.gallery-pro {
+    column-gap: 12px;
+    column-width: 200px;
+}
+
+.gallery-pro > * {
+    margin-bottom: 12px;
+}
+
+.gallery-pro > * img {
+    width: 100%;
+}

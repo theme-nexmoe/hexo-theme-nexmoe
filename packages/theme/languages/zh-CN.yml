@@ -1,0 +1,20 @@
+continue: 查看更多
+nav:
+  home: 回到首页
+
+search: 搜索
+archive: 文章归档
+recent_posts: 最新文章
+categories: 文章分类
+hitokoto: 一言
+tagcloud: 标签云
+social: 社交按钮
+
+count:
+  articles: 文章
+  tags: 标签
+  categories: 分类
+  
+copyright:
+  author: 本文作者
+  permalink: 本文链接

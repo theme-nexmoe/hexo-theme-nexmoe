@@ -1,0 +1,20 @@
+continue: More
+nav:
+  home: Home
+
+search: Search
+archive: Archive
+recent_posts: Recent Posts
+categories: Categories
+hitokoto: Hitokoto
+tagcloud: Tagcloud
+social: Social
+
+count:
+  articles: Articles
+  tags: Tags
+  categories: Categories
+  
+copyright:
+  author: Author
+  permalink: Link

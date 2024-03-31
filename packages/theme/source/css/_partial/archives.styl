@@ -1,0 +1,148 @@
+.nexmoe-archives .tagcloud {
+    margin-bottom: 13px;
+    font-size: 0;
+}
+
+.nexmoe-archives .categories {
+    margin-bottom: 12px;
+    font-size: 0;
+}
+
+.nexmoe-archives .tagcloud a {
+    border-radius: 15px;
+    padding: 6px 12px;
+    font-size: 15px !important;
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+
+.nexmoe-archives .tagcloud a:before {
+    content: '# ';
+}
+
+.nexmoe-archives .tagcloud a span:before {
+    content: ' ';
+}
+
+.nexmoe-archives .categories a {
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    height: 156px;
+    width: calc(33.333333333% - 8px);
+    position: relative;
+}
+
+.nexmoe-archives .categories a:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.nexmoe-archives .categories a .bg {
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.nexmoe-archives .categories a:before {
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.nexmoe-archives .categories a h1 {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .nexmoe-archives .categories a {
+        width: calc(50% - 6px);
+    }
+
+    .nexmoe-archives .categories a:nth-child(3n+3) {
+        margin-right: 12px;
+    }
+
+    .nexmoe-archives .categories a:nth-child(2n+2) {
+        margin-right: 0;
+    }
+}
+
+.nexmoe-archives .categories a span {
+    margin-top: 5px;
+    display: block;
+}
+
+.nexmoe-archives .categories a span:after {
+    content: ' Articles';
+}
+
+.nexmoe-archives article > *:first-child {
+    margin-top: 0;
+}
+
+.nexmoe-archives article > *:last-child {
+    margin-bottom: 0;
+}
+
+.nexmoe-archives ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.nexmoe-archives li {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 25px;
+}
+
+.nexmoe-archives li::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: var(--color-primary);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 11px;
+    margin-left: -25px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    z-index: 100;
+    position: relative;
+}
+
+.nexmoe-archives li::after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: var(--color-primary-bg);
+    position: absolute;
+    left: 6px;
+    top: 20px;
+}
+
+.nexmoe-archives li:last-child:after {
+    display: none;
+}
+
+.nexmoe-archives ul span {
+    margin-right: 15px;
+}

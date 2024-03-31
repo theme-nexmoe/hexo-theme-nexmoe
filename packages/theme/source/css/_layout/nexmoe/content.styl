@@ -1,0 +1,34 @@
+
+#nexmoe-content {
+    position: relative;
+
+    .nexmoe-primary {
+        box-shadow: 0 0 1rem var(--color-shadow);
+        background-color: var(--color-card);
+        float: left;
+        width: 100%;
+        padding: $gutter;
+        position: absolute;
+        min-height: 100vh;
+    }
+}
+
+#nexmoe-content:after {
+    clear: both;
+    display: table;
+    content: ' ';
+}
+
+@media screen and (max-width: 1024px) {
+    #nexmoe-content {
+        .nexmoe-primary {
+            width: 100%;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .nexmoe-secondary {
+            display: none;
+        }
+    }
+}

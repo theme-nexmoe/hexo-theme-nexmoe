@@ -1,0 +1,115 @@
+.nexmoe-widget-wrap {
+    box-shadow: 0 0 1rem var(--color-shadow);
+    background-color: var(--color-card);
+    margin: 20px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    white-space: normal;
+
+    .nexmoe-widget-title {
+        font-size: 1em;
+        font-weight: 400;
+        padding: 24px 18px 12px;
+        margin: 0;
+        color: var(--color-primary);
+    }
+
+    .nexmoe-widget {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                position: relative;
+                padding: 12px 18px;
+
+                a {
+                    color: #606266;
+                }
+            }
+
+            li:last-child {
+                border-bottom: none;
+                padding-bottom: 24px;
+            }
+        }
+
+        .category-list-count, .archive-list-count {
+            background-color: var(--color-primary-bg);
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            border-radius: 100%;
+            color: var(--color-primary);
+            position: absolute;
+            right: 18px;
+            top: 10px;
+        }
+    }
+
+    .tagcloud {
+        padding: 10px;
+        padding-bottom: 6px;
+        padding-top: 11px;
+
+        a {
+            border-radius: var(--radius);
+            padding: 5px 10px;
+            font-size: 12px !important;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        a:before {
+            content: '# ';
+        }
+    }
+
+    .nexmoe-search {
+        input {
+            border: none !important;
+            background-color: transparent;
+            padding: 20px;
+            box-sizing: border-box;
+            outline: none;
+        }
+    }
+
+    input::-webkit-search-decoration, input::-webkit-search-cancel-button {
+        display: none !important;
+    }
+
+    .nexmoe-social {
+        padding: 12px;
+        font-size: 0;
+
+        a {
+            width: 41px;
+            height: 41px;
+            line-height: 41px;
+            margin: 4px;
+            border-radius: 100%;
+            display: inline-block;
+            text-align: center;
+            color: #606266;
+        }
+    }
+}
+
+.nexmoe-widget-wrap:first-child {
+    margin-top: 0;
+}
+@media screen and (max-width: 1024px) {
+    #nexmoe-header .nexmoe-social a {
+        margin: 5px;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+    }
+}

@@ -1,0 +1,4 @@
+<% if (theme.function.wordCount){ %>
+    <a><i class="nexmoefont icon-areachart"></i>约<%- wordcount(post.content) %>字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要<%- min2read(post.content, {cn: 300, en: 160}) %>分钟</a>
+<% } %>
