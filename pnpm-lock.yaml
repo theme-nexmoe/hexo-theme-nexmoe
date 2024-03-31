@@ -28,9 +28,6 @@ importers:
       hexo-renderer-ejs:
         specifier: ^2.0.0
         version: 2.0.0
-      hexo-renderer-inferno:
-        specifier: ^0.1.3
-        version: 0.1.3
       hexo-renderer-marked:
         specifier: ^6.0.0
         version: 6.2.0
@@ -66,8 +63,8 @@ importers:
         specifier: ^7.0.0
         version: 7.1.1
       hexo-component-inferno:
-        specifier: ^2.0.2
-        version: 2.0.4
+        specifier: ^3.0.0
+        version: 3.0.0
       hexo-generator-json-content:
         specifier: ^4.2.3
         version: 4.2.3
@@ -84,7 +81,7 @@ importers:
         specifier: ^8.2.3
         version: 8.2.3
       semver:
-        specifier: '>=5.0.0'
+        specifier: ^7.5.4
         version: 7.6.0
     devDependencies:
       eslint:
@@ -3750,16 +3747,16 @@ packages:
       tildify: 2.0.0
     dev: false
 
-  /hexo-component-inferno@2.0.4:
-    resolution: {integrity: sha512-omxq1ev2HqzjtEKQ933Rb7cv2Xm4gvpT9XTBm5AJOvo0AnnpXkWcADFPVaIBq9caNUY2DMZxGfE1N2rWpOsIxQ==}
-    engines: {node: '>=12.4.0'}
+  /hexo-component-inferno@3.0.0:
+    resolution: {integrity: sha512-c0H2XLN5yQgo9zuqpmSiVS18GSwHr24ZDN1zHeq6Vq0OAzpRD4fj0kYe5JIE0tmAvlDmsMNzDHAmPpwaUwGKhA==}
+    engines: {node: '>=14'}
     dependencies:
       ajv: 8.12.0
-      hexo: 6.3.0
-      hexo-pagination: 2.0.0
-      hexo-util: 2.7.0
-      inferno: 7.4.11
-      inferno-create-element: 7.4.11
+      hexo: 7.1.1
+      hexo-pagination: 3.0.0
+      hexo-util: 3.2.0
+      inferno: 8.2.3
+      inferno-create-element: 8.2.3
       js-yaml: 4.1.0
       moment: 2.30.1
       semver: 7.6.0
@@ -3865,11 +3862,6 @@ packages:
       picocolors: 1.0.0
     dev: false
 
-  /hexo-pagination@2.0.0:
-    resolution: {integrity: sha512-ZZQli5UwFWTW6bJNF4zwp2PCeGsipgoPxadud8+cPPxvygTP5GjTS5eVWcUTcfEaCluP+O1maxZCCWmYQoJkiQ==}
-    engines: {node: '>=10.13.0'}
-    dev: false
-
   /hexo-pagination@3.0.0:
     resolution: {integrity: sha512-8oo1iozloZo7TojPVYg4IxL3SJKCBdSJ908fTlIxIK7TWJIKdYnQlW31+12DBJ0NhVZA/lZisPObGF08wT8fKw==}
     engines: {node: '>=14'}
@@ -3880,21 +3872,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       ejs: 3.1.9
-    dev: false
-
-  /hexo-renderer-inferno@0.1.3:
-    resolution: {integrity: sha512-crtisttRWnpNKmhscYPTDGOIT7txTQPre9QU4+WkIHKKO7RCjjIT+Qt62GzX5mb0px/BLd2P4gZ5TItNY6ig1g==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@babel/core': 7.24.3
-      '@babel/preset-env': 7.24.3(@babel/core@7.24.3)
-      '@babel/register': 7.23.7(@babel/core@7.24.3)
-      babel-plugin-inferno: 6.7.1(@babel/core@7.24.3)
-      inferno: 7.4.11
-      inferno-create-element: 7.4.11
-      inferno-server: 7.4.11
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   /hexo-renderer-inferno@1.0.2:
@@ -4138,23 +4115,10 @@ packages:
     engines: {node: '>=0.8.19'}
     dev: true
 
-  /inferno-create-element@7.4.11:
-    resolution: {integrity: sha512-kE6XIx2hPAd5qpDli2iGjNXgubvuyxdLvoiW71WnSzIIxA+Uxa/s8lY8m03VyHHVypFV3n329ZY5dFvKc7UQMg==}
-    dependencies:
-      inferno: 7.4.11
-    dev: false
-
   /inferno-create-element@8.2.3:
     resolution: {integrity: sha512-YEwX4OiFlgeTutvE16uCGxkaSVwZ1DklpAPX8okjVsGaLIWQrM8QIQFxn3mTLWSu70Uea+afQfKL5wE4hxn39Q==}
     dependencies:
       inferno: 8.2.3
-    dev: false
-
-  /inferno-server@7.4.11:
-    resolution: {integrity: sha512-SUnkCqZNWOIrjRVoVk/E1/70O1f1ImkCX9H2gDPbS0uc3GDxuzIeCgn0rpcc0XV9KzZJ2LTGxuBtEoQQOjUn2Q==}
-    engines: {node: '>=8'}
-    dependencies:
-      inferno: 7.4.11
     dev: false
 
   /inferno-server@8.2.3:
@@ -4164,25 +4128,8 @@ packages:
       inferno: 8.2.3
     dev: false
 
-  /inferno-shared@7.4.11:
-    resolution: {integrity: sha512-pN725bDSTxkQmRS3e/3H02/xAqgHl+xgddCMjPm8M0etRdRcVCisi3NGPhzSbDDmiftrxhY31exs7+dwsngcDA==}
-    dev: false
-
-  /inferno-vnode-flags@7.4.11:
-    resolution: {integrity: sha512-L7lslEQCq3IfwgT/b9zhuMf8fv6KXCNXXHZevk/WYxnqJsOWGDcKpJn0zkzXfvmj0otbB149iLUQVBq3oe2sfA==}
-    dev: false
-
   /inferno-vnode-flags@8.2.3:
     resolution: {integrity: sha512-dfC0MIwFv9PCbZCUsuk9ISejFS3fKJODC0rZ/LjxxzE+OrCk+PMwPLsUnGU6O9/jbBnPACVz1BkACDf5LWgU5Q==}
-    dev: false
-
-  /inferno@7.4.11:
-    resolution: {integrity: sha512-N+cs33ESWI8fdToCd98yMRYl7jkLnCkJskxov3FKKlaKOvk3PRlAttbhmUaYdWXlRvt2WeXi+J4MbzNj3V6G0w==}
-    requiresBuild: true
-    dependencies:
-      inferno-shared: 7.4.11
-      inferno-vnode-flags: 7.4.11
-      opencollective-postinstall: 2.0.3
     dev: false
 
   /inferno@8.2.3:
