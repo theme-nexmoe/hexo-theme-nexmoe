@@ -31,7 +31,7 @@
 	"dependencies": {
 		"hexo-generator-json-content": "^4.2.3",
 		"hexo": "^7.0.0",
-		"hexo-component-inferno": "^2.0.2",
+		"hexo-component-inferno": "^3.0.0",
 		"hexo-renderer-inferno": "^0.1.3",
 		"hexo-renderer-stylus": "^3.0.0",
 		"inferno": "^7.3.3",
