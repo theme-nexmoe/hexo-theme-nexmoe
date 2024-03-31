@@ -31,3 +31,10 @@ import Index from './section.vue'
 </script>
 
 <Index/>
+
+<style>
+  .is-home .vp-doc.container {
+    max-width: 100%;
+    padding: 0;
+  }
+</style>

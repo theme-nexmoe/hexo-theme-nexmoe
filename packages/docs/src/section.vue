@@ -24,7 +24,6 @@ const infinites: LInfiniteItem[] = [
 const sections: LAutoSectionProps[] = [
   {
     title: '这是一个图片支持良好的主题',
-    cover: true,
     props: {
       tiles: [
         {
@@ -74,7 +73,6 @@ const sections: LAutoSectionProps[] = [
   },
   {
     title: '贡献者们',
-    cover: true,
     props: {
       tiles: [
         {
