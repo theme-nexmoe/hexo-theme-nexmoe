@@ -54,6 +54,25 @@ const sections: LAutoSectionProps[] = [
     }
   },
   {
+    title: 'Showcases',
+    cover: true,
+    props: {
+      gallery: [
+        {
+          title: 'https://www.tangyuxian.com/',
+          img: 'https://camo.githubusercontent.com/09dd48d463a638f3f8b9e4249e3ae5ca4992155847c7fb43e89d0142c9aad482/68747470733a2f2f63646e2e74616e6779757869616e2e636f6d2f506963476f496d616765732f32303231303432393130343831382e706e67',
+        },
+        {
+          img: 'https://raw.githubusercontent.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme/master/cover.png'
+        },
+        {
+          title: 'https://hosizuki.github.io/',
+          img: 'https://i.dawnlab.me/b2804fa8cf5e2c42eb64b39a5825cca4.png/nexmoe'
+        }
+      ]
+    }
+  },
+  {
     title: '贡献者们',
     cover: true,
     props: {
