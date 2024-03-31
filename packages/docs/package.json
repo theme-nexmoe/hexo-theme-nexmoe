@@ -1,28 +1,21 @@
 {
+  "name": "docs",
   "engines": {
     "node": ">=14.0.0"
   },
+  "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "dependencies": {
     "landify": "^0.3.5",
-    "vue": "^3.2.33"
+    "typescript": "^5.4.3",
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "vitepress": "1.0.1"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "react",
-        "react-dom",
-        "@types/react"
-      ]
-    }
   }
 }
