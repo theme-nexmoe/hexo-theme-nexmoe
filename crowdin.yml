@@ -1,6 +1,0 @@
-project_id: '490491'
-files:
-  - source: /languages/zh-CN.yml
-    translation: /languages/%two_letters_code%.yml
-  - source: /languages/zh-CN.yml
-    translation: /languages/%locale%.yml

@@ -1,0 +1,11 @@
+<% if (page.hide_copyright !== true && theme.slotCopyright || page.copyright) { %>
+    <div class="nexmoe-post-copyright">
+        <strong><%- __('copyright.author') %>：</strong><%= config.author %><br>
+        <strong><%- __('copyright.permalink') %>：</strong><%- link_to(page.permalink, page.permalink, {external: true}) %><br>
+        <% if (page.copyright) { %>
+            <%- page.copyright %>
+        <% } else { %>
+            <%- theme.slotCopyright %>
+        <% } %>
+    </div>
+<% } %>

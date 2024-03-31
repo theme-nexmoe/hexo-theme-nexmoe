@@ -1,0 +1,33 @@
+<div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <% if (options.search.type=='engine') { %> 
+            <form id="search_form" action_e="<%= options.search.url %>" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="<%= __('search') %>"></label>
+            </form>
+        <% } else { %>
+            <form id="search_form">
+                <label><input class="st-default-search-input" id="search_value" name="q" type="search" placeholder="<%= __('search') %>" style="
+                    font-size: 15px !important;
+                    height: 56px !important;
+                    background-image: none;
+                "></label>
+            </form>
+        <% } %> 
+    </div>
+</div>
+
+<% if (options.search.type == 'local') { %>
+	<%- js_auto_version('js/search') %>
+<%  } %>
+
+<% if (options.search.type=='swiftype') { %>
+	<script type="text/javascript">
+		var id='<%-options.search.id%>';
+		(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+		(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+		e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+		})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+		_st('install', id ,'2.0.0');
+	</script>
+<% } %>

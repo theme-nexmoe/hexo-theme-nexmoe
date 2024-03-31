@@ -1,0 +1,20 @@
+    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            <% if (page.toc || theme.function.globalToc){ %>
+
+            <% const toc_obj = toc(page.content, {list_number: true}); %>
+            <% if (toc_obj.length > 0) { %>
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <%- toc_obj %>
+                </div>
+            </button>
+            <% } %>
+
+            <%} %>
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>

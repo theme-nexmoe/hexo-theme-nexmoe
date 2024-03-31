@@ -1,0 +1,39 @@
+.nexmoe-widget-wrap {
+    .nexmoe-widget {
+        // 文字滚动，从 https://juejin.cn/post/6844904165446156302 复制
+        .hitokoto-box {
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .hitokoto-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: 10s wordsLoop linear infinite normal;
+        }
+
+        @keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+
+        @keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+    }
+}

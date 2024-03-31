@@ -1,0 +1,34 @@
+<div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="<%- url_for() %>" title="<%= config.author || config.title %>">
+            <img src="<%= theme.avatar %>" alt="<%= config.author || config.title %>" alt="<%= config.author || config.title %>">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span><%= __('count.articles') %></span><%= site.posts.length %></div>
+        <div><span><%= __('count.tags') %></span><%= site.tags.length %></div>
+        <div><span><%= __('count.categories') %></span><%= site.categories.length %></div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        <% for (name in theme.menu) { %>
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple <%= is_current(theme.menu[name][0]) %>" href="<%- url_for(theme.menu[name][0]) -%>" title="<%= name %>">
+            <i class="mdui-list-item-icon nexmoefont <% if (theme.menu[name][1]){ %><%= theme.menu[name][1] %><%} else{ %><%= 'icon-unorderedlist' %><% } %>"></i>
+            <div class="mdui-list-item-content">
+                <%= name %>
+            </div>
+        </a>
+        <% } %>
+    </div>
+    
+    <% theme.widgets.forEach(function(widget){ %>
+        <% if(widget.enable){ %>
+        <%- partial('_widget/' + widget.name, {options: widget.options}) %>
+    <% }}) %>
+   
+    <div class="nexmoe-copyright">
+        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+        <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <%- theme.slotSidebar %>
+    </div>
+</div><!-- .nexmoe-drawer -->

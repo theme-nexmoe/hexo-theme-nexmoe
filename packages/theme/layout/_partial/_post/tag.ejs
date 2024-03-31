@@ -1,0 +1,11 @@
+<div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    <% if (page.tags && page.tags.length){ %>
+        <%- list_tags(page.tags, {
+            show_count: false,
+            class: 'nexmoefont icon-tag-fill ',
+            style: 'none',
+            separator: ' '
+        }) %>
+    <% } %>
+</div>

@@ -1,0 +1,97 @@
+#nexmoe-search-space {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6000;
+    font-size: 1rem;
+    background: rgba(10, 10, 10, 0.86);
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.25em;
+    display: none;
+
+    .search-container {
+        width: 540px;
+        overflow: auto;
+        z-index: 6001;
+        top: 100px;
+        bottom: 100px;
+        flex-direction: column;
+        position: fixed;
+        display: flex;
+
+        .search-header {
+            display: flex;
+            flex-direction: row;
+            line-height: 1.5em;
+            font-weight: normal;
+            border-radius: 13px;
+            background-color: #ffffff;
+            min-height: 3rem;
+
+            .search-input-container {
+                    width: 90%;
+                    height: 100%;
+                    padding-left: 16px;
+
+                    .search-input {
+                        width: 100%;
+                        height: 100%;
+                        outline-style: none;
+                        border: 0px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: initial;
+                    }
+            }
+
+            .search-close {
+                font-family: initial;
+                font-size: 1.4em;
+                padding: 0.6em 0.75em;
+            }
+        }
+
+        .search-body {
+            .search-result {
+                background-color: #fff;
+                border-radius: 13px;
+                
+                a {
+                    color: #b5b5b5;
+                    font-family: initial;
+
+                    h3 {
+                        color: black;
+                        padding: 18px;
+                        margin-bottom: 0px;
+                        padding-bottom: 10px;
+                    }
+
+                    .content {
+                        padding-left: 17px;
+                        bottom: 10px;
+                        margin-top: 10px;
+                        word-wrap: break-word;
+                    }
+
+                    .keyword {
+                        color: var(--color-primary);
+                    }
+                }
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search-container {
+        align-items: center;
+
+        .search-header, .search-body {
+            width: 330px;
+        }
+    }
+}

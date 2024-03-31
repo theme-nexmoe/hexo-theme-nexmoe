@@ -1,0 +1,35 @@
+<div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill"><%- date(page.date, "YYYY年MM月DD日") %></a>
+        <% if (page.categories && page.categories.length){ %>
+            <%- list_categories(page.categories, {
+                show_count: false,
+                class: 'nexmoefont icon-appstore-fill ',
+                style: 'none',
+                separator: ''
+            }) %>
+        <% } %>
+        <%- partial('_partial/_post/word-count', {post: page}) %>
+    </div>
+    
+    <% if (page.wechat){ %>
+        <a class="wechat" href="<%- page.wechat %>" target="_blank">
+            <i class="nexmoefont icon-wechat-fill"></i>
+        </a>
+    <% } %>
+    <% if (page.zhihu){ %>
+        <a class="zhihu" href="<%- page.zhihu %>" target="_blank">
+            <i class="nexmoefont icon-zhihu"></i>
+        </a>
+    <% } %>
+    <% if (page.bilibili){ %>
+        <a class="bilibili" href="<%- page.bilibili %>" target="_blank">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a>
+    <% } %>
+    <% if (page.sspai){ %>
+        <a class="sspai" href="<%- page.sspai %>" target="_blank">
+            <i class="nexmoefont">π</i>
+        </a>
+    <% } %>
+</div>
