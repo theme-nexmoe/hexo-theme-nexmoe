@@ -10,6 +10,4 @@ node_modules
 
 WIKI/.vuepress/dist
 
-.vscode/
-
 .eslintcache
