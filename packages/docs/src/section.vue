@@ -36,13 +36,13 @@ const sections: LAutoSectionProps[] = [
           title: '归档页',
           des: '预览：https://nexmoe.com/archive.html',
           shadow: true,
-          img: 'https://user-images.githubusercontent.com/16796652/134768466-cf580997-1201-48a8-812e-77eb0af6ce59.png'
+          img: 'https://user-images.githubusercontent.com/16796652/134768465-a578b70e-38f2-4266-97e7-f0b85bd86348.png'
         },
         {
           title: '友情链接页面',
           des: '预览：https://nexmoe.com/PY.html',
           shadow: true,
-          img: '/v4.2/post/archive/image-20210721123359847.png'
+          img: 'https://user-images.githubusercontent.com/16796652/134768466-cf580997-1201-48a8-812e-77eb0af6ce59.png'
         },
         {
           title: '文章内插入图片瀑布',
