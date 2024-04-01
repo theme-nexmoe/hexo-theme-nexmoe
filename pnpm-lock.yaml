@@ -11,31 +11,31 @@ importers:
   packages/demo:
     dependencies:
       hexo:
-        specifier: ^7.0.0
-        version: 7.1.1
+        specifier: 6.3.0
+        version: 6.3.0
       hexo-generator-archive:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       hexo-generator-category:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       hexo-generator-index:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       hexo-generator-tag:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       hexo-renderer-ejs:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       hexo-renderer-marked:
-        specifier: ^6.0.0
+        specifier: 6.2.0
         version: 6.2.0
       hexo-renderer-stylus:
-        specifier: ^3.0.0
-        version: 3.0.1
+        specifier: 3.0.0
+        version: 3.0.0
       hexo-server:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       hexo-theme-nexmoe:
         specifier: workspace:^
@@ -44,13 +44,13 @@ importers:
   packages/docs:
     dependencies:
       landify:
-        specifier: ^0.3.5
+        specifier: 0.3.5
         version: 0.3.5
       typescript:
-        specifier: ^5.4.3
+        specifier: 5.4.3
         version: 5.4.3
       vue:
-        specifier: ^3.4.21
+        specifier: 3.4.21
         version: 3.4.21(typescript@5.4.3)
     devDependencies:
       vitepress:
@@ -60,41 +60,41 @@ importers:
   packages/theme:
     dependencies:
       hexo:
-        specifier: ^7.0.0
+        specifier: 7.1.1
         version: 7.1.1
       hexo-component-inferno:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       hexo-generator-json-content:
-        specifier: ^4.2.3
+        specifier: 4.2.3
         version: 4.2.3
       hexo-renderer-inferno:
-        specifier: ^1.0.2
+        specifier: 1.0.2
         version: 1.0.2
       hexo-renderer-stylus:
-        specifier: ^3.0.0
+        specifier: 3.0.1
         version: 3.0.1
       inferno:
-        specifier: ^8.2.3
+        specifier: 8.2.3
         version: 8.2.3
       inferno-create-element:
-        specifier: ^8.2.3
+        specifier: 8.2.3
         version: 8.2.3
       semver:
-        specifier: ^7.5.4
+        specifier: 7.6.0
         version: 7.6.0
     devDependencies:
       eslint:
-        specifier: ^8.6.0
+        specifier: 8.57.0
         version: 8.57.0
       eslint-config-hexo:
-        specifier: ^5.0.0
+        specifier: 5.0.0
         version: 5.0.0(eslint@8.57.0)(typescript@5.4.3)
       eslint-plugin-json:
-        specifier: ^3.0.0
+        specifier: 3.1.0
         version: 3.1.0
       eslint-plugin-react:
-        specifier: ^7.17.0
+        specifier: 7.34.1
         version: 7.34.1(eslint@8.57.0)
 
 packages:
@@ -2309,6 +2309,10 @@ packages:
     deprecated: Use your platform's native atob() and btoa() methods instead
     dev: false
 
+  /abbrev@1.1.1:
+    resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
+    dev: false
+
   /abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -3750,7 +3754,7 @@ packages:
       ajv: 8.12.0
       hexo: 7.1.1
       hexo-pagination: 3.0.0
-      hexo-util: 3.2.0
+      hexo-util: 3.3.0
       inferno: 8.2.3
       inferno-create-element: 8.2.3
       js-yaml: 4.1.0
@@ -3760,11 +3764,28 @@ packages:
       - chokidar
     dev: false
 
+  /hexo-front-matter@3.0.0:
+    resolution: {integrity: sha512-hSQTPUmB/BCe1BFYmXRkPyLk8rqbBqHCQq+rjwwOJuEfOADrFaVK2VPZb90tJzPyXE1xSxpgCxE/AZq0CyTVwg==}
+    engines: {node: '>=12.13.0'}
+    dependencies:
+      js-yaml: 4.1.0
+    dev: false
+
   /hexo-front-matter@4.2.1:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
     engines: {node: '>=14'}
     dependencies:
       js-yaml: 4.1.0
+    dev: false
+
+  /hexo-fs@3.1.0:
+    resolution: {integrity: sha512-SfoDH7zlU9Iop+bAfEONXezbNIkpVX1QqjNCBYpapilZR+xVOCfTEdlNixanrKBbLGPb2fXqrdDBFgrKuiVGQQ==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      bluebird: 3.7.2
+      chokidar: 3.6.0
+      graceful-fs: 4.2.11
+      hexo-util: 2.7.0
     dev: false
 
   /hexo-fs@4.1.1:
@@ -3813,11 +3834,25 @@ packages:
       hexo-pagination: 3.0.0
     dev: false
 
+  /hexo-i18n@1.0.0:
+    resolution: {integrity: sha512-yw90JHr7ybUHN/QOkpHmlWJj1luVk5/v8CUU5NRA0n4TFp6av8NT7ujZ10GDawgnQEdMHnN5PUfAbNIVGR6axg==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      sprintf-js: 1.1.3
+    dev: false
+
   /hexo-i18n@2.0.0:
     resolution: {integrity: sha512-dkUXecEtChaQMdTHN4WR13c8GwKqjbSOZPJS9qDqV6Ebnb77Wa/nQzWFckhP0dCps3a9lUQBd8hYGOMbOosiQQ==}
     engines: {node: '>=14'}
     dependencies:
       sprintf-js: 1.1.3
+    dev: false
+
+  /hexo-log@3.2.0:
+    resolution: {integrity: sha512-fk7jOW3hvKiAv4Q/d8UxaQlARwcv+5KjGcnxexUrqBqyWbMCLmw7jhMHTSRLNNQpaoTlF5ff+kQkPi4yhp9iag==}
+    engines: {node: '>=12.4.0'}
+    dependencies:
+      picocolors: 1.0.0
     dev: false
 
   /hexo-log@4.1.0:
@@ -3859,7 +3894,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       dompurify: 3.0.11
-      hexo-util: 3.2.0
+      hexo-util: 3.3.0
       jsdom: 20.0.3
       marked: 4.3.0
     transitivePeerDependencies:
@@ -3867,6 +3902,16 @@ packages:
       - canvas
       - supports-color
       - utf-8-validate
+    dev: false
+
+  /hexo-renderer-stylus@3.0.0:
+    resolution: {integrity: sha512-wgKOcjUzq1i4Y70luoyYDbh91QeQcDzJO+v1598LgY+IdREFAm+vy1MWtl/TZsVXyPaEtsULNi3Vi22hdsPUSA==}
+    engines: {node: '>=14'}
+    dependencies:
+      nib: 1.2.0(stylus@0.59.0)
+      stylus: 0.59.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /hexo-renderer-stylus@3.0.1:
@@ -3909,20 +3954,6 @@ packages:
       strip-indent: 3.0.0
     dev: false
 
-  /hexo-util@3.2.0:
-    resolution: {integrity: sha512-iM2eS8P88IUpcgiU2szx584bwhXzjzLLqED6WwDk55wYQZrQh/sni/UJwmoW4pxpgubbISIUPXr4LjwPyJuYzA==}
-    engines: {node: '>=14'}
-    requiresBuild: true
-    dependencies:
-      camel-case: 4.1.2
-      cross-spawn: 7.0.3
-      deepmerge: 4.3.1
-      highlight.js: 11.9.0
-      htmlparser2: 9.1.0
-      prismjs: 1.29.0
-      strip-indent: 3.0.0
-    dev: false
-
   /hexo-util@3.3.0:
     resolution: {integrity: sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q==}
     engines: {node: '>=14'}
@@ -3935,6 +3966,39 @@ packages:
       htmlparser2: 9.1.0
       prismjs: 1.29.0
       strip-indent: 3.0.0
+    dev: false
+
+  /hexo@6.3.0:
+    resolution: {integrity: sha512-4Jq+rWd8sYvR1YdIQyndN/9WboQ/Mqm6eax8CjrjO+ePFm2oMVafSOx9WEyJ42wcLOHjfyMfnlQhnUuNmJIpPg==}
+    engines: {node: '>=12.13.0'}
+    hasBin: true
+    dependencies:
+      abbrev: 1.1.1
+      archy: 1.0.0
+      bluebird: 3.7.2
+      hexo-cli: 4.3.1
+      hexo-front-matter: 3.0.0
+      hexo-fs: 3.1.0
+      hexo-i18n: 1.0.0
+      hexo-log: 3.2.0
+      hexo-util: 2.7.0
+      js-yaml: 4.1.0
+      js-yaml-js-types: 1.0.1(js-yaml@4.1.0)
+      micromatch: 4.0.5
+      moize: 6.1.6
+      moment: 2.30.1
+      moment-timezone: 0.5.45
+      nunjucks: 3.2.4
+      picocolors: 1.0.0
+      pretty-hrtime: 1.0.3
+      resolve: 1.22.8
+      strip-ansi: 6.0.1
+      text-table: 0.2.0
+      tildify: 2.0.0
+      titlecase: 1.1.3
+      warehouse: 4.0.2
+    transitivePeerDependencies:
+      - chokidar
     dev: false
 
   /hexo@7.1.1:
@@ -3950,7 +4014,7 @@ packages:
       hexo-fs: 4.1.1
       hexo-i18n: 2.0.0
       hexo-log: 4.1.0
-      hexo-util: 3.2.0
+      hexo-util: 3.3.0
       js-yaml: 4.1.0
       js-yaml-js-types: 1.0.1(js-yaml@4.1.0)
       micromatch: 4.0.5
@@ -4684,6 +4748,14 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /nib@1.2.0(stylus@0.59.0):
+    resolution: {integrity: sha512-7HgrnMl/3yOmWykueO8/D0q+0iWwe7Z+CK2Eaq/xQV8w1hK80WN1oReRQkfkrztbAAnp/nTHkUSl5EcVkor6JQ==}
+    peerDependencies:
+      stylus: '*'
+    dependencies:
+      stylus: 0.59.0
+    dev: false
+
   /nib@1.2.0(stylus@0.62.0):
     resolution: {integrity: sha512-7HgrnMl/3yOmWykueO8/D0q+0iWwe7Z+CK2Eaq/xQV8w1hK80WN1oReRQkfkrztbAAnp/nTHkUSl5EcVkor6JQ==}
     peerDependencies:
@@ -5207,6 +5279,10 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
+  /sax@1.2.4:
+    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    dev: false
+
   /sax@1.3.0:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
     dev: false
@@ -5443,6 +5519,19 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
     dev: true
+
+  /stylus@0.59.0:
+    resolution: {integrity: sha512-lQ9w/XIOH5ZHVNuNbWW8D822r+/wBSO/d6XvtyHLF7LW4KaCIDeVbvn5DF8fGCJAUCwVhVi/h6J0NUcnylUEjg==}
+    hasBin: true
+    dependencies:
+      '@adobe/css-tools': 4.3.3
+      debug: 4.3.4
+      glob: 7.2.3
+      sax: 1.2.4
+      source-map: 0.7.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /stylus@0.62.0:
     resolution: {integrity: sha512-v3YCf31atbwJQIMtPNX8hcQ+okD4NQaTuKGUWfII8eaqn+3otrbttGL1zSMZAAtiPsBztQnujVBugg/cXFUpyg==}
@@ -5842,6 +5931,20 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       xml-name-validator: 4.0.0
+    dev: false
+
+  /warehouse@4.0.2:
+    resolution: {integrity: sha512-GixS7SolBGu81rnxYM6bScxdElLM97Jx/kr0a6B6PGBWFqvHeuWFj7QbgEX1YWZSxiJt/aR6dBVQKC/PvvihdQ==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      bluebird: 3.7.2
+      cuid: 2.1.8
+      graceful-fs: 4.2.11
+      hexo-log: 3.2.0
+      is-plain-object: 5.0.0
+      jsonparse: 1.3.1
+      rfdc: 1.3.1
+      through2: 4.0.2
     dev: false
 
   /warehouse@5.0.1:

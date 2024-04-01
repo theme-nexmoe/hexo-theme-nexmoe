@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "engines": {
-    "node": ">=14.0.0"
+    "node": "21.7.1"
   },
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "landify": "^0.3.5",
-    "typescript": "^5.4.3",
-    "vue": "^3.4.21"
+    "landify": "0.3.5",
+    "typescript": "5.4.3",
+    "vue": "3.4.21"
   },
   "devDependencies": {
     "vitepress": "1.0.1"

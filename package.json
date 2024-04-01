@@ -6,7 +6,7 @@
     "build:demo": "pnpm run --filter=demo build"
   },
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=8"
+    "node": "21.7.1",
+    "pnpm": "8.15.5"
   }
 }
