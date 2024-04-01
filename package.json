@@ -2,7 +2,8 @@
   "name": "nexmoe",
   "scripts": {
     "dev": "pnpm run --filter=demo dev",
-    "dev:docs": "pnpm run --filter=docs dev"
+    "dev:docs": "pnpm run --filter=docs dev",
+    "build:demo": "pnpm run --filter=demo build"
   },
   "engines": {
     "node": ">=18",

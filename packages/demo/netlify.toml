@@ -1,0 +1,8 @@
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--version" # prevent Netlify npm install
+
+[build]
+  publish = "packages/demo/public"
+  command = "npx pnpm i && pnpm build:demo"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF packages/demo"
