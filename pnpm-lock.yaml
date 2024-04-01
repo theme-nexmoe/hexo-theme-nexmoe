@@ -3822,7 +3822,7 @@ packages:
   /hexo-generator-json-content@4.2.3:
     resolution: {integrity: sha512-XGqCaTUr6+X8Ty/YvRi+0eh0DJgHcp+lgBhn+Sgyh6ev40P0cwamwJyaZroTdHt8GPoBwbSGVu0H/CdzEf0lFA==}
     dependencies:
-      hexo-util: 3.2.0
+      hexo-util: 3.3.0
       keyword-extractor: 0.0.28
       moment: 2.30.1
     dev: false
@@ -3946,6 +3946,20 @@ packages:
 
   /hexo-util@3.2.0:
     resolution: {integrity: sha512-iM2eS8P88IUpcgiU2szx584bwhXzjzLLqED6WwDk55wYQZrQh/sni/UJwmoW4pxpgubbISIUPXr4LjwPyJuYzA==}
+    engines: {node: '>=14'}
+    requiresBuild: true
+    dependencies:
+      camel-case: 4.1.2
+      cross-spawn: 7.0.3
+      deepmerge: 4.3.1
+      highlight.js: 11.9.0
+      htmlparser2: 9.1.0
+      prismjs: 1.29.0
+      strip-indent: 3.0.0
+    dev: false
+
+  /hexo-util@3.3.0:
+    resolution: {integrity: sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q==}
     engines: {node: '>=14'}
     requiresBuild: true
     dependencies:
