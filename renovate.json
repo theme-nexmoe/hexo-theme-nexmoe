@@ -3,9 +3,7 @@
   "extends": [
     "config:base",
     "default:automergeMinor",
-    "default:disableRateLimiting",
     "default:rebaseStalePrs",
-    "default:pinVersions",
     "group:allNonMajor"
   ]
 }
