@@ -3,23 +3,7 @@ import {
   LFooter,
   LAutoSection,
   type LAutoSectionProps,
-  type LInfiniteItem
 } from 'landify'
-
-const infinites: LInfiniteItem[] = [
-  {
-    img: 'https://xiaoshu.s3.bitiful.net/Snipaste_2022-10-28_11-17-27.png?fmt=webp&w=1000?fmt=webp&w=1000'
-  },
-  {
-    img: 'https://xiaoshu.s3.bitiful.net/Snipaste_2021-12-21_17-37-31.png?fmt=webp&w=1000?fmt=webp&w=1000'
-  },
-  {
-    img: 'https://xiaoshu.s3.bitiful.net/Snipaste_2022-06-07_23-26-40.png?fmt=webp&w=1000?fmt=webp&w=1000'
-  },
-  {
-    img: 'https://xiaoshu.s3.bitiful.net/QQ图片20220607234517.jpg?fmt=webp&w=1000?fmt=webp&w=1000'
-  }
-]
 
 const sections: LAutoSectionProps[] = [
   {
