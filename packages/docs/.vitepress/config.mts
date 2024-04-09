@@ -11,6 +11,9 @@ export default defineConfig({
       ...zhConfig
     },
   },
+  sitemap: {
+    hostname: 'https://docs.nexmoe.com'
+  },
   head: [
     [
       'meta',
