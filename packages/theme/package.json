@@ -24,7 +24,7 @@
 	"homepage": "https://docs.nexmoe.com/",
 	"devDependencies": {
 		"eslint": "^8.6.0",
-		"eslint-config-hexo": "^5.0.0",
+		"eslint-config-hexo": "^6.0.0",
 		"eslint-plugin-json": "^3.0.0",
 		"eslint-plugin-react": "^7.17.0"
 	},
